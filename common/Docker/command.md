@@ -1,10 +1,10 @@
-# command
+# 命令
 
 ---
 
-- [command](#command)
+- [命令](#命令)
   - [docker help](#docker-help)
-  - [docker-compose 常用命令](#docker-compose-%e5%b8%b8%e7%94%a8%e5%91%bd%e4%bb%a4)
+  - [docker-compose 常用命令](#docker-compose-常用命令)
 
 ---
 

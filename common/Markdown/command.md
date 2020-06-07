@@ -1,8 +1,8 @@
-# command
+# 命令
 
 ---
 
-- [command](#command)
+- [命令](#命令)
 
 ---
 

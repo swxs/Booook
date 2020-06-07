@@ -1,9 +1,9 @@
-# install
+# 安装
 
 ---
 
-- [install](#install)
-  - [Docker安装](#docker%e5%ae%89%e8%a3%85)
+- [安装](#安装)
+  - [Docker安装](#docker安装)
 
 ---
 

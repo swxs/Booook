@@ -1,21 +1,22 @@
-# install
+# 安装
 
 ---
 
-- [install](#install)
-  - [下载安装](#%e4%b8%8b%e8%bd%bd%e5%ae%89%e8%a3%85)
-      - [yum安装](#yum%e5%ae%89%e8%a3%85)
-        - [3.6](#36)
-        - [4.0](#40)
-    - [配置](#%e9%85%8d%e7%bd%ae)
-      - [运行](#%e8%bf%90%e8%a1%8c)
+- [安装](#安装)
+  - [下载安装](#下载安装)
+    - [yum安装](#yum安装)
+      - [3.6](#36)
+      - [4.0](#40)
+    - [配置](#配置)
+      - [运行](#运行)
 
 ---
 
 ## 下载安装
 
 1. 下载址定版本并解压
-```
+
+``` sh
 wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.2.17.tgz
 
 tar -zxvf mongodb-linux-x86_64-3.2.17.tgz -C /usr/local/
@@ -26,7 +27,8 @@ mv mongodb-linux-x86_64-3.2.17 mongodb3.2.17
 ```
 
 2. 配置
-```
+
+``` sh
 cat >> /etc/profile << EOF
 export PATH=$PATH:/usr/local/mongodb3.2.17/bin
 EOF
@@ -34,9 +36,11 @@ EOF
 source /etc/profile
 ```
 
-#### yum安装
-##### 3.6
-```
+### yum安装
+
+#### 3.6
+
+``` sh
 cd /etc/yum.repos.d
 cat >> mongodb-org-3.6.repo << EOF
 [mongodb-org-3.6]
@@ -50,7 +54,8 @@ EOF
 yum install -y mongodb-org
 ```
 
-##### 4.0
+#### 4.0
+
 ``` shell
 cd /etc/yum.repos.d
 cat >> mongodb-org-4.0.repo << EOF
@@ -69,7 +74,7 @@ yum install -y mongodb-org
 
 vim /etc/mongod.conf
 
-```
+``` sh
 # mongod.conf
 
 # for documentation of all options, see:
@@ -123,8 +128,9 @@ net:
 
 环境:DB1:192.168.200.201
 
-1、创建数据和日志目录
-```
+1. 创建数据和日志目录
+
+``` sh
 mkdir -p /data/database/mongodb/cemdb
 mkdir -p /data/database/mongodb/cemdb_slave
 mkdir -p /data/log/mongodb
@@ -133,19 +139,24 @@ chmod -R 777 /data/database/mongodb/cemdb_slave
 chmod -R 777 /data/log/
 ```
 
-2、启动mongod服务
-```
+2. 启动mongod服务
+
+``` sh
 mongod --dbpath /data/database/mongodb/cemdb --logpath=/data/log/mongodb/cemdb.log --logappend --logRotate reopen
 ```
 
 Master:
-```
+
+``` sh
 numactl --interleave=all /usr/local/mongodb3.2.17/bin/mongod --dbpath=/data/database/mongodb/cemdb --logpath=/data/log/mongodb/cemdb.log --logappend --logRotate reopen --fork --directoryperdb --nssize=1024 --port=27017 --bind_ip=10.183.188.184 --storageEngine=wiredTiger --master
 ```
+
 Slave:
-```
+
+``` sh
 numactl --interleave=all /usr/local/mongodb3.2.17/bin/mongod --dbpath=/data/database/mongodb/cemdb_slave --logpath=/data/log/mongodb/cemdb.log --logappend --logRotate reopen --fork --directoryperdb --nssize=1024 --port=27017 --source=10.183.188.184 --bind_ip=10.183.188.179 --storageEngine=wiredTiger --slave
 ```
 
-3、检查状态
-netstat -nltp |grep mongod
+3. 检查状态
+
+netstat -nltp | grep mongod

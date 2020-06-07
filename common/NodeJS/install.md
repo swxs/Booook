@@ -1,9 +1,9 @@
-# install
+# 安装
 
 ---
 
-- [install](#install)
-  - [centos 安装](#centos-%e5%ae%89%e8%a3%85)
+- [安装](#安装)
+  - [centos 安装](#centos-安装)
 
 ---
 
