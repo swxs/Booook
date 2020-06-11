@@ -5,6 +5,10 @@
   "repository": "https://github.com/swxs/Booook.git",
   "author": "xiaoren <xr.ju@idiaoyan.com>",
   "license": "MIT",
+  "scripts": {
+    "init": "gitbook init",
+    "serve": "gitbook serve"
+  },
   "dependencies": {
     "gitbook-cli": "^2.3.2"
   }
