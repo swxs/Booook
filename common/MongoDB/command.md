@@ -26,7 +26,7 @@ mongorestore --gzip --archive=dump.gz 库名是 cem_server_vehicel
 
 ### 如果版本不一致
 
-``` mongo
+``` sh
 # Mongodump: Unrecognized field 'snapshot'
 --forceTableScan
 ```

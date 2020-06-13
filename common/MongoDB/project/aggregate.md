@@ -18,7 +18,7 @@
 
 BI实现思路， 实现了多维度交叉， 度量的总计， 计数， 去重计数， 平均
 
-``` mongo
+``` sh
 db.getCollection('USER_GROUP').aggregate([
 {
     '$match': {
@@ -65,13 +65,13 @@ db.getCollection('USER_GROUP').aggregate([
 
 ## 查询并修改
 
-``` mongo
+``` sh
 db.DELIVER_DELIVER。find().forEach(function(item){db.getCollection('DELIVER_DELIVER').update({"_id": item._id},{$set:{"name": item.code}})})
 ```
 
 ## 查询并修改2
 
-``` mongo
+``` sh
 db.BI_COLUMN.aggregate([
     {
         "$lookup": {
@@ -108,7 +108,7 @@ db.BI_COLUMN.aggregate([
 
 ## 关联查询
 
-``` mongo
+``` sh
 db.getCollection('BI_COLUMN').aggregate([
     {
         $lookup: {
@@ -131,7 +131,7 @@ db.getCollection('BI_COLUMN').aggregate([
 
 ## 多层关联查询
 
-``` mongo
+``` sh
 db.getCollection('DELIVER_SMSTEMPLATE').aggregate([
     {
         $lookup: {
@@ -172,7 +172,7 @@ db.getCollection('DELIVER_SMSTEMPLATE').aggregate([
 
 ## 多层关联查询2
 
-``` mongo
+``` sh
 db.getCollection('BI_COLUMN').aggregate([
     {
         $lookup: {
@@ -200,7 +200,7 @@ db.getCollection('BI_COLUMN').aggregate([
 
 ## 分组后按数量排序
 
-``` mongo
+``` sh
 db.getCollection('BI_COLUMN').aggregate([
     {
         $group: {
@@ -226,7 +226,7 @@ db.getCollection('BI_COLUMN').aggregate([
 
 ## 统计数量分段
 
-``` mongo
+``` sh
 db.getCollection('BI_COLUMN').aggregate([
     {
         $group: {

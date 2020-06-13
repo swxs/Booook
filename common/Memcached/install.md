@@ -18,7 +18,7 @@
 
 ### 安装 & 运行
 
-``` bat
+``` bash
 memcached.exe -d install
 memcached.exe -d start
 ```
