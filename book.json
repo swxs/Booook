@@ -87,6 +87,14 @@
         "favicon": {
             "shortcut": "favicon.ico",
             "bookmark": "favicon.ico"
+        },
+        "pluginsConfig": {
+            "simple-mind-map": {
+                "type": "txtmap",
+                "preset": "colorful",
+                "linkShape": "diagonal",
+                "autoFit": true
+            }
         }
     }
 }

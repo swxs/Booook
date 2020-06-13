@@ -22,9 +22,9 @@
 
 ### markdown
 
-``` sh
+```` sh
 {% simplemindmap %}
-\`\`\`markdown
+``` markdown
 * simplemindmap
     * config book.json
         * plugins
@@ -48,15 +48,23 @@
         * txtmap
         * json
         * mindmup
-\`\`\`
-{% endsimplemindmap %}
 ```
+{% endsimplemindmap %}
+````
+
+```` sh
+{% simplemindmap type="txtmap" %}
+``` markdown
+```
+{% endsimplemindmap %}
+````
+
 
 ### txtmap
 
-``` sh
+```` sh
 {% simplemindmap type="txtmap" %}
-\`\`\`txtmap
+``` txtmap
 some
   example
     content
@@ -67,6 +75,13 @@ some
       the
     file
       structure
-\`\`\`
-{% endsimplemindmap %}
 ```
+{% endsimplemindmap %}
+````
+
+```` sh
+{% simplemindmap type="txtmap" %}
+``` txtmap
+```
+{% endsimplemindmap %}
+````

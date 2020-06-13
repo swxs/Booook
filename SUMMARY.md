@@ -66,6 +66,7 @@
             * [凭证存储](common/Git/project/credential.md)
     * [gitbook](common/gitbook/README.md)
         * [插件](common/gitbook/plugins/README.md)
+            * [简介](common/gitbook/plugins/summary.md)
             * [simple-mind-map](common/gitbook/plugins/simple-mind-map.md)
     * [Nginx](common/Nginx/README.md)
         * [安装](common/Nginx/install.md)
