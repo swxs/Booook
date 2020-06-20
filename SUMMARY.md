@@ -65,6 +65,8 @@
             * [子模块](common/Git/project/submode.md)
             * [凭证存储](common/Git/project/credential.md)
     * [gitbook](common/gitbook/README.md)
+        * [专题](common/gitbook/project/README.md)
+            * [github](common/gitbook/project/github.md)
         * [插件](common/gitbook/plugins/README.md)
             * [简介](common/gitbook/plugins/summary.md)
             * [simple-mind-map](common/gitbook/plugins/simple-mind-map.md)
