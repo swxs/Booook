@@ -55,6 +55,7 @@
         * [命令](common/Redis/command.md)
         * [专题](common/Redis/project/README.md)
             * [安全设置](common/Redis/project/safe.md)
+            * [lua脚本](common/Redis/project/lua.md)
     * [Memcached](common/Memcached/README.md)
         * [安装](common/Memcached/install.md)
     * [Git](common/Git/README.md)
