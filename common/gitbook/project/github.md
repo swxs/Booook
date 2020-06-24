@@ -4,7 +4,9 @@
 
 - [github](#github)
   - [使用travis-ci自动化构建](#使用travis-ci自动化构建)
+    - [配置github](#配置github)
     - [配置travis-ci](#配置travis-ci)
+    - [配置脚本](#配置脚本)
 
 ---
 
@@ -25,7 +27,7 @@
 
 - [https://travis-ci.org/](https://travis-ci.org/)
 
-![配置](../../../static/gitbook/travis.PNG)
+![配置](/static/gitbook/travis.PNG)
 
 ### 配置脚本
 

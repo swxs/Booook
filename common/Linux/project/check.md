@@ -132,12 +132,12 @@ tables.exceptions.NoSuchNodeError: group ``/df_1591804800`` does not have a chil
 ```
 
 通过该问题去查询，发现相关issue:
-![Build libhdf5 with the --enable-threadsafe flag](https://github.com/PyTables/PyTables/issues/776)
+[Build libhdf5 with the --enable-threadsafe flag](https://github.com/PyTables/PyTables/issues/776)
 
 尝试根据该方法编译一个线程安全的 `libhdf5.so`
 
 下载hdf5源码
-![hdf5项目](https://www.hdfgroup.org/downloads/hdf5/source-code/)
+[hdf5项目](https://www.hdfgroup.org/downloads/hdf5/source-code/)
 
 ``` sh
 cd /opt/
@@ -168,7 +168,7 @@ ldd hdf5extension.cpython-36m-x86_64-linux-gnu.so
 
 先尝试修改`tables/__init__.py`中的依赖路径, 看了下代码只有windows平台是基于配置的， unix系需要在安装时就指定路径
 
-参考 ![安装文档](https://www.pytables.org/usersguide/installation.html)
+参考 [安装文档](https://www.pytables.org/usersguide/installation.html)
 
 
 ``` sh
@@ -176,7 +176,7 @@ ldd hdf5extension.cpython-36m-x86_64-linux-gnu.so
 pip3 install --install-option='--hdf5=/usr/local/hdf5/' tables==3.5.1
 ```
 
-![相关issue](https://github.com/PyTables/PyTables/issues/219)
+[相关issue](https://github.com/PyTables/PyTables/issues/219)
 
 很老的版本需要系统自带的hdf5，现在会打在wheel里，就不维护了。但是打出来的有问题啊，唉，得继续找办法了
 
