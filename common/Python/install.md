@@ -11,6 +11,7 @@
     - [包解析](#包解析)
     - [conda包管理](#conda包管理)
     - [pip](#pip)
+      - [更新](#更新)
 
 ---
 
@@ -28,7 +29,7 @@
 #### 全局设值
 
 ``` sh
-pip config set global.index-url 
+pip config set global.index-url [index-url]
 pip config set global.trusted-host
 ```
 
@@ -38,6 +39,11 @@ pip config set global.trusted-host
 https://pypi.tuna.tsinghua.edu.cn/simple # 清华
 http://pypi.douban.com/simple/ # 豆瓣
 http://mirrors.aliyun.com/pypi/simple/
+```
+
+e.g:
+``` sh
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
 ### 包解析
@@ -62,3 +68,7 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/
 ### pip
 
 <a href="/static/Python/get-pip.py" target="_blank">安装pip</a>
+
+#### 更新
+
+`pip install -U pip`

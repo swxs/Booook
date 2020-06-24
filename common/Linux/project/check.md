@@ -104,4 +104,94 @@ Unable to open/create file '/XM/data/5d70d351aace70000afe0d1c_20.h5'
 yum install lsof
 
 lsof 5d70d351aace70000afe0d1c_20.h5
+lsof +D ./
+```
+
+查询日志， 发现有问题的文件都有过相关报错
+
+``` sh
+[I 200620 09:37:47 aioredislock:143 pid=11] 获得/XM/data/5edf5b19aace70000cbfccec_3.h5读锁
+[E 200620 09:37:47 df_utils:186 pid=11] PID: 11, /XM/data/5edf5b19aace70000cbfccec_3.h5 key[/df_1591804800] exception [Unknown]!
+Traceback (most recent call last):
+  File "/XM/commons/df_utils.py", line 172, in get_dataframe_by_file
+    df = pd.read_hdf(abs_filename, key=key, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/pandas/io/pytables.py", line 407, in read_hdf
+    return store.select(key, auto_close=auto_close, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/pandas/io/pytables.py", line 761, in select
+    s = self._create_storer(group)
+  File "/usr/local/lib/python3.6/site-packages/pandas/io/pytables.py", line 1457, in _create_storer
+    fields = group.table._v_attrs.fields
+  File "/usr/local/lib/python3.6/site-packages/tables/group.py", line 839, in __getattr__
+    return self._f_get_child(name)
+  File "/usr/local/lib/python3.6/site-packages/tables/group.py", line 711, in _f_get_child
+    self._g_check_has_child(childname)
+  File "/usr/local/lib/python3.6/site-packages/tables/group.py", line 398, in _g_check_has_child
+    % (self._v_pathname, name))
+tables.exceptions.NoSuchNodeError: group ``/df_1591804800`` does not have a child named ``table``
+[I 200620 09:37:47 aioredislock:155 pid=11] 释放/XM/data/5edf5b19aace70000cbfccec_3.h5读锁， 完全释放
+```
+
+通过该问题去查询，发现相关issue:
+![Build libhdf5 with the --enable-threadsafe flag](https://github.com/PyTables/PyTables/issues/776)
+
+尝试根据该方法编译一个线程安全的 `libhdf5.so`
+
+下载hdf5源码
+![hdf5项目](https://www.hdfgroup.org/downloads/hdf5/source-code/)
+
+``` sh
+cd /opt/
+wget -i https://hdf-wordpress-1.s3.amazonaws.com/wp-content/uploads/manual/HDF5/HDF5_1_12_0/source/hdf5-1.12.0.tar.gz
+
+./configure --prefix=/usr/local/hdf5 --disable-hl --enable-threadsafe
+make install
+```
+
+看了下版本对不上， 当前版本`3.5.1`会有一个指向tables自己编译的 `ldd hdf5extension.cpython-36m-x86_64-linux-gnu.so`，而不是系统定义的
+
+``` sh
+ldd hdf5extension.cpython-36m-x86_64-linux-gnu.so 
+	linux-vdso.so.1 (0x00007fff94b0a000)
+	libhdf5-1b021ebd.so.101.1.0 => /usr/local/lib/python3.6/site-packages/tables/./.libs/libhdf5-1b021ebd.so.101.1.0 (0x00007ff7dd99c000)
+	libstdc++.so.6 => /usr/lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007ff7dd61a000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007ff7dd316000)
+	libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007ff7dd0ff000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007ff7dcee2000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007ff7dcb43000)
+	librt.so.1 => /lib/x86_64-linux-gnu/librt.so.1 (0x00007ff7dc93b000)
+	libsz-1c7dd0cf.so.2.0.1 => /usr/local/lib/python3.6/site-packages/tables/./.libs/./libsz-1c7dd0cf.so.2.0.1 (0x00007ff7dc737000)
+	libaec-2147abcd.so.0.0.4 => /usr/local/lib/python3.6/site-packages/tables/./.libs/./libaec-2147abcd.so.0.0.4 (0x00007ff7dc52e000)
+	libz-a147dcb0.so.1.2.3 => /usr/local/lib/python3.6/site-packages/tables/./.libs/./libz-a147dcb0.so.1.2.3 (0x00007ff7dc319000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007ff7dc115000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007ff7de323000)
+```
+
+先尝试修改`tables/__init__.py`中的依赖路径, 看了下代码只有windows平台是基于配置的， unix系需要在安装时就指定路径
+
+参考 ![安装文档](https://www.pytables.org/usersguide/installation.html)
+
+
+``` sh
+# 尝试使用进行安装， 但是失败
+pip3 install --install-option='--hdf5=/usr/local/hdf5/' tables==3.5.1
+```
+
+![相关issue](https://github.com/PyTables/PyTables/issues/219)
+
+很老的版本需要系统自带的hdf5，现在会打在wheel里，就不维护了。但是打出来的有问题啊，唉，得继续找办法了
+
+``` sh
+# 尝试下载源码，
+python setup.py install -hdf5=/usr/local/hdf5/
+
+# 装不了， 查了一圈
+export DYLD_LIBRARY_PATH=/usr/local/hdf5/lib
+
+# 运行测试失败
+Traceback (most recent call last):
+  File "test_tables.py", line 1, in <module>
+    import tables
+  File "/usr/local/lib/python3.6/dist-packages/tables-3.5.1-py3.6-linux-x86_64.egg/tables/__init__.py", line 93, in <module>
+    from .utilsextension import (
+ImportError: libhdf5.so.200: cannot open shared object file: No such file or directory
 ```
