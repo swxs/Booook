@@ -149,22 +149,20 @@ make install
 
 看了下版本对不上， 当前版本`3.5.1`会有一个指向tables自己编译的 `ldd hdf5extension.cpython-36m-x86_64-linux-gnu.so`，而不是系统定义的
 
-``` sh
-ldd hdf5extension.cpython-36m-x86_64-linux-gnu.so 
-	linux-vdso.so.1 (0x00007fff94b0a000)
-	libhdf5-1b021ebd.so.101.1.0 => /usr/local/lib/python3.6/site-packages/tables/./.libs/libhdf5-1b021ebd.so.101.1.0 (0x00007ff7dd99c000)
-	libstdc++.so.6 => /usr/lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007ff7dd61a000)
-	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007ff7dd316000)
-	libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007ff7dd0ff000)
-	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007ff7dcee2000)
-	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007ff7dcb43000)
-	librt.so.1 => /lib/x86_64-linux-gnu/librt.so.1 (0x00007ff7dc93b000)
-	libsz-1c7dd0cf.so.2.0.1 => /usr/local/lib/python3.6/site-packages/tables/./.libs/./libsz-1c7dd0cf.so.2.0.1 (0x00007ff7dc737000)
-	libaec-2147abcd.so.0.0.4 => /usr/local/lib/python3.6/site-packages/tables/./.libs/./libaec-2147abcd.so.0.0.4 (0x00007ff7dc52e000)
-	libz-a147dcb0.so.1.2.3 => /usr/local/lib/python3.6/site-packages/tables/./.libs/./libz-a147dcb0.so.1.2.3 (0x00007ff7dc319000)
-	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007ff7dc115000)
-	/lib64/ld-linux-x86-64.so.2 (0x00007ff7de323000)
-```
+    ldd hdf5extension.cpython-36m-x86_64-linux-gnu.so 
+      linux-vdso.so.1 (0x00007fff94b0a000)
+      libhdf5-1b021ebd.so.101.1.0 => /usr/local/lib/python3.6/site-packages/tables/./.libs/libhdf5-1b021ebd.so.101.1.0 (0x00007ff7dd99c000)
+      libstdc++.so.6 => /usr/lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007ff7dd61a000)
+      libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007ff7dd316000)
+      libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007ff7dd0ff000)
+      libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007ff7dcee2000)
+      libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007ff7dcb43000)
+      librt.so.1 => /lib/x86_64-linux-gnu/librt.so.1 (0x00007ff7dc93b000)
+      libsz-1c7dd0cf.so.2.0.1 => /usr/local/lib/python3.6/site-packages/tables/./.libs/./libsz-1c7dd0cf.so.2.0.1 (0x00007ff7dc737000)
+      libaec-2147abcd.so.0.0.4 => /usr/local/lib/python3.6/site-packages/tables/./.libs/./libaec-2147abcd.so.0.0.4 (0x00007ff7dc52e000)
+      libz-a147dcb0.so.1.2.3 => /usr/local/lib/python3.6/site-packages/tables/./.libs/./libz-a147dcb0.so.1.2.3 (0x00007ff7dc319000)
+      libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007ff7dc115000)
+      /lib64/ld-linux-x86-64.so.2 (0x00007ff7de323000)
 
 先尝试修改`tables/__init__.py`中的依赖路径, 看了下代码只有windows平台是基于配置的， unix系需要在安装时就指定路径
 
@@ -194,4 +192,15 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.6/dist-packages/tables-3.5.1-py3.6-linux-x86_64.egg/tables/__init__.py", line 93, in <module>
     from .utilsextension import (
 ImportError: libhdf5.so.200: cannot open shared object file: No such file or directory
+
+# 看报错信息
+ld -ldhf5 --verbose
+# 是没找到 hdf5.so 导致的， 尝试加入，并检查了一下其他库都有在
+ln -s /usr/local/hdf5/lib/libhdf5.so /usr/local/lib/libhdf5.so
+# 再尝试
+ld -ldhf5 --verbose
+# 换了一个报错
+# ld: warning: cannot find entry symbol _start; not setting start address
+# 查了一下是因为没有libc.so导致的， 但确实有加载到啊
+# found libc.so.6 at //lib/x86_64-linux-gnu/libc.so.6
 ```
