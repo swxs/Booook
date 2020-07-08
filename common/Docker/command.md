@@ -3,16 +3,14 @@
 ---
 
 - [命令](#命令)
-  - [docker help](#docker-help)
-  - [docker-compose 常用命令](#docker-compose-常用命令)
+	- [docker help](#docker-help)
+	- [docker-compose 常用命令](#docker-compose-常用命令)
 
 ---
 
 ## docker help
 
-``` sh
-Run 'docker COMMAND --help' for more information on a command.
-```
+	Run 'docker COMMAND --help' for more information on a command.
 
 | 命令    | 描述                                                               | 翻译                                                                                   |
 | :------ | :----------------------------------------------------------------- | :------------------------------------------------------------------------------------- |
@@ -26,10 +24,10 @@ Run 'docker COMMAND --help' for more information on a command.
 | exec    | Run a command in an existing container                             | 在已存在的容器上运行命令                                                               |
 | export  | Stream the contents of a container as a tar archive                | 导出容器的内容流作为一个 tar 归档文件[对应 import ]                                    |
 | history | Show the history of an image                                       | 展示一个镜像形成历史                                                                   |
-| images  | List images                                                        | 列出系统当前镜像                                                                       |
+| images  | List images                                                        | **列出系统当前镜像**                                                                       |
 | import  | Create a new filesystem image from the contents of a tarball       | 从 tar 包中的内容创建一个新的文件系统映像[对应 export]                                 |
 | info    | Display system-wide information                                    | 显示系统相关信息                                                                       |
-| inspect | Return low-level information on a container                        | 查看容器详细信息                                                                       |
+| inspect | Return low-level information on a container                        | **查看容器详细信息**                                                                   |
 | kill    | Kill a running container                                           | kill 指定 docker 容器                                                                  |
 | load    | Load an image from a tar archive                                   | 从一个 tar 包中加载一个镜像[对应 save]                                                 |
 | login   | Register or Login to the docker registry server                    | 注册或者登陆一个 docker 源服务器                                                       |
@@ -81,5 +79,5 @@ Run 'docker COMMAND --help' for more information on a command.
 | stop    | Stop services                                             | 停止服务           |
 | top     | Display the running processes                             |                    |
 | unpause | Unpause services                                          |                    |
-| up      | Create and start containers                               | 创建并启动容器     |
+| up      | Create and start containers                               | **创建并启动容器**     |
 | version | Show the Docker-Compose version information               |                    |

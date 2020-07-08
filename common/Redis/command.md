@@ -9,4 +9,4 @@
 
 ## 文档
 
-[文档](!http://redisdoc.com/index.html)
+[文档地址](http://redisdoc.com/index.html)

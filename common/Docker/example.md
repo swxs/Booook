@@ -5,6 +5,7 @@
 - [实例](#实例)
   - [简单场景](#简单场景)
     - [一般流程](#一般流程)
+    - [更新容器配置](#更新容器配置)
     - [删除所有container](#删除所有container)
     - [加速](#加速)
   - [特殊场景](#特殊场景)
@@ -24,6 +25,13 @@ run(<-d>image) =>
                => start(container) <=> stop(container)
                                     => restart(container)
 rmi(images) <=
+```
+
+### 更新容器配置
+
+``` sh
+docker-compose up --build --no-start [image]
+docker-compose restart [image]
 ```
 
 ### 删除所有container
@@ -55,7 +63,9 @@ sudo systemctl restart docker
  # squash its history.
  docker export 77d9619a7a71 > update.tar
  docker import - update < update.tar
+```
 
+``` sh
  # keep its history
  docker save -o update1.tar update 
  docker load < update1.tar
@@ -64,13 +74,8 @@ sudo systemctl restart docker
 ## 实例
 
 ``` sh
-docker cp
-
-"C:\Users\user1\Downloads\Miniconda3-latest-Linux-x86_64.sh" "ffcf4b501621:/home"
-
+docker cp "C:\Users\user1\Downloads\Miniconda3-latest-Linux-x86_64.sh" "ffcf4b501621:/home"
 yum install -y bzip2
-
 export PATH="/root/miniconda3/bin":PATH
-
 docker pull centos
 ```

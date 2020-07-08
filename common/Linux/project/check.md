@@ -3,12 +3,12 @@
 ---
 
 - [问题排查](#问题排查)
-  - [2020/05/11](#20200511)
-    - [服务器磁盘占用过高](#服务器磁盘占用过高)
-  - [2020/05/12](#20200512)
-    - [账号服务错误](#账号服务错误)
-  - [2020/06/19](#20200619)
-    - [.h5文件读写报错](#h5文件读写报错)
+	- [2020/05/11](#20200511)
+		- [服务器磁盘占用过高](#服务器磁盘占用过高)
+	- [2020/05/12](#20200512)
+		- [账号服务错误](#账号服务错误)
+	- [2020/06/19](#20200619)
+		- [.h5文件读写报错](#h5文件读写报错)
 
 ---
 
@@ -149,20 +149,20 @@ make install
 
 看了下版本对不上， 当前版本`3.5.1`会有一个指向tables自己编译的 `ldd hdf5extension.cpython-36m-x86_64-linux-gnu.so`，而不是系统定义的
 
-    ldd hdf5extension.cpython-36m-x86_64-linux-gnu.so 
-      linux-vdso.so.1 (0x00007fff94b0a000)
-      libhdf5-1b021ebd.so.101.1.0 => /usr/local/lib/python3.6/site-packages/tables/./.libs/libhdf5-1b021ebd.so.101.1.0 (0x00007ff7dd99c000)
-      libstdc++.so.6 => /usr/lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007ff7dd61a000)
-      libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007ff7dd316000)
-      libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007ff7dd0ff000)
-      libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007ff7dcee2000)
-      libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007ff7dcb43000)
-      librt.so.1 => /lib/x86_64-linux-gnu/librt.so.1 (0x00007ff7dc93b000)
-      libsz-1c7dd0cf.so.2.0.1 => /usr/local/lib/python3.6/site-packages/tables/./.libs/./libsz-1c7dd0cf.so.2.0.1 (0x00007ff7dc737000)
-      libaec-2147abcd.so.0.0.4 => /usr/local/lib/python3.6/site-packages/tables/./.libs/./libaec-2147abcd.so.0.0.4 (0x00007ff7dc52e000)
-      libz-a147dcb0.so.1.2.3 => /usr/local/lib/python3.6/site-packages/tables/./.libs/./libz-a147dcb0.so.1.2.3 (0x00007ff7dc319000)
-      libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007ff7dc115000)
-      /lib64/ld-linux-x86-64.so.2 (0x00007ff7de323000)
+	ldd hdf5extension.cpython-36m-x86_64-linux-gnu.so 
+	  linux-vdso.so.1 (0x00007fff94b0a000)
+	  libhdf5-1b021ebd.so.101.1.0 => /usr/local/lib/python3.6/site-packages/tables/./.libs/libhdf5-1b021ebd.so.101.1.0 (0x00007ff7dd99c000)
+	  libstdc++.so.6 => /usr/lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007ff7dd61a000)
+	  libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007ff7dd316000)
+	  libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007ff7dd0ff000)
+	  libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007ff7dcee2000)
+	  libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007ff7dcb43000)
+	  librt.so.1 => /lib/x86_64-linux-gnu/librt.so.1 (0x00007ff7dc93b000)
+	  libsz-1c7dd0cf.so.2.0.1 => /usr/local/lib/python3.6/site-packages/tables/./.libs/./libsz-1c7dd0cf.so.2.0.1 (0x00007ff7dc737000)
+	  libaec-2147abcd.so.0.0.4 => /usr/local/lib/python3.6/site-packages/tables/./.libs/./libaec-2147abcd.so.0.0.4 (0x00007ff7dc52e000)
+	  libz-a147dcb0.so.1.2.3 => /usr/local/lib/python3.6/site-packages/tables/./.libs/./libz-a147dcb0.so.1.2.3 (0x00007ff7dc319000)
+	  libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007ff7dc115000)
+	  /lib64/ld-linux-x86-64.so.2 (0x00007ff7de323000)
 
 先尝试修改`tables/__init__.py`中的依赖路径, 看了下代码只有windows平台是基于配置的， unix系需要在安装时就指定路径
 
