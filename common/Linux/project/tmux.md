@@ -3,12 +3,13 @@
 ---
 
 - [tmux](#tmux)
-  - [命令](#命令)
-  - [常用配置](#常用配置)
+	- [命令](#命令)
+	- [常用配置](#常用配置)
 
 ---
 
 ## 命令
+
 | 快捷键                | 命令 | 效果                                                                               |
 | :-------------------- | :--- | :--------------------------------------------------------------------------------- |
 | C-b                   |      | Send the prefix key (C-b) through to the application.                              |
@@ -61,9 +62,7 @@
 
 ## 常用配置
 
-``` sh
-vim ~/.bashrc
-```
+	vim ~/.bashrc
 
 ``` sh
 alias tmuxl='tmux select-pane -L'
@@ -74,6 +73,9 @@ alias tmuxs='tmux switch -t '
 alias tmuxa='tmux attach -t '
 ```
 
+	vim ~/.tmux.conf
+
 ``` sh
-source ~/.bashrc
+# 设置鼠标滚动
+set -g mouse on
 ```
