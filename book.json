@@ -40,7 +40,6 @@
         "favicon@^0.0.2",
         "todo@^0.1.3",
         "simple-mind-map",
-        "back-to-top-button",
         "code"
     ],
     "pluginsConfig": {

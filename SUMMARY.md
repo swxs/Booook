@@ -81,4 +81,6 @@
         * [配置](common/Nginx/settings.md)
     * [Jenkins](common/Jenkins/README.md)
         * [安装](common/Jenkins/install.md)
+    * [读书体会](common/Book/README.md)
+        * [编译原理](common/Book/Compilers.md)
 
