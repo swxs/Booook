@@ -83,4 +83,5 @@
         * [安装](common/Jenkins/install.md)
     * [读书体会](common/Book/README.md)
         * [编译原理](common/Book/Compilers.md)
+    * [工具](common/Tool/README.md)
 
