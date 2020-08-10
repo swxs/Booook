@@ -12,7 +12,7 @@
 
 ## 安装
 
-``` sh
+``` json
 {
     "plugins": ["simple-mind-map"]
 }
@@ -52,7 +52,7 @@
 {% endsimplemindmap %}
 ````
 
-```` sh
+```` text
 {% simplemindmap type="txtmap" %}
 ``` markdown
 ```
@@ -79,7 +79,7 @@ some
 {% endsimplemindmap %}
 ````
 
-```` sh
+```` text
 {% simplemindmap type="txtmap" %}
 ``` txtmap
 ```
