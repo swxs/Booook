@@ -4,7 +4,8 @@
 
 - [simple-mind-map](#simple-mind-map)
   - [安装](#安装)
-  - [语法](#语法)
+  - [配置](#配置)
+  - [示例](#示例)
     - [markdown](#markdown)
     - [txtmap](#txtmap)
 
@@ -18,7 +19,9 @@
 }
 ```
 
-## 语法
+## 配置
+
+## 示例
 
 ### markdown
 

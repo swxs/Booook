@@ -3,47 +3,15 @@
 ---
 
 - [简介](#简介)
-  - [code](#code)
-  - [simple-mind-map](#simple-mind-map)
-  - [anchor-navigation-ex](#anchor-navigation-ex)
-  - [katex](#katex)
+  - [列表](#列表)
 
 ---
 
-## code
+## 列表
 
-``` json
-{
-    "plugins": ["code"]
-}
-```
-
-## simple-mind-map
-
-思维导图
-
-``` json
-{
-    "plugins": ["simple-mind-map"]
-}
-```
-
-## anchor-navigation-ex
-
-添加Toc到侧边悬浮导航以及回到顶部按
-
-``` json
-{
-    "plugins": ["anchor-navigation-ex@0.1.8"]
-}
-```
-
-## katex
-
-数学公式解析， `$$` 或者 `{% math %}` 和 `{% endmath %}`
-
-``` json
-{
-    "plugins": ["katex@^1.1.3"]
-}
-```
+| 名称                                    | 功能                                | 备注                                      |
+| :-------------------------------------- | :---------------------------------- | :---------------------------------------- |
+| code                                    |                                     |                                           |
+| [simple-mind-map](./simple-mind-map.md) | 思维导图                            |                                           |
+| anchor-navigation-ex@0.1.8              | 添加Toc到侧边悬浮导航以及回到顶部按 |                                           |
+| katex@^1.1.3                            | 数学公式解析                        | `$$` 或者 `{% math %}` 和 `{% endmath %}` |
