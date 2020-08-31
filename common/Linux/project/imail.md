@@ -17,10 +17,10 @@ cem@bpsinopec.com
 
 helo wenjuan.com
 
-mail from: <cem@bpsinopec.com>
+mail from: [email]
 
-rcpt to: <em.yu@idiaoyan.com>
-rcpt to: <zhang.hailong@bpsinopec.com>
+rcpt to: [email]
+rcpt to: [email]
 data
 
 subject:Hello, there!

@@ -57,7 +57,7 @@ cd /data/www
 #    lftp --version
 #    lftp --help
 
-lftp -p 990 -u ftpqsc,"Password@qsc" ftps://10.126.226.36
+lftp -p 990 -u ftpqsc,"Password@qsc" ftps://host
 
 set ftp:ssl-auth TLS 
 set ftp:ssl-force true 
@@ -67,5 +67,5 @@ set ftp:ssl-protect-fxp yes
 set ftp:passive-mode off
 set ssl:verify-certificate no  
 
-mput /home/data/www/cem-mcd/api/bi/data_file/NOB_map.csv;
+mput filename;
 ```

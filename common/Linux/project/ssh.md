@@ -19,7 +19,7 @@ ssh-keygen -t  rsa
 2. 复制公钥到远程服务器
 
 ``` sh
-ssh-copy-id -i ~/.ssh/id_rsa.pub oracle@192.168.55.232
+ssh-copy-id -i ~/.ssh/id_rsa.pub root@127.0.0.1
 ```
 
 ## 多私钥配置

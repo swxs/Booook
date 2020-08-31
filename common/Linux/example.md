@@ -238,12 +238,12 @@ dmesg|grep mongo
 ## 统计PV、UV
 
 ``` sh
-pv：cat /usr/local/nginx/logs/access.log| sed -n /`date "+%d\/%b\/%Y"`/p |awk '{print $7}' |sort|wc -l
-uv：cat /usr/local/nginx/logs/access.log| sed -n /`date "+%d\/%b\/%Y"`/p |awk '{print $1}' |sort|uniq -c |wc -l
+pv：cat access.log| sed -n /`date "+%d\/%b\/%Y"`/p |awk '{print $7}' |sort|wc -l
+uv：cat access.log| sed -n /`date "+%d\/%b\/%Y"`/p |awk '{print $1}' |sort|uniq -c |wc -l
 
-grep modify survey.mcd.com.cn_access.log >1.log
+grep modify access.log >1.log
 cat 1.log|wc -l
 
-tail -f survey.mcd.com.cn_access.log
-tail -f survey.mcd.com.cn_access.log | grep create
+tail -f access.log
+tail -f access.log | grep create
 ```
