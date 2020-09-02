@@ -32,7 +32,7 @@
 ### 配置脚本
 
 1. 创建 .travis.yml
-2. 编写一下内容
+2. 编写以下内容
 ``` yml
 branches:  
     only:  
