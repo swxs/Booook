@@ -51,19 +51,21 @@ pip config set global.trusted-host [index-domain]
 ##### 可以使用的国内镜像
 
 1. 清华(推荐): `https://pypi.tuna.tsinghua.edu.cn/simple `
+
 ``` sh
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple/
 pip config set global.trusted-host pypi.tuna.tsinghua.edu.cn
-
 ```
 
-2. 豆瓣(不推荐) `http://pypi.douban.com/simple/`
+1. 豆瓣(不推荐) `http://pypi.douban.com/simple/`
+
 ``` sh
 pip config set global.index-url http://pypi.douban.com/simple/
 pip config set global.trusted-host pypi.douban.com
 ```
 
-3. 阿里(不推荐) `http://mirrors.aliyun.com/pypi/simple/`
+1. 阿里(不推荐) `http://mirrors.aliyun.com/pypi/simple/`
+
 ``` sh
 pip config set global.index-url http://mirrors.aliyun.com/pypi/simple/
 pip config set global.trusted-host mirrors.aliyun.com
@@ -97,6 +99,7 @@ pip wheel --wheel-dir=/root/tm_wheel
 #### 特殊包
 
 等价代替
+
 ```
 pip install pycrypto => pip install pycryptodome
 ```
@@ -104,11 +107,13 @@ pip install pycrypto => pip install pycryptodome
 ### conda
 
 安装:
+
 ``` sh
 wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
 ```
 
 换源:
+
 ``` sh
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/ 
 conda config --set show_channel_urls yes 

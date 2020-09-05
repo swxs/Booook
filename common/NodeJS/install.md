@@ -12,6 +12,7 @@
     - [临时设置](#临时设置)
     - [全局设置](#全局设置)
     - [可用的国内源](#可用的国内源)
+    - [查看\设置 npm 安装路径](#查看设置-npm-安装路径)
 
 ---
 
@@ -62,4 +63,14 @@ npm config set registry https://registry.npm.taobao.org
 
 ``` shell
 https://registry.npm.taobao.org
+```
+
+### 查看\设置 npm 安装路径
+
+``` sh
+npm config get prefix
+```
+
+``` sh
+npm config set prefix
 ```

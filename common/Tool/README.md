@@ -12,6 +12,7 @@
   - [Visual Studio Code](#visual-studio-code)
   - [CPU-Z](#cpu-z)
   - [AIDA64 Extreme](#aida64-extreme)
+  - [python](#python)
 
 ---
 
@@ -94,3 +95,10 @@ system information tool
 
 下载:
 [https://www.aida64.com/downloads](https://www.aida64.com/downloads)
+
+## python
+
+python
+
+下载:
+[https://www.python.org/downloads/](https://www.python.org/downloads/)
