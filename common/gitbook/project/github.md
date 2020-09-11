@@ -1,6 +1,6 @@
 # github
 
----
+------
 
 - [github](#github)
   - [使用travis-ci自动化构建](#使用travis-ci自动化构建)
@@ -8,7 +8,7 @@
     - [配置travis-ci](#配置travis-ci)
     - [配置脚本](#配置脚本)
 
----
+------
 
 ## 使用travis-ci自动化构建
 

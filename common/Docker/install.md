@@ -1,6 +1,6 @@
 # 安装
 
----
+------
 
 - [安装](#安装)
   - [centos 安装](#centos-安装)
@@ -8,7 +8,7 @@
     - [安装 Docker Compose](#安装-docker-compose)
     - [Centos 6.7 安装 Docker几个坑](#centos-67-安装-docker几个坑)
 
----
+------
 
 ## centos 安装 
 

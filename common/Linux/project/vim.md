@@ -1,12 +1,12 @@
 # vim
 
----
+------
 
 - [vim](#vim)
   - [tab替换](#tab替换)
   - [vimrc](#vimrc)
 
----
+------
 
 ## tab替换
 

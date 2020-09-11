@@ -1,11 +1,11 @@
 # Python-Docstring-Generator
 
----
+------
 
 - [Python-Docstring-Generator](#python-docstring-generator)
   - [配置](#配置)
 
----
+------
 
 ## 配置
 

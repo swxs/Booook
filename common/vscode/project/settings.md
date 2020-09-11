@@ -1,12 +1,22 @@
 # 常用配置
 
----
+------
 
 - [常用配置](#常用配置)
+  - [系统配置](#系统配置)
+    - [不禁止运行脚本](#不禁止运行脚本)
   - [launch.json 配置](#launchjson-配置)
     - [python](#python)
 
----
+------
+
+## 系统配置
+
+### 不禁止运行脚本
+
+``` sh
+set-executionpolicy remotesigned
+```
 
 ## launch.json 配置
 

@@ -1,6 +1,6 @@
 # simple-mind-map
 
----
+------
 
 - [simple-mind-map](#simple-mind-map)
   - [安装](#安装)
@@ -9,7 +9,7 @@
     - [markdown](#markdown)
     - [txtmap](#txtmap)
 
----
+------
 
 ## 安装
 
