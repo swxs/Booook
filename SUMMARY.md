@@ -27,6 +27,8 @@
     * [windows](common/windows/README.md)
         * [专题](common/windows/project/README.md)
             * [问题排查](common/windows/project/check.md)
+            * [系统工具](common/windows/project/tools.md)
+            * [CMD](common/windows/project/cmd.md)
             * [wsl](common/windows/project/wsl.md)
     * [Docker](common/Docker/README.md)
         * [安装](common/Docker/install.md)

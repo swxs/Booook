@@ -3,7 +3,10 @@
 ------
 
 - [安装](#安装)
-  - [下载安装](#下载安装)
+  - [安装](#安装-1)
+    - [windows](#windows)
+      - [配置启动任务](#配置启动任务)
+    - [下载安装](#下载安装)
     - [yum安装](#yum安装)
       - [3.6](#36)
       - [4.0](#40)
@@ -12,7 +15,32 @@
 
 ------
 
-## 下载安装
+## 安装
+
+### windows
+
+``` sh
+.\mongod.exe --config .\mongod.conf --directoryperdb --serviceName Mongodb --install
+```
+
+``` sh
+#mongod.conf
+dbpath=F:\mongodb\db
+logpath=F:\mongodb\logs\mongod.log
+
+logappend=true
+journal=true
+quiet=true
+
+bind_ip=127.0.0.1
+port=27017
+```
+
+如果碰到`错误100`, 尝试删除`db`文件夹下的`mongod.lock`与`storage.bson`
+
+#### 配置启动任务
+
+### 下载安装
 
 1. 下载址定版本并解压
 
