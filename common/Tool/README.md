@@ -13,6 +13,7 @@
   - [CPU-Z](#cpu-z)
   - [AIDA64 Extreme](#aida64-extreme)
   - [python](#python)
+  - [7-zip](#7-zip)
 
 ------
 
@@ -42,9 +43,6 @@ screen capture tool
 
 下载:
 [https://www.faststone.org/FSCaptureDownload.htm](https://www.faststone.org/FSCaptureDownload.htm)
-
-破解:
-暂无
 
 ## calibre-ebook
 
@@ -102,3 +100,12 @@ python
 
 下载:
 [https://www.python.org/downloads/](https://www.python.org/downloads/)
+
+## 7-zip
+
+a file archiver with a high compression ratio.
+
+解压缩软件
+
+下载:
+[https://www.7-zip.org/](https://www.7-zip.org/)

@@ -11,6 +11,7 @@
             * [system](common/Linux/project/system.md)
             * [yum](common/Linux/project/yum.md)
             * [RPM](common/Linux/project/rpm.md)
+            * [ZSH](common/Linux/project/zsh.md)
             * [SSH](common/Linux/project/ssh.md)
             * [iptables](common/Linux/project/iptables.md)
             * [tmux](common/Linux/project/tmux.md)
