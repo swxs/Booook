@@ -31,6 +31,9 @@
             * [系统工具](common/windows/project/tools.md)
             * [CMD](common/windows/project/cmd.md)
             * [wsl](common/windows/project/wsl.md)
+    * [termux](common/termux/README.md)
+        * [专题](common/termux/project/README.md)
+            * [系统工具](common/termux/project/tools.md)
     * [Docker](common/Docker/README.md)
         * [安装](common/Docker/install.md)
         * [命令](common/Docker/command.md)
@@ -99,6 +102,6 @@
         * [安装](common/Jenkins/install.md)
     * [读书体会](common/Book/README.md)
         * [编译原理](common/Book/Compilers.md)
-        * [七周七并发模型](common/Book/Seven-Concurrency-Models-in-Seven-Weeks:-When-Threads-Unravel.md)
+        * [七周七并发模型](common/Book/Seven-Concurrency-Models-in-Seven-Weeks.md)
     * [工具](common/Tool/README.md)
 

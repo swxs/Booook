@@ -29,13 +29,13 @@ kafkacat -b cdh-worker001:9092 -L
 ### 起一个消费端
 
 ``` sh
-kafka -C -b cdh-worker001:9092 -t topic
+kafkacat -C -b cdh-worker001:9092 -t [topic]
 ```
 
 ### 起一个发送端
 
 ``` sh
-kafka -P -b cdh-worker001:9092 -t topic
+kafkacat -P -b cdh-worker001:9092 -t [topic]
 ```
 
 ## 源码
