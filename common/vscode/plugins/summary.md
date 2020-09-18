@@ -18,6 +18,7 @@
 | [Python](Python)                                            | python 扩展   |               |
 | Pylance                                                     | python 扩展   |               |
 | [Python Docstring Generator](Python-Docstring-Generator.md) | python 注释   |               |
+| Calva: Clojure & ClojureScript Interactive Programming      | Clojure 扩展  |               |
 | SQL Formatter                                               | sql formatter |               |
 | Prettier - Code formatter                                   | Js Formatter  |               |
 | Winter is Coming Theme                                      | 效果优化-主题 |               |
