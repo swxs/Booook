@@ -13,6 +13,7 @@
   - [CPU-Z](#cpu-z)
   - [AIDA64 Extreme](#aida64-extreme)
   - [python](#python)
+  - [Clojure](#clojure)
   - [7-zip](#7-zip)
 
 ------
@@ -100,6 +101,13 @@ python
 
 下载:
 [https://www.python.org/downloads/](https://www.python.org/downloads/)
+
+## Clojure
+
+Clojure
+
+下载
+[https://github.com/clojure/tools.deps.alpha/wiki/clj-on-Windows](https://github.com/clojure/tools.deps.alpha/wiki/clj-on-Windows)
 
 ## 7-zip
 

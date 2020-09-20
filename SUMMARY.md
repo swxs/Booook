@@ -55,6 +55,8 @@
             * [GIL](common/Python/project/GIL.md)
     * [NodeJS](common/NodeJS/README.md)
         * [安装](common/NodeJS/install.md)
+    * [Java](common/Java/README.md)
+        * [安装](common/Java/install.md)
     * [Clojure](common/Clojure/README.md)
         * [安装](common/Clojure/install.md)
     * [MongoDB](common/MongoDB/README.md)
