@@ -81,7 +81,7 @@ pip uninstall [package]
 
 ``` sh
 pip install pip-tools
-pip-compile requirements.in > requirements.txt
+pip-compile requirements.in -o requirements.txt
 ```
 
 #### 包缓存

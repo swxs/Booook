@@ -6,6 +6,7 @@
   - [git pull](#git-pull)
   - [将【本地分支】与【远程分支】同步](#将本地分支与远程分支同步)
   - [删除git的追踪](#删除git的追踪)
+  - [删除远程分支](#删除远程分支)
   - [同步远程分支列表](#同步远程分支列表)
   - [分支返回到未提交的状态](#分支返回到未提交的状态)
   - [追加commit](#追加commit)
@@ -32,6 +33,13 @@ git branch --set-upstream-to=origin/<branch> <local branch>
 
 ``` git
 git rm --cache [file]
+```
+
+## 删除远程分支
+
+``` git
+git -c diff.mnemonicprefix=false -c core.quotepath=false --no-optional-locks branch -D -r origin/<branch>
+git -c diff.mnemonicprefix=false -c core.quotepath=false --no-optional-locks push origin :refs/heads/<branch>
 ```
 
 ## 同步远程分支列表

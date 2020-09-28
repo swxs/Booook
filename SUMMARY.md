@@ -53,6 +53,8 @@
         * [专题](common/Python/project/README.md)
             * [2to3](common/Python/project/python2to3.md)
             * [GIL](common/Python/project/GIL.md)
+            * [pre-commit](common/Python/project/pre-commit.md)
+            * [logging](common/Python/project/logging.md)
     * [NodeJS](common/NodeJS/README.md)
         * [安装](common/NodeJS/install.md)
     * [Java](common/Java/README.md)
