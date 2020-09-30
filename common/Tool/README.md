@@ -8,6 +8,7 @@
   - [FastStone Capture](#faststone-capture)
   - [calibre-ebook](#calibre-ebook)
   - [Just Manager](#just-manager)
+  - [向日葵](#向日葵)
   - [SourceTree](#sourcetree)
   - [Visual Studio Code](#visual-studio-code)
   - [CPU-Z](#cpu-z)
@@ -62,6 +63,13 @@ a feature packed, versatile, multi-tabbed multi-pane file manager for the Window
 
 下载:
 [http://justmanager.ru/downloads/](http://justmanager.ru/downloads/)
+
+## 向日葵
+
+远程管理
+
+下载:
+[https://sunlogin.oray.com/download/](https://sunlogin.oray.com/download/)
 
 ## SourceTree
 

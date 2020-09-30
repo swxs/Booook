@@ -93,6 +93,7 @@
             * [github](common/gitbook/project/github.md)
         * [插件](common/gitbook/plugins/README.md)
             * [简介](common/gitbook/plugins/summary.md)
+            * [mermaid](common/gitbook/plugins/mermaid.md)
             * [simple-mind-map](common/gitbook/plugins/simple-mind-map.md)
     * [notebook](common/notebook/README.md)
         * [安装](common/notebook/install.md)

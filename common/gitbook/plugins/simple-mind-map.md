@@ -55,13 +55,33 @@
 {% endsimplemindmap %}
 ````
 
-```` text
-{% simplemindmap type="txtmap" %}
+{% simplemindmap %}
 ``` markdown
+* simplemindmap
+    * config book.json
+        * plugins
+            * others
+            * simple-mind-map
+        * pluginsConfig
+            * others
+            * simple-mind-map
+                * type
+                * preset
+                * linkShape
+                * autoFit
+                * style
+    * custom file.md
+        * markdown
+            * type
+            * preset
+            * linkShape
+            * autoFit
+            * style
+        * txtmap
+        * json
+        * mindmup
 ```
 {% endsimplemindmap %}
-````
-
 
 ### txtmap
 
@@ -82,9 +102,17 @@ some
 {% endsimplemindmap %}
 ````
 
-```` text
 {% simplemindmap type="txtmap" %}
 ``` txtmap
+some
+  example
+    content
+  for
+  you
+    to
+    see
+      the
+    file
+      structure
 ```
 {% endsimplemindmap %}
-````
