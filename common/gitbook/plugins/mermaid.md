@@ -9,7 +9,6 @@
 ------
 
 ## 示例
-````
 ```
 {% mermaid %}
 graph TD;
@@ -19,9 +18,7 @@ graph TD;
   C-->D;
 {% endmermaid %}
 ```
-````
 
-```
 {% mermaid %}
 graph TD;
   A-->B;
@@ -29,7 +26,6 @@ graph TD;
   B-->D;
   C-->D;
 {% endmermaid %}
-```
 
 ## 相关文档
 
