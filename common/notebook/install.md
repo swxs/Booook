@@ -5,6 +5,10 @@
 - [安装](#安装)
   - [python kernel](#python-kernel)
   - [clojure kernel](#clojure-kernel)
+  - [javascript kernel](#javascript-kernel)
+  - [C kernel](#c-kernel)
+  - [C++ kernel](#c-kernel-1)
+  - [Go kernel](#go-kernel)
 
 ------
 
@@ -54,3 +58,25 @@ clj -m clojupyter.cmdline install --ident clojupyter-1 --jarfile clojupyter-stan
 ```
 
 查看目录`~\AppData\Roaming\jupyter`， 修改部分内容，移入kernels， 修改`kernel.json`文件
+
+
+## javascript kernel
+
+``` sh
+npm install -g ijavascript
+ijsinstall
+```
+
+项目地址: [https://github.com/n-riesco/ijavascript](https://github.com/n-riesco/ijavascript)
+
+## C kernel
+
+项目地址: [https://github.com/brendan-rius/jupyter-c-kernel](https://github.com/brendan-rius/jupyter-c-kernel)
+
+## C++ kernel
+
+项目地址: [https://github.com/jupyter-xeus/xeus-cling](https://github.com/jupyter-xeus/xeus-cling)
+
+## Go kernel
+
+项目地址: [https://github.com/gopherdata/gophernotes](https://github.com/gopherdata/gophernotes)

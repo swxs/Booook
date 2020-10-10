@@ -16,6 +16,7 @@
   - [python](#python)
   - [Clojure](#clojure)
   - [7-zip](#7-zip)
+  - [Build Tools for Visual Studio 2017](#build-tools-for-visual-studio-2017)
 
 ------
 
@@ -125,3 +126,10 @@ a file archiver with a high compression ratio.
 
 下载:
 [https://www.7-zip.org/](https://www.7-zip.org/)
+
+## Build Tools for Visual Studio 2017
+
+Build Tools for Visual Studio 2017
+
+下载:
+[https://download.visualstudio.microsoft.com/download/pr/3e542575-929e-4297-b6c6-bef34d0ee648/639c868e1219c651793aff537a1d3b77/vs_buildtools.exe](https://download.visualstudio.microsoft.com/download/pr/3e542575-929e-4297-b6c6-bef34d0ee648/639c868e1219c651793aff537a1d3b77/vs_buildtools.exe)

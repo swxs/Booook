@@ -97,6 +97,8 @@
             * [simple-mind-map](common/gitbook/plugins/simple-mind-map.md)
     * [notebook](common/notebook/README.md)
         * [安装](common/notebook/install.md)
+        * [插件](common/notebook/plugins/README.md)
+            * [简介](common/notebook/plugins/summary.md)
     * [Nginx](common/Nginx/README.md)
         * [安装](common/Nginx/install.md)
         * [配置](common/Nginx/settings.md)
