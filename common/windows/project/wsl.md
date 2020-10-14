@@ -4,6 +4,9 @@
 
 - [wsl](#wsl)
   - [安装](#安装)
+    - [Enable the Windows Subsystem for Linux](#enable-the-windows-subsystem-for-linux)
+    - [Enable Virtual Machine feature](#enable-virtual-machine-feature)
+    - [Download the Linux kernel update package](#download-the-linux-kernel-update-package)
   - [更新](#更新)
   - [安装docker](#安装docker)
   - [安装 python3](#安装-python3)
@@ -13,15 +16,27 @@
 
 ## 安装
 
-1. win+x powershell(管理员)
 
+
+### Enable the Windows Subsystem for Linux
+win+x powershell(管理员)
 ``` sh
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
 
+### Enable Virtual Machine feature
 ``` sh
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
+
+### Download the Linux kernel update package
+``` sh
+wsl --set-default-version 2
+wsl --list --verbose
+wsl --set-version <distribution name> <versionNumber>
+```
+
+- 教程: [https://docs.microsoft.com/en-us/windows/wsl/install-win10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
 ## 更新
 
@@ -31,9 +46,9 @@ sudo apt-get update
 
 ## 安装docker
 
-- [教程](https://docs.docker.com/engine/install/ubuntu/#installation-methods)
-- [WSL使用docker](https://blog.jayway.com/2017/04/19/running-docker-on-bash-on-windows/)
-- [win10 Home 安装docker](https://itnext.io/install-docker-on-windows-10-home-d8e621997c1d)
+- 教程: [https://docs.docker.com/engine/install/ubuntu/#installation-methods](https://docs.docker.com/engine/install/ubuntu/#installation-methods)
+- WSL使用docker: [https://blog.jayway.com/2017/04/19/running-docker-on-bash-on-windows/](https://blog.jayway.com/2017/04/19/running-docker-on-bash-on-windows/)
+- win10 Home 安装docker: [https://itnext.io/install-docker-on-windows-10-home-d8e621997c1d](https://itnext.io/install-docker-on-windows-10-home-d8e621997c1d)
 
 1. Update the apt package index and install packages to allow apt to use a repository over HTTPS:
 

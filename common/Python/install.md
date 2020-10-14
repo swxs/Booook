@@ -108,14 +108,32 @@ pip install pycrypto => pip install pycryptodome
 
 安装:
 
+windows: [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html)
+
+linux: 
 ``` sh
 wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
+
 ```
 
 换源:
 
 ``` sh
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/ 
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 conda config --set show_channel_urls yes 
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
 ```
+
+
+添加多版本python
+
+``` sh
+conda create -n python36 python=3.6.8
+```
+
+版本切换
+``` sh
+conda activate python36
+conda deactivate
+```
+
