@@ -19,6 +19,8 @@
 
 ### windows
 
+#### 配置启动任务
+
 ``` sh
 .\mongod.exe --config .\mongod.conf --directoryperdb --serviceName Mongodb --install
 ```
@@ -37,8 +39,6 @@ port=27017
 ```
 
 如果碰到`错误100`, 尝试删除`db`文件夹下的`mongod.lock`与`storage.bson`
-
-#### 配置启动任务
 
 ### 下载安装
 
