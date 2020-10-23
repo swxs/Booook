@@ -112,6 +112,7 @@
     * [Jenkins](common/Jenkins/README.md)
         * [安装](common/Jenkins/install.md)
     * [读书体会](common/Book/README.md)
+        * [生僻字](common/Book/words.md)
         * [编译原理](common/Book/Compilers.md)
         * [七周七并发模型](common/Book/Seven-Concurrency-Models-in-Seven-Weeks.md)
     * [工具](common/Tool/README.md)
