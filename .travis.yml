@@ -23,3 +23,7 @@ deploy:
   verbose: true
   on:
     branch: master
+after_deploy:
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker build -t swxs/booook .
+  - docker push swxs/booook

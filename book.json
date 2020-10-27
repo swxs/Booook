@@ -50,7 +50,7 @@
             "css": [
                 "prism-themes/themes/prism-base16-ateliersulphurpool.light.css"
             ],
-            "ignore": ["yml", "text", "ps1", "bat"]
+            "ignore": ["yml", "text", "txt", "ps1", "bat"]
         },
         "github": {
             "url": "https://github.com/swxs/Booook"
