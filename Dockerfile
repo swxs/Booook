@@ -1,4 +1,4 @@
 FROM swxs/nginx
 WORKDIR /data
-COPY ./dist .
+COPY ./_book .
 COPY ./nginx.tmpl .
