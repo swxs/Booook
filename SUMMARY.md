@@ -99,6 +99,8 @@
         * [安装](common/notebook/install.md)
         * [插件](common/notebook/plugins/README.md)
             * [简介](common/notebook/plugins/summary.md)
+        * [专题](common/notebook/project/README.md)
+            * [样式](common/notebook/project/style.md)
     * [Nginx](common/Nginx/README.md)
         * [安装](common/Nginx/install.md)
         * [配置](common/Nginx/settings.md)
