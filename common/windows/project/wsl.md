@@ -8,15 +8,15 @@
     - [Enable Virtual Machine feature](#enable-virtual-machine-feature)
     - [Download the Linux kernel update package](#download-the-linux-kernel-update-package)
   - [更新](#更新)
-  - [安装docker](#安装docker)
+  - [安装docker(弃用， 直接转wsl2)](#安装docker弃用-直接转wsl2)
   - [安装 python3](#安装-python3)
   - [修改复制模式](#修改复制模式)
+  - [问题处理](#问题处理)
+    - [问题: `参考的对象类型不支持尝试的操作。`](#问题-参考的对象类型不支持尝试的操作)
 
 ------
 
 ## 安装
-
-
 
 ### Enable the Windows Subsystem for Linux
 win+x powershell(管理员)
@@ -44,7 +44,7 @@ wsl --set-version <distribution name> <versionNumber>
 sudo apt-get update
 ```
 
-## 安装docker
+## 安装docker(弃用， 直接转wsl2)
 
 - 教程: [https://docs.docker.com/engine/install/ubuntu/#installation-methods](https://docs.docker.com/engine/install/ubuntu/#installation-methods)
 - WSL使用docker: [https://blog.jayway.com/2017/04/19/running-docker-on-bash-on-windows/](https://blog.jayway.com/2017/04/19/running-docker-on-bash-on-windows/)
@@ -75,20 +75,20 @@ sudo apt-get update
     sudo apt-get install docker-ce docker-ce-cli containerd.io
     ```
 
-WSL现在用不了docker，主要是用不了systemctl
+    WSL现在用不了docker，主要是用不了systemctl
 
-1. 尝试windows上启动服务，wsl启动client
+    1. 尝试windows上启动服务，wsl启动client
 
-``` sh
-已检测到虚拟机监控程序。将不显示 Hyper-V 所需的功能。
-```
+    ``` sh
+    已检测到虚拟机监控程序。将不显示 Hyper-V 所需的功能。
+    ```
 
-1. Home装不了docker..., 转装docker-toolbox
+    1. Home装不了docker..., 转装docker-toolbox
 
-``` sh
-# 关闭Hyper-V
-bcdedit /set {d89bf857-d769-11e9-a69e-3c18a0727e3f} hypervisorlaunchtype OFF
-```
+    ``` sh
+    # 关闭Hyper-V
+    bcdedit /set {d89bf857-d769-11e9-a69e-3c18a0727e3f} hypervisorlaunchtype OFF
+    ```
 
 ## 安装 python3
 
@@ -100,3 +100,11 @@ apt-get install python3-distutils python3-dev build-essential libssl-dev libffi-
 
 Right-click on the title bar > Properties
 Options tab > Edit options > enable QuickEdit Mode
+
+## 问题处理
+
+### 问题: `参考的对象类型不支持尝试的操作。`
+
+``` sh
+netsh winsock reset
+```

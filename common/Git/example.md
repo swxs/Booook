@@ -14,6 +14,7 @@
   - [回退分支, 及回退merge的分支](#回退分支-及回退merge的分支)
   - [删除 stash(损坏的)](#删除-stash损坏的)
   - [统计代码行数](#统计代码行数)
+  - [大小写敏感](#大小写敏感)
 
 ------
 
@@ -105,4 +106,10 @@ git reflog delete --rewrite stash@{0}
 
 ``` git
 git log --author="$(git config --get user.name)" --pretty=tformat: --numstat | gawk '{ add += $1 ; subs += $2 ; loc += $1 - $2 } END { printf "added lines: %s removed lines : %s total lines: %s\n",add,subs,loc }' -
+```
+
+## 大小写敏感
+
+``` git
+git config core.ignorecase false
 ```
