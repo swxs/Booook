@@ -22,6 +22,12 @@ ssh-keygen -t  rsa
 ssh-copy-id -i ~/.ssh/id_rsa.pub root@127.0.0.1
 ```
 
+3. 重启ssh服务
+``` sh
+systemctl restart sshd.service
+```
+
+
 ## 多私钥配置
 
 ```
@@ -33,4 +39,3 @@ ssh-add -l
 # 清空私钥列表
 ssh-add -D
 ```
-

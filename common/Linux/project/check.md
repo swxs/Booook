@@ -5,6 +5,7 @@
 - [问题排查](#问题排查)
   - [2020/10/28](#20201028)
     - [延长ssh](#延长ssh)
+    - [$'\r': command not found](#r-command-not-found)
   - [2020/05/11](#20200511)
     - [服务器磁盘占用过高](#服务器磁盘占用过高)
   - [2020/05/12](#20200512)
@@ -34,6 +35,13 @@ service sshd restart
 - 没有的话就重装
 ```
 yum -y install openssh-server openssh-clients
+```
+
+### $'\r': command not found
+
+``` sh
+vi
+:set ff-unix
 ```
 
 ## 2020/05/11
