@@ -3,6 +3,7 @@
 ------
 
 - [聚合查询](#聚合查询)
+  - [MapReduce](#mapreduce)
   - [常用聚合写法](#常用聚合写法)
   - [查询并修改](#查询并修改)
   - [查询并修改2](#查询并修改2)
@@ -13,6 +14,20 @@
   - [统计数量分段](#统计数量分段)
 
 ------
+
+
+## MapReduce
+
+``` text
+EX1
+    var mapFunction1 = function() { emit(this.cust_id, this.price); };
+    var reduceFunction1 = function(keyCustId, valuesPrices) { return Array.sum(valuesPrices); };
+    db.orders.mapReduce( mapFunction1, reduceFunction1,  { out: "map_reduce_example" } )
+EX2
+    var map = function() {for (var key in this) {emit(key, {count: 1})}}
+    var reduce = function(key, emits) {total = 0; for (var i in emits) {total += emits[i].count;} return {"count": total}}
+```
+
 
 ## 常用聚合写法
 

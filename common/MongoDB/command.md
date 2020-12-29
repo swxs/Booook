@@ -3,30 +3,98 @@
 ------
 
 - [命令](#命令)
-  - [mongo导数据](#mongo导数据)
-    - [如果版本不一致](#如果版本不一致)
+  - [创建](#创建)
+  - [查询](#查询)
+    - [查询条件](#查询条件)
+    - [显示规则](#显示规则)
+  - [更新](#更新)
+    - [更新规则](#更新规则)
+    - [是否复数修改](#是否复数修改)
+  - [删除](#删除)
+  - [其他](#其他)
+  - [Aggregation](#aggregation)
+  - [MapReduce](#mapreduce)
+  - [index](#index)
+  - [文档](#文档)
 
 ------
 
-## mongo导数据
+## 创建
+  - insert
+  - insertOne
+  - insertMany
 
-```
-mongodump -h IP --port 端口 -u 用户名 -p 密码 -d 数据库 -o 文件存在路径
+## 查询
+  - find [查询条件] [显示规则]
+  - count
+  - distinct
+### 查询条件
+  - $or
+  - $not
+  - $exists
+  - $in
+  - $nin
+  - $mod
+  - $lt
+  - $gt
+  - $ne
+  - $all
+  - $each
+  - $size
+  - $where
+  - $search
+  - $regex: /reg/
 
-mongorestore -h IP --port 端口 -u 用户名 -p 密码 -d 数据库 --drop 文件存在路径
+### 显示规则
+  - $slice
+                    
+## 更新
+  - update [查询条件] [更新规则] [是否追加] [是否复数修改]
+  - updateOne
+  - updateMany
+  - replaceOne
+### 更新规则
+  - $inc
+  - $set
+  - $unset
+  - $push
+  - $pull
+  - $pop
+    - $pop: {key: 1} 数组末尾
+    - $pop: {key： -1} 数组开头
+  - $addToSet
+### 是否复数修改
+  - {$mutli: 1}
+           
+## 删除
+  - deleteOne
+  - deleteMany
+  - remove
+  - drop
+  - dropDatabase
 
-mongoexport -h IP --port 端口 -u 用户名 -p 密码 -d 数据库 -c 表名 -f 字段 -q 条件导出 --csv -o 文件名
+## 其他
+  - sort
+  - limit
+  - skip
 
-mongoimport -h IP --port 端口 -u 用户名 -p 密码 -d 数据库 -c 表名 --upsert 插入或者更新现有数据 --drop 文件名
+## Aggregation
+  - $match
+  - $redact
+  - $addFields
+  - $project
+  - $group
 
-mongorestore --gzip --archive=dump.gz 库名是 cem_server_vehicel
+## MapReduce
+  - map
+  - reduce
+  - query
+  - output
 
+## index
+  ensureIndex
+  {$unique: true}
+  {$dropDup: true}
 
-```
-
-### 如果版本不一致
-
-``` sh
-# Mongodump: Unrecognized field 'snapshot'
---forceTableScan
-```
+## 文档
+- 官方文档: [https://docs.mongodb.com/manual/introduction/](https://docs.mongodb.com/manual/introduction/)

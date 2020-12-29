@@ -15,6 +15,7 @@
   - [删除 stash(损坏的)](#删除-stash损坏的)
   - [统计代码行数](#统计代码行数)
   - [大小写敏感](#大小写敏感)
+  - [常用配置](#常用配置)
 
 ------
 
@@ -112,4 +113,10 @@ git log --author="$(git config --get user.name)" --pretty=tformat: --numstat | g
 
 ``` git
 git config core.ignorecase false
+```
+
+## 常用配置
+
+``` git
+
 ```

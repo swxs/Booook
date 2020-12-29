@@ -88,6 +88,11 @@ sudo apt-get update
     ``` sh
     # 关闭Hyper-V
     bcdedit /set {d89bf857-d769-11e9-a69e-3c18a0727e3f} hypervisorlaunchtype OFF
+
+    # 关闭Hyper-V
+    bcdedit /set hypervisorlaunchtype off
+    # 开启Hyper-V
+    bcdedit /set hypervisorlaunchtype auto
     ```
 
 ## 安装 python3
