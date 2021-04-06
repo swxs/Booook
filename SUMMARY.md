@@ -76,6 +76,8 @@
         * [专题](common/MySQL/project/README.md)
             * [聚合查询](common/MySQL/project/aggregate.md)
             * [8.0特性](common/MySQL/project/feature8.0.md)
+    * [Clickhouse](common/Clickhouse/README.md)
+        * [安装](common/Clickhouse/install.md)
     * [Redis](common/Redis/README.md)
         * [安装](common/Redis/install.md)
         * [命令](common/Redis/command.md)

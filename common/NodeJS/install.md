@@ -3,7 +3,9 @@
 ------
 
 - [安装](#安装)
-  - [centos 安装](#centos-安装)
+  - [安装](#安装-1)
+    - [centos 安装](#centos-安装)
+    - [windows 安装](#windows-安装)
   - [包管理](#包管理)
     - [npm](#npm)
     - [yarn](#yarn)
@@ -16,7 +18,9 @@
 
 ------
 
-## centos 安装
+## 安装
+
+### centos 安装
 
 ``` sh
 rpm -ivh http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
@@ -28,6 +32,10 @@ yum install -y gcc-c++ make
 yum install -y nodejs
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
+
+### windows 安装
+
+[下载](#../Tool/REAMME.md#NodeJS)
 
 ## 包管理
 

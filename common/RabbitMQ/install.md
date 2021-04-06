@@ -31,3 +31,11 @@ rabbitmqctl add_vhost <vhost>
 rabbitmqctl set_permissions -p <vhost> <username> '.*' '.*' '.*'
 rabbitmqctl set_user_tags <username> administrator
 ```
+
+e.g.
+```
+rabbitmqctl add_user clickhouse clickhouse
+rabbitmqctl add_vhost clickhouse
+rabbitmqctl set_permissions -p clickhouse clickhouse '.*' '.*' '.*'
+rabbitmqctl set_user_tags clickhouse administrator
+```

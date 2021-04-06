@@ -3,6 +3,9 @@
 ------
 
 - [问题排查](#问题排查)
+  - [2021/03/18](#20210318)
+    - [pip 失败](#pip-失败)
+    - [vcode无法运行powershell](#vcode无法运行powershell)
   - [2020/11/23](#20201123)
     - [系统蓝屏重启](#系统蓝屏重启)
   - [2020/11/09](#20201109)
@@ -12,6 +15,25 @@
     - [windows Terminal 设置管理员权限](#windows-terminal-设置管理员权限)
 
 ------
+
+## 2021/03/18
+
+### pip 失败 
+
+```
+pip is configured with locations that require TLS/SSL, however the ssl module in Python is not available
+```
+
+需要添加`Miniconda`相关的环境变量
+
+### vcode无法运行powershell
+
+```
+PowerShell：因为在此系统上禁止运行脚本
+```
+
+- 查询策略: `get-executionpolicy`
+- 设置策略: `set-executionpolicy remotesigned`
 
 ## 2020/11/23
 

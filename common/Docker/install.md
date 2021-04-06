@@ -7,6 +7,7 @@
     - [安装 Docker](#安装-docker)
     - [安装 Docker Compose](#安装-docker-compose)
     - [Centos 6.7 安装 Docker几个坑](#centos-67-安装-docker几个坑)
+  - [windows 安装](#windows-安装)
 
 ------
 
@@ -59,3 +60,6 @@ docker-compose必须是1.5.2
 1.5.2版本 只支持 V1 版本的 docker-compose.yml，所以需要修改，大多是删除 `version: "2" ` 和`services:`两行
 
 docker-compose.yml
+
+## windows 安装
+

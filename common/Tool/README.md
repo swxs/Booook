@@ -13,17 +13,17 @@
   - [Visual Studio Code](#visual-studio-code)
   - [CPU-Z](#cpu-z)
   - [AIDA64 Extreme](#aida64-extreme)
-  - [python](#python)
+  - [Python](#python)
+  - [NodeJS](#nodejs)
   - [Clojure](#clojure)
   - [7-zip](#7-zip)
-  - [Build Tools for Visual Studio 2017](#build-tools-for-visual-studio-2017)
   - [Foxmail](#foxmail)
   - [GIT](#git)
   - [redis](#redis)
   - [mongodb](#mongodb)
   - [Postman](#postman)
   - [xmind](#xmind)
-  - [C++ build tools](#c-build-tools)
+  - [docker](#docker)
 
 ------
 
@@ -111,12 +111,32 @@ system information tool
 下载:
 - [https://www.aida64.com/downloads](https://www.aida64.com/downloads)
 
-## python
+## Python
 
-python
+Python
 
 下载:
 - [https://www.python.org/downloads/](https://www.python.org/downloads/)
+
+MiniConda
+
+下载:
+- [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html)
+
+C++ build tools
+
+下载:
+- [https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x64.exe](https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x64.exe)
+- [https://www.microsoft.com/en-ph/download/confirmation.aspx?id=40784](https://www.microsoft.com/en-ph/download/confirmation.aspx?id=40784)
+- [http://go.microsoft.com/fwlink/?LinkId=691126](http://go.microsoft.com/fwlink/?LinkId=691126)
+- [https://download.visualstudio.microsoft.com/download/pr/3e542575-929e-4297-b6c6-bef34d0ee648/639c868e1219c651793aff537a1d3b77/vs_buildtools.exe](https://download.visualstudio.microsoft.com/download/pr/3e542575-929e-4297-b6c6-bef34d0ee648/639c868e1219c651793aff537a1d3b77/vs_buildtools.exe)
+
+## NodeJS
+
+NodeJS
+
+下载
+- [https://nodejs.org/zh-cn/](https://nodejs.org/zh-cn/)
 
 ## Clojure
 
@@ -134,13 +154,6 @@ a file archiver with a high compression ratio.
 下载:
 - [https://www.7-zip.org/](https://www.7-zip.org/)
 
-## Build Tools for Visual Studio 2017
-
-Build Tools for Visual Studio 2017
-
-下载:
-- [https://download.visualstudio.microsoft.com/download/pr/3e542575-929e-4297-b6c6-bef34d0ee648/639c868e1219c651793aff537a1d3b77/vs_buildtools.exe](https://download.visualstudio.microsoft.com/download/pr/3e542575-929e-4297-b6c6-bef34d0ee648/639c868e1219c651793aff537a1d3b77/vs_buildtools.exe)
-
 ## Foxmail
 
 邮件管理
@@ -155,7 +168,6 @@ Build Tools for Visual Studio 2017
 下载:
 - [https://git-scm.com/download/win](https://git-scm.com/download/win)
 
-
 ## redis
 
 下载:
@@ -164,9 +176,12 @@ Build Tools for Visual Studio 2017
 
 ## mongodb
 
+mongod、mongo数据处理工具(mongodump, mongorestore)、robo3T
+
 下载:
 - [https://www.mongodb.com/try/download/community?tck=docs_server](https://www.mongodb.com/try/download/community?tck=docs_server)
-
+- [https://www.mongodb.com/try/download/database-tools](https://www.mongodb.com/try/download/database-tools)
+- [https://robomongo.org/download](https://robomongo.org/download)
 
 ## Postman
 
@@ -179,8 +194,14 @@ Build Tools for Visual Studio 2017
 下载:
 - [https://www.xmind.net/download/](https://www.xmind.net/download/)
 
-## C++ build tools
+
+## docker
+
+docker on windows
 
 下载:
-- [http://go.microsoft.com/fwlink/?LinkId=691126](http://go.microsoft.com/fwlink/?LinkId=691126)
+- [https://hub.docker.com/editions/community/docker-ce-desktop-windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+
+
+
 
