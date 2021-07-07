@@ -218,6 +218,12 @@ db.getCollection('BI_COLUMN').aggregate([
 ``` text
 db.getCollection('BI_COLUMN').aggregate([
     {
+        $match: {
+            dtype: 5,
+            ttype: 0
+        }
+    },
+    {
         $group: {
             _id: {
                 "worktable": "$worktable_id"
@@ -244,6 +250,12 @@ db.getCollection('BI_COLUMN').aggregate([
 ``` text
 db.getCollection('BI_COLUMN').aggregate([
     {
+        $match: {
+            ttype: 0,
+            dtype: 1
+        }
+    },
+    {
         $group: {
             _id: {
                 "worktable": "$worktable_id"
@@ -259,40 +271,40 @@ db.getCollection('BI_COLUMN').aggregate([
             "steps": {
                 "$cond": {
                     "if": {
-                        "$lt": ['$number', 100]
+                        "$lt": ['$number', 200]
                     },
-                    "then": "<100",
+                    "then": "<200",
                     "else": {
                         "$cond": {
                             "if": {
                                 "$and": [{
-                                    "$gte": ["$number", 100]
+                                    "$gte": ["$number", 200]
                                 }, {
-                                    "$lt": ["$number", 150]
+                                    "$lt": ["$number", 500]
                                 }]
                             },
-                            "then": "100~150",
+                            "then": "200~500",
                             "else": {
                                 "$cond": {
                                     "if": {
                                         "$and": [{
-                                            "$gte": ["$number", 150]
+                                            "$gte": ["$number", 500]
                                         }, {
-                                            "$lte": ["$number", 200]
+                                            "$lte": ["$number", 800]
                                         }]
                                     },
-                                    "then": "150~200",
+                                    "then": "500~800",
                                     "else": {
                                         "$cond": {
                                             "if": {
                                                 "$and": [{
-                                                    "$gte": ["$number", 200]
+                                                    "$gte": ["$number", 800]
                                                 }, {
-                                                    "$lte": ["$number", 300]
+                                                    "$lte": ["$number", 1000]
                                                 }]
                                             },
-                                            "then": "200~300",
-                                            "else": ">300"
+                                            "then": "800~1000",
+                                            "else": ">1000"
                                         }
                                     }
                                 }

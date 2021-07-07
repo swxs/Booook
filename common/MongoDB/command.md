@@ -93,6 +93,7 @@
 
 ## index
   ensureIndex
+  createIndex
   {$unique: true}
   {$dropDup: true}
 
