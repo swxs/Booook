@@ -3,6 +3,8 @@
 ## ELB
 Elastic Load Balancing - 弹性负载均衡
 
+LB、
+
 ## EC2
 Elastic Compute Cloud - 弹性云计算
 

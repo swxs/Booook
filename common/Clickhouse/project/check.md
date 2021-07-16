@@ -3,12 +3,14 @@
 ------
 
 - [问题排查](#问题排查)
-  - [2021/0618](#20210618)
+  - [2021/06/18](#20210618)
     - [Clickhouse drop table on cluster but not delete on zookeeper](#clickhouse-drop-table-on-cluster-but-not-delete-on-zookeeper)
+  - [2021/05/03](#20210503)
+    - [时间插入后有偏移](#时间插入后有偏移)
 
 ------
 
-## 2021/0618
+## 2021/06/18
 
 ### Clickhouse drop table on cluster but not delete on zookeeper
 
@@ -20,3 +22,11 @@
 
 - [https://github.com/ClickHouse/ClickHouse/issues/18382](https://github.com/ClickHouse/ClickHouse/issues/18382)
 - [https://github.com/ClickHouse/ClickHouse/blob/master/tests/config/config.d/database_atomic.xml](https://github.com/ClickHouse/ClickHouse/blob/master/tests/config/config.d/database_atomic.xml)
+
+## 2021/05/03
+
+### 时间插入后有偏移
+
+需要注意
+通过插入字符串的方式插入时间字段， CK会根据配置的当前时区、字段配置的时区等信息对字符串做自动转化
+通过插入整形时间戳方式插入时间字段，CK会直接存入不做额外处理

@@ -15,56 +15,56 @@
   - [删除 stash(损坏的)](#删除-stash损坏的)
   - [统计代码行数](#统计代码行数)
   - [大小写敏感](#大小写敏感)
-  - [常用配置](#常用配置)
+  - [cherry-pick](#cherry-pick)
 
 ------
 
 ## git pull
 
-``` git
+``` sh
 git pull <remote> <branch>
 ```
 
 ## 将【本地分支】与【远程分支】同步
 
-``` git
+``` sh
 git branch --set-upstream-to=origin/<branch> <local branch>
 ```
 
 ## 删除git的追踪
 
-``` git
+``` sh
 git rm --cache [file]
 ```
 
 ## 删除远程分支
 
-``` git
+``` sh
 git -c diff.mnemonicprefix=false -c core.quotepath=false --no-optional-locks branch -D -r origin/<branch>
 git -c diff.mnemonicprefix=false -c core.quotepath=false --no-optional-locks push origin :refs/heads/<branch>
 ```
 
 ## 同步远程分支列表
 
-``` git
+``` sh
 git remote prune origin
 ```
 
 ## 分支返回到未提交的状态
 
-``` git
+``` sh
 git reset --hard <分支>
 ```
 
 ## 追加commit
 
-``` git
+``` sh
 git commit --amend
 ```
 
 ## git rebase
 
-``` git
+``` sh
 git rebase <target branch> <root branch> <sub branch>
 
 git rebase <分支2>
@@ -76,10 +76,12 @@ git rebase <target branch> <root branch> <sub branch>
 
 ## 回退分支, 及回退merge的分支
 
-``` git
+``` sh
 git revert <分支>
 git revert <分支> -m [1,2]
+```
 
+```
 回退到 <1> 状态 （git revert <分支> -m 1）
 [m]<1>----|-----[n]<3>----[n`]<4>
           |
@@ -99,24 +101,26 @@ git revert <分支> -m [1,2]
 
 ## 删除 stash(损坏的)
 
-``` git
+``` sh
 git reflog delete --rewrite stash@{0}
 ```
 
 ## 统计代码行数
 
-``` git
+``` sh
 git log --author="$(git config --get user.name)" --pretty=tformat: --numstat | gawk '{ add += $1 ; subs += $2 ; loc += $1 - $2 } END { printf "added lines: %s removed lines : %s total lines: %s\n",add,subs,loc }' -
 ```
 
 ## 大小写敏感
 
-``` git
+``` sh
 git config core.ignorecase false
 ```
 
-## 常用配置
+## cherry-pick
 
-``` git
-
+``` sh
+git cherry-pick [hash]
+git cherry-pick [hash]..[hash]
+git cherry-pick ^[hash]..[hash]
 ```
