@@ -31,7 +31,7 @@ git pull <remote> <branch>
 git branch --set-upstream-to=origin/<branch> <local branch>
 ```
 
-## 删除git的追踪
+# 删除git的追踪
 
 ``` sh
 git rm --cache [file]

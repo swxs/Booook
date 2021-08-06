@@ -23,6 +23,7 @@
   - [mongodb](#mongodb)
   - [Postman](#postman)
   - [xmind](#xmind)
+  - [freemind](#freemind)
   - [docker](#docker)
 
 ------
@@ -173,7 +174,6 @@ a file archiver with a high compression ratio.
 下载:
 - windows: [https://github.com/microsoftarchive/redis/releases](https://github.com/microsoftarchive/redis/releases)
 
-
 ## mongodb
 
 mongod、mongo数据处理工具(mongodump, mongorestore)、robo3T
@@ -188,12 +188,16 @@ mongod、mongo数据处理工具(mongodump, mongorestore)、robo3T
 下载:
 - [https://www.postman.com/downloads/](https://www.postman.com/downloads/)
 
-
 ## xmind
 
 下载:
 - [https://www.xmind.net/download/](https://www.xmind.net/download/)
 
+## freemind
+
+下载:
+- [http://freemind.sourceforge.net/wiki/index.php/Download](http://freemind.sourceforge.net/wiki/index.php/Download)
+- [https://sourceforge.net/projects/freemind/files/latest/download](https://sourceforge.net/projects/freemind/files/latest/download)
 
 ## docker
 
@@ -201,7 +205,3 @@ docker on windows
 
 下载:
 - [https://hub.docker.com/editions/community/docker-ce-desktop-windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-
-
-
-
