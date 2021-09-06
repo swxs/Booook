@@ -5,6 +5,7 @@
 - [lua脚本](#lua脚本)
   - [读写锁](#读写锁)
   - [利用scan进行批量操作](#利用scan进行批量操作)
+  - [链接](#链接)
 
 ------
 
@@ -139,3 +140,6 @@ repeat
 until (cursor == '0')
 return delete_count
 ```
+
+## 链接
+- Cuckoo Filter: [https://www.cs.cmu.edu/~dga/papers/cuckoo-conext2014.pdf](https://www.cs.cmu.edu/~dga/papers/cuckoo-conext2014.pdf)

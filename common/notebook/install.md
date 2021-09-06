@@ -49,13 +49,10 @@ bash> cat src/user.clj
 
 ``` sh
 clojure -A:depstar -m hf.depstar.uberjar clojupyter-standalone.jar
-```
-
-3. a
-
-``` sh
 clj -m clojupyter.cmdline install --ident clojupyter-1 --jarfile clojupyter-standalone.jar
 ```
+
+3. 修改错误的安装目录
 
 查看目录`~\AppData\Roaming\jupyter`， 修改部分内容，移入kernels， 修改`kernel.json`文件
 
