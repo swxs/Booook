@@ -3,6 +3,10 @@
 ------
 
 - [问题排查](#问题排查)
+  - [2022/01/52](#20220152)
+    - [OSS图片没有Access-Control-Allow-Origin: *请求头](#oss图片没有access-control-allow-origin-请求头)
+  - [2021/12/20](#20211220)
+    - [尝试排查内存泄露问题](#尝试排查内存泄露问题)
   - [2020/10/28](#20201028)
     - [延长ssh](#延长ssh)
     - [$'\r': command not found](#r-command-not-found)
@@ -14,6 +18,98 @@
     - [.h5文件读写报错](#h5文件读写报错)
 
 ------
+
+## 2022/01/52
+
+### OSS图片没有Access-Control-Allow-Origin: *请求头
+
+``` curl访问资源
+curl -voa '{img-url}' -H 'Origin:{host-url}'
+```
+
+- [相关资料](https://www.cnblogs.com/wwyz/p/9210856.html)
+
+
+## 2021/12/20
+
+### 尝试排查内存泄露问题
+
+- 修改docker配置
+``` sh
+# docker
+docker run --cap-add sys_ptrace 
+```
+
+``` sh
+# docker-compose 添加配置
+    cap_add:
+      - sys_ptrace
+```
+
+
+- 安装gdb
+```
+apt-get install -y gdb
+```
+
+- 排查问题
+
+GDB文档: [https://sourceware.org/gdb/documentation/](https://sourceware.org/gdb/documentation/)
+
+1. attach 进程
+```
+gdb python [pid]
+```
+2. 查看线程
+```
+(gdb) info threads
+```
+3. py堆栈（有问题）
+```
+(gdb) py-list
+Undefined command: "py-list".  Try "help".
+```
+```
+gcore [-o filename] pid
+generate-core-file
+
+top -H -p 8
+
+
+apt install -y pstack 
+pstack [tid]
+
+apt install -y strace
+strace -f -p [tid]
+```
+
+- 利用pyrasite访问进程
+1. 安装pyrasite
+```
+pip install pyrasite
+pyrasite-shell [pid]
+```
+2. 安装guppy3
+```
+pip install guppy3
+
+>>> from guppy import hpy
+>>> h = hpy()
+>>> h.heap()
+```
+3. 检查垃圾数据
+```
+>>> import gc
+>>> gc.collect()
+>>> gc.garbage
+```
+4. 打印堆栈
+```
+# 需要gdb
+pip install pystack-debugger
+pystack [pid]
+```
+
 
 ## 2020/10/28
 

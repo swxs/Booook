@@ -3,12 +3,29 @@
 ------
 
 - [问题排查](#问题排查)
+  - [2022/03/07](#20220307)
+    - [部分异常及对应配置](#部分异常及对应配置)
   - [2021/06/18](#20210618)
     - [Clickhouse drop table on cluster but not delete on zookeeper](#clickhouse-drop-table-on-cluster-but-not-delete-on-zookeeper)
   - [2021/05/03](#20210503)
     - [时间插入后有偏移](#时间插入后有偏移)
 
 ------
+
+## 2022/03/07
+
+### 部分异常及对应配置
+
+`code 62，Max query size exceeded`: 
+``` xml
+<max_query_size>10000000</max_query_size>
+```
+
+`Code: 168, AST is too big，Maximum: 50000`: 
+``` xml
+<max_ast_elements>10000000</max_ast_elements>
+<max_expanded_ast_elements>10000000</max_expanded_ast_elements>
+```
 
 ## 2021/06/18
 
