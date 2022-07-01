@@ -5,7 +5,7 @@
 - [实例](#实例)
   - [git pull](#git-pull)
   - [将【本地分支】与【远程分支】同步](#将本地分支与远程分支同步)
-  - [删除git的追踪](#删除git的追踪)
+- [删除git的追踪](#删除git的追踪)
   - [删除远程分支](#删除远程分支)
   - [同步远程分支列表](#同步远程分支列表)
   - [分支返回到未提交的状态](#分支返回到未提交的状态)
@@ -16,6 +16,7 @@
   - [统计代码行数](#统计代码行数)
   - [大小写敏感](#大小写敏感)
   - [cherry-pick](#cherry-pick)
+  - [cannot lock ref](#cannot-lock-ref)
 
 ------
 
@@ -123,4 +124,14 @@ git config core.ignorecase false
 git cherry-pick [hash]
 git cherry-pick [hash]..[hash]
 git cherry-pick ^[hash]..[hash]
+```
+
+
+## cannot lock ref
+
+``` sh
+# 先更新一下reference
+git update-ref -d refs/remotes/origin/[locked branch name]
+# 随后同步代码
+git pull
 ```
