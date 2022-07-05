@@ -43,7 +43,8 @@
 
 ### OSS图片没有Access-Control-Allow-Origin: *请求头
 
-``` curl访问资源
+``` sh
+# curl访问资源
 curl -voa '{img-url}' -H 'Origin:{host-url}'
 ```
 

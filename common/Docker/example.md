@@ -18,7 +18,7 @@
 
 ### 一般流程
 
-``` text
+``` sh
 pull => [change] => tag => push
 
 run(<-d>image) =>
