@@ -18,6 +18,9 @@
 pip install jupyter
 ```
 
+```
+pip3 install jupyterlab
+```
 
 ## clojure kernel
 

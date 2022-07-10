@@ -124,6 +124,10 @@ pip install pycrypto => pip install pycryptodome
 
 windows: [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html)
 
+ssh 问题解决: [https://blog.csdn.net/Sky_Tree_Delivery/article/details/109078288](https://blog.csdn.net/Sky_Tree_Delivery/article/details/109078288)
+
+> 将`~miniconda3\Library\bin`添加到环境变量
+
 linux: 
 ``` sh
 wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
@@ -144,7 +148,7 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/
 #### 添加多版本python
 
 ``` sh
-conda create -n python36 python=3.6.8
+conda create -n python36 python=3.6
 ```
 
 #### 版本切换
