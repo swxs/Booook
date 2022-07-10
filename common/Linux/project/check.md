@@ -3,6 +3,8 @@
 ------
 
 - [问题排查](#问题排查)
+  - [2022/04/11](#20220411)
+    - [安装gdb失败](#安装gdb失败)
   - [2022/01/52](#20220152)
     - [OSS图片没有Access-Control-Allow-Origin: *请求头](#oss图片没有access-control-allow-origin-请求头)
   - [2021/12/20](#20211220)
@@ -19,11 +21,30 @@
 
 ------
 
+## 2022/04/11
+
+### 安装gdb失败
+
+清华源将[glibc]文件删除了, 已提issue
+
+- [https://github.com/tuna/issues/issues/725](https://github.com/tuna/issues/issues/725)
+
+先换源安装
+
+- [https://blog.csdn.net/qq_21095573/article/details/99736630](https://blog.csdn.net/qq_21095573/article/details/99736630)
+
+用的阿里源
+
+查看操作系统版本 `head -n 1 /etc/issue`
+
+替换文件 `/etc/apt/sources.list` 然后 `apt-get upgrade`
+
 ## 2022/01/52
 
 ### OSS图片没有Access-Control-Allow-Origin: *请求头
 
-``` curl访问资源
+``` sh
+# curl访问资源
 curl -voa '{img-url}' -H 'Origin:{host-url}'
 ```
 
@@ -46,41 +67,9 @@ docker run --cap-add sys_ptrace
       - sys_ptrace
 ```
 
-
 - 安装gdb
 ```
 apt-get install -y gdb
-```
-
-- 排查问题
-
-GDB文档: [https://sourceware.org/gdb/documentation/](https://sourceware.org/gdb/documentation/)
-
-1. attach 进程
-```
-gdb python [pid]
-```
-2. 查看线程
-```
-(gdb) info threads
-```
-3. py堆栈（有问题）
-```
-(gdb) py-list
-Undefined command: "py-list".  Try "help".
-```
-```
-gcore [-o filename] pid
-generate-core-file
-
-top -H -p 8
-
-
-apt install -y pstack 
-pstack [tid]
-
-apt install -y strace
-strace -f -p [tid]
 ```
 
 - 利用pyrasite访问进程
@@ -109,7 +98,6 @@ pip install guppy3
 pip install pystack-debugger
 pystack [pid]
 ```
-
 
 ## 2020/10/28
 

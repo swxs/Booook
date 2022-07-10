@@ -3,10 +3,17 @@
 ------
 
 - [vim](#vim)
+  - [替换](#替换)
   - [tab替换](#tab替换)
   - [vimrc](#vimrc)
 
 ------
+
+## 替换
+```
+:[%]s/parttern/replace/[range]
+```
+
 
 ## tab替换
 
