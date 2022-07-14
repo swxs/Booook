@@ -57,3 +57,7 @@ vm.max_map_count=262144
 ```
 
 `sysctl -p`
+
+```
+sysctl -w vm.max_map_count=262144
+```

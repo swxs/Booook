@@ -9,6 +9,8 @@
     - [OSS图片没有Access-Control-Allow-Origin: *请求头](#oss图片没有access-control-allow-origin-请求头)
   - [2021/12/20](#20211220)
     - [尝试排查内存泄露问题](#尝试排查内存泄露问题)
+      - [timeout 问题](#timeout-问题)
+    - [top看到的内存占用与heap不一致](#top看到的内存占用与heap不一致)
   - [2020/10/28](#20201028)
     - [延长ssh](#延长ssh)
     - [$'\r': command not found](#r-command-not-found)
@@ -70,7 +72,13 @@ docker run --cap-add sys_ptrace
 - 安装gdb
 ```
 apt-get install -y gdb
+apt-get install python3-dbg
+
+gdb
+>>> source /usr/share/gdb/auto-load/usr/bin/python3.7-gdb.py
+
 ```
+教程：[https://wiki.python.org/moin/DebuggingWithGdb](https://wiki.python.org/moin/DebuggingWithGdb)
 
 - 利用pyrasite访问进程
 1. 安装pyrasite
@@ -78,6 +86,13 @@ apt-get install -y gdb
 pip install pyrasite
 pyrasite-shell [pid]
 ```
+#### timeout 问题
+修改`vim /usr/local/lib/python3.8/site-packages/pyrasite/ipc.py`
+
+```
+self.sock.settimeout(5) -> self.sock.settimeout(50)
+```
+
 2. 安装guppy3
 ```
 pip install guppy3
@@ -85,8 +100,12 @@ pip install guppy3
 >>> from guppy import hpy
 >>> h = hpy()
 >>> h.heap()
+>>> heapy.setref()
+>>> h.heap().byid[0].sp
+>>> h.heap().get_rp(10)
 ```
-3. 检查垃圾数据
+
+1. 检查垃圾数据
 ```
 >>> import gc
 >>> gc.collect()
@@ -98,6 +117,25 @@ pip install guppy3
 pip install pystack-debugger
 pystack [pid]
 ```
+
+### top看到的内存占用与heap不一致
+
+`gcore <pid>`
+
+生成失败了
+```
+root@xm-biapi:/XM# gcore 98
+warning: process 98 is already traced by process 15209
+ptrace: Operation not permitted.
+You can't do that without a process to debug.
+The program is not being run.
+gcore: failed to create core.98
+```
+
+清除相关监听
+`ps -ef | grep gdb`
+
+
 
 ## 2020/10/28
 
