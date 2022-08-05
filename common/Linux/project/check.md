@@ -3,6 +3,8 @@
 ------
 
 - [问题排查](#问题排查)
+  - [2022/07/18](#20220718)
+    - [继续内存问题](#继续内存问题)
   - [2022/04/11](#20220411)
     - [安装gdb失败](#安装gdb失败)
   - [2022/01/52](#20220152)
@@ -23,6 +25,74 @@
 
 ------
 
+## 2022/07/18
+
+### 继续内存问题
+
+```
+gdb --pid 30019
+
+# 查看堆栈
+>>> t a a py-bt
+>>> t a a bt
+# 查看虚拟内存占用情况
+>>> i proc m
+```
+
+安装perf
+
+```
+apt-get install -y linux-source binutils-dev libdw-dev python-dev libnewt-dev
+cd /usr/src
+tar -xf linux-source-4.19.tar.xz
+cd linux-source-4.19/tools/perf
+make
+make install
+```
+
+修改docker
+``` sh
+# docker
+docker run --cap-add sys_admin
+```
+
+``` sh
+# docker-compose 添加配置
+    cap_add:
+      - sys_admin
+```
+
+```
+./perf probe -x /lib/x86_64-linux-gnu/libc-2.28.so --add malloc
+./perf record -e probe_libc:malloc -aR sleep 10
+```
+报错
+```
+Error:
+The sys_perf_event_open() syscall returned with 22 (Invalid argument) for event (probe_libc:malloc).
+/bin/dmesg | grep -i perf may provide additional information.
+```
+没找到解决方案
+
+
+```
+git clone https://github.com/brendangregg/FlameGraph.git
+```
+
+```
+./perf/perf record -p 34326 -e syscalls:sys_enter_brk -a -g -- sleep 1200
+./perf/perf record -p 34326 -e syscalls:sys_enter_mmap -a -g -- sleep 1200
+./perf/perf script -i perf.data &> perf.unfold
+./FlameGraph/stackcollapse-perf.pl perf.unfold &> perf.folded
+./FlameGraph/flamegraph.pl perf.folded > perf.svg
+
+rm -f perf.data perf.data.old perf.unfold perf.folded perf.svg
+```
+
+```
+./perf/perf record -e page-fault -a -g -- sleep 120
+```
+
 ## 2022/04/11
 
 ### 安装gdb失败
@@ -30,6 +100,8 @@
 清华源将[glibc]文件删除了, 已提issue
 
 - [https://github.com/tuna/issues/issues/725](https://github.com/tuna/issues/issues/725)
+
+已经可以了，先`apt-get update`
 
 先换源安装
 
@@ -72,7 +144,7 @@ docker run --cap-add sys_ptrace
 - 安装gdb
 ```
 apt-get install -y gdb
-apt-get install python3-dbg
+apt-get install -y python3-dbg
 
 gdb
 >>> source /usr/share/gdb/auto-load/usr/bin/python3.7-gdb.py
@@ -100,7 +172,8 @@ pip install guppy3
 >>> from guppy import hpy
 >>> h = hpy()
 >>> h.heap()
->>> heapy.setref()
+>>> h.setref()
+>>> h.heap().byid
 >>> h.heap().byid[0].sp
 >>> h.heap().get_rp(10)
 ```
@@ -134,8 +207,6 @@ gcore: failed to create core.98
 
 清除相关监听
 `ps -ef | grep gdb`
-
-
 
 ## 2020/10/28
 

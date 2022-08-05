@@ -44,6 +44,7 @@ uname -a               # 查看内核/操作系统/CPU信息
 head -n 1 /etc/issue   # 查看操作系统版本
 rpm -q centos-release  # Centos 版本
 rpm -q redhat-release  # Redhat 版本
+cat /proc/version      # Linux内核版本
 cat /proc/cpuinfo      # 查看CPU信息
 cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c
 cat /proc/cpuinfo | grep physical | uniq -c

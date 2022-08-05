@@ -10,6 +10,7 @@
             * [find](common/Linux/tool/find.md)
             * [kill](common/Linux/tool/kill.md)
             * [apt](common/Linux/tool/apt.md)
+            * [ps](common/Linux/tool/ps.md)
             * [yum](common/Linux/tool/yum.md)
             * [RPM](common/Linux/tool/rpm.md)
             * [ZSH](common/Linux/tool/zsh.md)
