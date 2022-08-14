@@ -3,6 +3,8 @@
 ------
 
 - [问题排查](#问题排查)
+  - [2022/08/08](#20220808)
+    - [磁盘不足](#磁盘不足)
   - [2022/07/18](#20220718)
     - [继续内存问题](#继续内存问题)
   - [2022/04/11](#20220411)
@@ -24,6 +26,34 @@
     - [.h5文件读写报错](#h5文件读写报错)
 
 ------
+
+## 2022/08/08
+
+### 磁盘不足
+
+20G磁盘用完了，看下情况
+
+清理日志差不多1G
+``` ssh
+journalctl --disk-usage
+
+journalctl --vacuum-time=1w
+journalctl --vacuum-size=10M
+```
+
+清理snap差不多4G
+
+docker磁盘7G
+
+清理不需要的资源差不多1G
+```
+docker system prune -a
+```
+剩下5G，但是看镜像只有600M，可能要研究下
+```
+# 看着实际占用的磁盘远比这个大
+docker system df -v
+```
 
 ## 2022/07/18
 
@@ -130,6 +160,7 @@ curl -voa '{img-url}' -H 'Origin:{host-url}'
 ### 尝试排查内存泄露问题
 
 - 修改docker配置
+
 ``` sh
 # docker
 docker run --cap-add sys_ptrace 
@@ -142,6 +173,7 @@ docker run --cap-add sys_ptrace
 ```
 
 - 安装gdb
+
 ```
 apt-get install -y gdb
 apt-get install -y python3-dbg
@@ -150,15 +182,19 @@ gdb
 >>> source /usr/share/gdb/auto-load/usr/bin/python3.7-gdb.py
 
 ```
+
 教程：[https://wiki.python.org/moin/DebuggingWithGdb](https://wiki.python.org/moin/DebuggingWithGdb)
 
 - 利用pyrasite访问进程
+
 1. 安装pyrasite
+
 ```
 pip install pyrasite
 pyrasite-shell [pid]
 ```
 #### timeout 问题
+
 修改`vim /usr/local/lib/python3.8/site-packages/pyrasite/ipc.py`
 
 ```
@@ -166,6 +202,7 @@ self.sock.settimeout(5) -> self.sock.settimeout(50)
 ```
 
 2. 安装guppy3
+
 ```
 pip install guppy3
 
@@ -179,12 +216,15 @@ pip install guppy3
 ```
 
 1. 检查垃圾数据
+
 ```
 >>> import gc
 >>> gc.collect()
 >>> gc.garbage
 ```
-4. 打印堆栈
+
+1. 打印堆栈
+
 ```
 # 需要gdb
 pip install pystack-debugger
@@ -196,6 +236,7 @@ pystack [pid]
 `gcore <pid>`
 
 生成失败了
+
 ```
 root@xm-biapi:/XM# gcore 98
 warning: process 98 is already traced by process 15209
@@ -206,6 +247,7 @@ gcore: failed to create core.98
 ```
 
 清除相关监听
+
 `ps -ef | grep gdb`
 
 ## 2020/10/28
@@ -213,6 +255,7 @@ gcore: failed to create core.98
 ### 延长ssh
 
 - 修改配置
+
 ``` sh
 #（每30秒往客户端发送会话请求，保持连接）
 ClientAliveInterval 30
@@ -221,11 +264,13 @@ ClientAliveCountMax 3
 ```
 
 - 重启
+
 ``` sh
 service sshd restart
 ```
 
 - 没有的话就重装
+
 ```
 yum -y install openssh-server openssh-clients
 ```
