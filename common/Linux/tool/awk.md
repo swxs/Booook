@@ -51,12 +51,12 @@ awk 'pattern {action}'
 
 ## 示例
 
-``` ssh
+``` sh
 # 条件聚合
 cat 1.csv | awk -F ',' '$1~/[ab]/ {g[$1]+=$2*$3} END {for(l in g) printf "%s = %d\n",l,g[l]}'
 ```
 
-``` ssh
+``` sh
 # ls
 awk 'BEGIN{while( "ls" | getline) print}'
 ```

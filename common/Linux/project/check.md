@@ -34,7 +34,7 @@
 20G磁盘用完了，看下情况
 
 清理日志差不多1G
-``` ssh
+``` sh
 journalctl --disk-usage
 
 journalctl --vacuum-time=1w

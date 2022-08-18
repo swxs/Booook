@@ -1,99 +1,104 @@
 {
-    "title": "技术笔记",
-    "description": "记录一些通识与思考",
-    "author": "swxs",
-    "output.name": "Booook",
-    "language": "zh-hans",
-    "gitbook": "3.2.2",
-    "root": ".",
-    "structure": {
-        "readme": "README.md"
-    },
-    "links": {
-        "sidebar": {
-            "github": "https://github.com/"
-        }
-    },
-    "plugins": [
-        "-lunr",
-        "-search",
-        "-highlight",
-        "-livereload",
-        "search-plus@^0.0.11",
-        "github@^2.0.0",
-        "github-buttons@2.1.0",
-        "edit-link@^2.0.2",
-        "prism@^2.1.0",
-        "prism-themes@^0.0.2",
-        "advanced-emoji@^0.2.1",
-        "anchors@^0.7.1",
-        "include-codeblock@^3.0.2",
-        "ace@^0.3.2",
-        "emphasize@^1.1.0",
-        "splitter@^0.0.8",
-        "tbfed-pagefooter@^0.0.1",
-        "expandable-chapters-small@^0.1.7",
-        "sectionx@^3.1.0",
-        "local-video@^1.0.1",
-        "anchor-navigation-ex@0.1.8",
-        "favicon@^0.0.2",
-        "mermaid",
-        "simple-mind-map",
-        "code"
-    ],
-    "pluginsConfig": {
-        "theme-default": {
-            "showLevel": true
-        },
-        "prism": {
-            "css": [
-                "prism-themes/themes/prism-base16-ateliersulphurpool.light.css"
-            ],
-            "ignore": ["yml", "text", "txt", "ps1", "bat"]
-        },
-        "github": {
-            "url": "https://github.com/swxs/Booook"
-        },
-        "github-buttons": {
-            "repo": "swxs/Booook",
-            "types": [
-                "star"
-            ],
-            "size": "small"
-        },
-        "include-codeblock": {
-            "template": "ace",
-            "unindent": true,
-            "edit": true
-        },
-        "simple-page-toc": {
-            "maxDepth": 3,
-            "skipFirstH1": true
-        },
-        "edit-link": {
-            "base": "https://github.com/swxs/Booook/edit/master",
-            "label": "编辑本页"
-        },
-        "anchor-navigation-ex": {
-            "isRewritePageTitle": false,
-            "tocLevel1Icon": "fa fa-hand-o-right",
-            "tocLevel2Icon": "fa fa-hand-o-right",
-            "tocLevel3Icon": "fa fa-hand-o-right"
-        },
-        "sectionx": {
-            "tag": "b"
-        },
-        "favicon": {
-            "shortcut": "favicon.ico",
-            "bookmark": "favicon.ico"
-        },
-        "pluginsConfig": {
-            "simple-mind-map": {
-                "type": "txtmap",
-                "preset": "colorful",
-                "linkShape": "diagonal",
-                "autoFit": true
-            }
-        }
+  "title": "技术笔记",
+  "description": "记录一些通识与思考",
+  "author": "swxs",
+  "output.name": "Booook",
+  "language": "zh-hans",
+  "gitbook": "3.2.2",
+  "root": ".",
+  "structure": {
+    "readme": "README.md"
+  },
+  "links": {
+    "sidebar": {
+      "github": "https://github.com/"
     }
+  },
+  "plugins": [
+    "-lunr",
+    "-search",
+    "-highlight",
+    "-livereload",
+    "search-plus@^0.0.11",
+    "github@^2.0.0",
+    "github-buttons@^3.0.0",
+    "edit-link@^2.0.2",
+    "prism@^2.4.0",
+    "prism-themes@^0.0.2",
+    "mermaid@^0.0.9",
+    "simple-mind-map@^0.2.4",
+    "advanced-emoji@^0.2.2",
+    "anchors@^0.7.1",
+    "anchor-navigation-ex@^1.0.14",
+    "include-codeblock@^3.0.2",
+    "ace@^0.3.2",
+    "emphasize@^1.1.0",
+    "splitter@^0.0.8",
+    "tbfed-pagefooter@^0.0.1",
+    "expandable-chapters-small@^0.1.7",
+    "sectionx@^3.1.0",
+    "local-video@^1.0.1",
+    "favicon@^0.0.2",
+    "code@^0.1.0"
+  ],
+  "pluginsConfig": {
+    "theme-default": {
+      "showLevel": true
+    },
+    "prism": {
+      "css": ["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"],
+      "ignore": [
+        "yml",
+        "text",
+        "txt",
+        "ps1",
+        "bat",
+        "mermaid",
+        "markdown",
+        "txtmap"
+      ]
+    },
+    "github": {
+      "url": "https://github.com/swxs/Booook"
+    },
+    "github-buttons": {
+      "repo": "swxs/Booook",
+      "types": ["star"],
+      "size": "small"
+    },
+    "include-codeblock": {
+      "template": "ace",
+      "unindent": true,
+      "edit": true
+    },
+    "simple-page-toc": {
+      "maxDepth": 3,
+      "skipFirstH1": true
+    },
+    "edit-link": {
+      "base": "https://github.com/swxs/Booook/edit/master",
+      "label": "编辑本页"
+    },
+    "anchor-navigation-ex": {
+      "isRewritePageTitle": false,
+      "tocLevel1Icon": "fa fa-hand-o-right",
+      "tocLevel2Icon": "fa fa-hand-o-right",
+      "tocLevel3Icon": "fa fa-hand-o-right"
+    },
+    "sectionx": {
+      "tag": "b"
+    },
+    "favicon": {
+      "shortcut": "favicon.ico",
+      "bookmark": "favicon.ico"
+    },
+    "pluginsConfig": {
+      "simple-mind-map": {
+        "type": "txtmap",
+        "preset": "colorful",
+        "linkShape": "diagonal",
+        "autoFit": true
+      }
+    }
+  }
 }

@@ -87,6 +87,7 @@
             * [8.0特性](common/MySQL/project/feature8.0.md)
     * [Clickhouse](common/Clickhouse/README.md)
         * [安装](common/Clickhouse/install.md)
+        * [实例](common/Clickhouse/example.md)
         * [专题](common/Clickhouse/project/README.md)
             * [version](common/Clickhouse/project/version.md)
             * [问题排查](common/Clickhouse/project/check.md)
