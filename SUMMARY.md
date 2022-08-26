@@ -144,6 +144,7 @@
         * [重构](common/Book/Refactoring-Improving-the-Design-of-Existing-Code.md)
         * [编译原理](common/Book/Compilers.md)
         * [七周七并发模型](common/Book/Seven-Concurrency-Models-in-Seven-Weeks.md)
+        * [Pro Git](common/Book/Pro-Git.md)
         * [影响力](common/Book/Influence-The-Psychology-of-Persuasion.md)
         * [卓有成效的管理者](common/Book/The-Effective-Executive.md)
         * [这就是OKR](common/Book/Measure-What-Matters.md)

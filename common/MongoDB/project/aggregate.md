@@ -247,7 +247,7 @@ db.getCollection('BI_COLUMN').aggregate([
 
 ## 统计数量分段
 
-``` text
+``` mongodb
 db.getCollection('BI_COLUMN').aggregate([
     {
         $match: {

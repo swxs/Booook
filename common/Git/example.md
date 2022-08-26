@@ -5,7 +5,7 @@
 - [实例](#实例)
   - [git pull](#git-pull)
   - [将【本地分支】与【远程分支】同步](#将本地分支与远程分支同步)
-- [删除git的追踪](#删除git的追踪)
+  - [删除git的追踪](#删除git的追踪)
   - [删除远程分支](#删除远程分支)
   - [同步远程分支列表](#同步远程分支列表)
   - [分支返回到未提交的状态](#分支返回到未提交的状态)
@@ -32,7 +32,7 @@ git pull <remote> <branch>
 git branch --set-upstream-to=origin/<branch> <local branch>
 ```
 
-# 删除git的追踪
+## 删除git的追踪
 
 ``` sh
 git rm --cache [file]
