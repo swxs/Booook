@@ -3,6 +3,8 @@
 ------
 
 - [问题排查](#问题排查)
+  - [2022/09/13](#20220913)
+    - [win32clipboard 引用失败](#win32clipboard-引用失败)
   - [2021/03/18](#20210318)
     - [pip 失败](#pip-失败)
     - [vcode无法运行powershell](#vcode无法运行powershell)
@@ -15,6 +17,23 @@
     - [windows Terminal 设置管理员权限](#windows-terminal-设置管理员权限)
 
 ------
+
+## 2022/09/13
+
+### win32clipboard 引用失败
+
+```
+Traceback (most recent call last):
+  File ".\mdt_gui.py", line 14, in <module>
+    import win32clipboard
+ImportError: DLL load failed while importing win32clipboard: 找不到指定的程序。
+```
+
+```
+# 添加引用规则，在win32clipboard之前需要引用pywintypes
+import pywintypes
+import win32clipboard
+```
 
 ## 2021/03/18
 

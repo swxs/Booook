@@ -4,7 +4,8 @@
 
 - [安装](#安装)
   - [docker](#docker)
-    - [如果发生异常](#如果发生异常)
+    - [max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]](#max-virtual-memory-areas-vmmax_map_count-65530-is-too-low-increase-to-at-least-262144)
+    - [Java heap space error or java.lang.OutOfMemoryError](#java-heap-space-error-or-javalangoutofmemoryerror)
 
 ------
 
@@ -47,8 +48,7 @@ volumes:
   postgresql_data:
 ```
 
-### 如果发生异常
-`max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]`
+### max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
 
 修改配置
 ```
@@ -61,3 +61,13 @@ vm.max_map_count=262144
 ```
 sysctl -w vm.max_map_count=262144
 ```
+
+### Java heap space error or java.lang.OutOfMemoryError
+
+Increase the memory via the SONAR_SCANNER_OPTS environment variable when running the scanner from a zip file:
+
+`export SONAR_SCANNER_OPTS="-Xmx512m"`
+
+In Windows environments, avoid the double-quotes, since they get misinterpreted and combine the two parameters into a single one.
+
+`set SONAR_SCANNER_OPTS=-Xmx512m`

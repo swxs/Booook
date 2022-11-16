@@ -25,3 +25,6 @@ Write-Ahead Logging - 预写日志系统
 
 ## VCSs
 版本控制系统
+
+## PVC
+Persistent Volume Claim - 持久化卷声明
