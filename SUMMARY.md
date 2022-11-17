@@ -106,6 +106,7 @@
         * [专题](common/Git/project/README.md)
             * [子模块](common/Git/project/submode.md)
             * [凭证存储](common/Git/project/credential.md)
+            * [GitHub](common/Git/project/github.md)
     * [gitbook](common/gitbook/README.md)
         * [安装](common/gitbook/install.md)
         * [专题](common/gitbook/project/README.md)
