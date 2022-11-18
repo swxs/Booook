@@ -2,16 +2,16 @@ name: auto-generate-gitbook
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout main
+      - name: checkout master
         uses: actions/checkout@v2
         with:
-          ref: main
+          ref: master
 
       - name: install nodejs
         uses: actions/setup-node@v1
@@ -39,8 +39,8 @@ jobs:
           git remote add origin https://${REF}
           git add . 
           git commit -m "Updated By Github Actions With Build ${{github.run_number}} of ${{github.workflow}} For Github Pages"
-          git branch -M main
-          git push --force --quiet "https://${TOKEN}@${REF}" main:gh-pages
+          git branch -M master
+          git push --force --quiet "https://${TOKEN}@${REF}" master:gh-pages
 
       - name: build and push docker image to docker.io
         env:
