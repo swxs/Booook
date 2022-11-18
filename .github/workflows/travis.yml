@@ -53,3 +53,8 @@ jobs:
         run: |
           docker build -t ${{ secrets.DOCKER_REGISTRY }}/swxs/booook .
           docker push ${{ secrets.DOCKER_REGISTRY }}/swxs/booook
+
+      - name: deploy webhook
+        uses: joelwmale/webhook-action@master
+        with:
+          url: ${{ secrets.WEBHOOK_URL }}
