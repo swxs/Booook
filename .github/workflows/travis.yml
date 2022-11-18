@@ -43,18 +43,13 @@ jobs:
           git push --force --quiet "https://${TOKEN}@${REF}" master:gh-pages
 
       - name: login aliyuncs
-        env:
-          DOCKER_USERNAME: 466565029@qq.com
-          DOCKER_REGISTRY: registry.cn-shanghai.aliyuncs.com
         uses: docker/login-action@v2
         with:
-          registry: ${DOCKER_REGISTRY}
-          username: ${DOCKER_USERNAME}
+          registry: ${{ secrets.DOCKER_REGISTRY }}
+          username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: build and push docker image to aliyuncs
-        env:
-          DOCKER_REGISTRY: registry.cn-shanghai.aliyuncs.com
         run: |
-          docker build -t ${DOCKER_REGISTRY}/swxs/booook .
-          docker push ${DOCKER_REGISTRY}/swxs/booook
+          docker build -t ${{ secrets.DOCKER_REGISTRY }}/swxs/booook .
+          docker push ${{ secrets.DOCKER_REGISTRY }}/swxs/booook
