@@ -44,12 +44,12 @@ jobs:
 
       - name: login aliyuncs
         env:
-          DOCKER_USERNAME: 4665*****@qq.com
+          DOCKER_USERNAME: 466565029@qq.com
           DOCKER_REGISTRY: registry.cn-shanghai.aliyuncs.com
         uses: docker/login-action@v2
         with:
-          registry: ${ DOCKER_REGISTRY }
-          username: ${ DOCKER_USERNAME }
+          registry: ${DOCKER_REGISTRY}
+          username: ${DOCKER_USERNAME}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: build and push docker image to aliyuncs
