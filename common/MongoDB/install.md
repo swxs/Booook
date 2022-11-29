@@ -3,23 +3,39 @@
 ------
 
 - [安装](#安装)
-  - [安装](#安装-1)
-    - [windows](#windows)
-      - [配置启动任务](#配置启动任务)
+  - [docker](#docker)
+  - [window](#window)
     - [下载安装](#下载安装)
+    - [配置启动任务](#配置启动任务)
+  - [linux](#linux)
+    - [下载安装](#下载安装-1)
     - [yum安装](#yum安装)
       - [3.6](#36)
       - [4.0](#40)
     - [配置](#配置)
-      - [运行](#运行)
+    - [运行](#运行)
 
 ------
 
-## 安装
+## docker
 
-### windows
+[https://hub.docker.com/_/mongo/](https://hub.docker.com/_/mongo/)
 
-#### 配置启动任务
+`docker pull mongo`
+
+``` sh
+docker volume create --name mongodb
+docker volume create --name mongoconfigdb
+docker run --name mongod -v mongodb:/data/db -v mongoconfigdb:/data/configdb -p 27017:27017 -d mongo
+```
+
+## window
+
+### 下载安装
+
+[https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community)
+
+### 配置启动任务
 
 ``` sh
 .\mongod.exe --config .\mongod.conf --directoryperdb --serviceName Mongodb --install
@@ -39,6 +55,8 @@ port=27017
 ```
 
 如果碰到`错误100`, 尝试删除`db`文件夹下的`mongod.lock`与`storage.bson`
+
+## linux
 
 ### 下载安装
 
@@ -152,7 +170,7 @@ net:
 
 ```
 
-#### 运行
+### 运行
 
 环境:DB1:192.168.200.201
 
