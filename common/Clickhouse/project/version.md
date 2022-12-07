@@ -11,104 +11,87 @@
     - [ClickHouse Release 1.1.54304, 2017-10-19](#clickhouse-release-1154304-2017-10-19)
     - [ClickHouse Release 1.1.54310, 2017-11-01](#clickhouse-release-1154310-2017-11-01)
     - [ClickHouse Release 1.1.54337, 2018-01-18](#clickhouse-release-1154337-2018-01-18)
+    - [ClickHouse Release 1.1.54362, 2018-03-11](#clickhouse-release-1154362-2018-03-11)
     - [ClickHouse Release 1.1.54370, 2018-03-16](#clickhouse-release-1154370-2018-03-16)
     - [ClickHouse Release 1.1.54378, 2018-04-16](#clickhouse-release-1154378-2018-04-16)
     - [ClickHouse Release 1.1.54380, 2018-04-21](#clickhouse-release-1154380-2018-04-21)
     - [ClickHouse Release 1.1.54388, 2018-06-28¶](#clickhouse-release-1154388-2018-06-28)
     - [ClickHouse Release 1.1.54390, 2018-07-06¶](#clickhouse-release-1154390-2018-07-06)
-  - [ClickHouse Release 18.1](#clickhouse-release-181)
+  - [ClickHouse Release 18.\*](#clickhouse-release-18)
     - [ClickHouse Release 18.1.0, 2018-07-23](#clickhouse-release-1810-2018-07-23)
-  - [ClickHouse Release 18.4](#clickhouse-release-184)
     - [ClickHouse Release 18.4.0, 2018-07-28](#clickhouse-release-1840-2018-07-28)
-  - [ClickHouse Release 18.5](#clickhouse-release-185)
     - [ClickHouse Release 18.5.1, 2018-07-31](#clickhouse-release-1851-2018-07-31)
-  - [ClickHouse Release 18.6](#clickhouse-release-186)
     - [ClickHouse Release 18.6.0, 2018-08-02](#clickhouse-release-1860-2018-08-02)
-  - [ClickHouse Release 18.10](#clickhouse-release-1810)
     - [ClickHouse Release 18.10.3, 2018-08-13](#clickhouse-release-18103-2018-08-13)
-  - [ClickHouse Release 18.12](#clickhouse-release-1812)
     - [ClickHouse Release 18.12.13, 2018-09-10](#clickhouse-release-181213-2018-09-10)
     - [ClickHouse Release 18.12.14, 2018-09-13](#clickhouse-release-181214-2018-09-13)
     - [ClickHouse Release 18.12.17, 2018-09-16](#clickhouse-release-181217-2018-09-16)
-  - [ClickHouse Release 18.14](#clickhouse-release-1814)
     - [ClickHouse Release 18.14.9, 2018-10-16](#clickhouse-release-18149-2018-10-16)
-  - [ClickHouse Release 18.16](#clickhouse-release-1816)
     - [ClickHouse Release 18.16.0, 2018-12-14¶](#clickhouse-release-18160-2018-12-14)
-  - [ClickHouse Release 19.1](#clickhouse-release-191)
+  - [ClickHouse Release 19.\*](#clickhouse-release-19)
     - [ClickHouse Release 19.1.6, 2019-01-24¶](#clickhouse-release-1916-2019-01-24)
-  - [ClickHouse Release 19.3](#clickhouse-release-193)
     - [ClickHouse Release 19.3.3, 2019-02-13](#clickhouse-release-1933-2019-02-13)
-  - [ClickHouse Release 19.4](#clickhouse-release-194)
     - [ClickHouse Release 19.4.0.49, 2019-03-09](#clickhouse-release-194049-2019-03-09)
-  - [ClickHouse Release 19.5](#clickhouse-release-195)
     - [ClickHouse Release 19.5.2.6, 2019-04-15](#clickhouse-release-19526-2019-04-15)
-  - [ClickHouse Release 19.6](#clickhouse-release-196)
     - [ClickHouse Release 19.6.2.11, 2019-05-13](#clickhouse-release-196211-2019-05-13)
-  - [ClickHouse Release 19.7](#clickhouse-release-197)
     - [ClickHouse Release 19.7.3.9, 2019-05-30](#clickhouse-release-19739-2019-05-30)
     - [ClickHouse Release 19.7.5.27, 2019-06-09¶](#clickhouse-release-197527-2019-06-09)
-  - [ClickHouse Release 19.8](#clickhouse-release-198)
     - [ClickHouse Release 19.8.3.8, 2019-06-11](#clickhouse-release-19838-2019-06-11)
-  - [ClickHouse Release 19.9](#clickhouse-release-199)
     - [ClickHouse Release 19.9.2.4, 2019-06-24¶](#clickhouse-release-19924-2019-06-24)
-  - [ClickHouse Release 19.10](#clickhouse-release-1910)
     - [ClickHouse Release 19.10.1.5, 2019-07-12](#clickhouse-release-191015-2019-07-12)
-  - [ClickHouse Release 19.11](#clickhouse-release-1911)
     - [ClickHouse Release 19.11.3.11, 2019-07-18](#clickhouse-release-1911311-2019-07-18)
-  - [ClickHouse Release 19.13](#clickhouse-release-1913)
     - [ClickHouse Release 19.13.2.19, 2019-08-14](#clickhouse-release-1913219-2019-08-14)
-  - [ClickHouse Release 19.14](#clickhouse-release-1914)
     - [ClickHouse Release 19.14.3.3, 2019-09-10](#clickhouse-release-191433-2019-09-10)
-  - [ClickHouse Release 19.15](#clickhouse-release-1915)
     - [ClickHouse Release 19.15.2.2, 2019-10-01](#clickhouse-release-191522-2019-10-01)
-  - [ClickHouse Release 19.16](#clickhouse-release-1916)
     - [ClickHouse Release 19.16.2.2, 2019-10-30](#clickhouse-release-191622-2019-10-30)
-  - [ClickHouse Release 19.17](#clickhouse-release-1917)
     - [ClickHouse Release 19.17.4.11, 2019-11-22¶](#clickhouse-release-1917411-2019-11-22)
-  - [ClickHouse release v20.1](#clickhouse-release-v201)
+  - [ClickHouse Release 20.\*](#clickhouse-release-20)
     - [ClickHouse release v20.1.2.4, 2020-01-22¶](#clickhouse-release-v20124-2020-01-22)
     - [ClickHouse release v20.1.6.30, 2020-03-05](#clickhouse-release-v201630-2020-03-05)
-  - [ClickHouse release v20.3](#clickhouse-release-v203)
     - [ClickHouse release v20.3.2.1, 2020-03-12](#clickhouse-release-v20321-2020-03-12)
     - [ClickHouse release v20.3.6.40, 2020-04-16](#clickhouse-release-v203640-2020-04-16)
     - [ClickHouse release v20.3.11.97-lts 2020-06-10](#clickhouse-release-v2031197-lts-2020-06-10)
-  - [ClickHouse release v20.4](#clickhouse-release-v204)
     - [ClickHouse release v20.4.2.9, 2020-05-12](#clickhouse-release-v20429-2020-05-12)
-  - [ClickHouse release 20.5](#clickhouse-release-205)
     - [ClickHouse release v20.5.2.7-stable 2020-07-02](#clickhouse-release-v20527-stable-2020-07-02)
-  - [ClickHouse release 20.6](#clickhouse-release-206)
     - [ClickHouse release v20.6.3.28-stable](#clickhouse-release-v206328-stable)
-  - [ClickHouse release 20.7](#clickhouse-release-207)
     - [ClickHouse release v20.7.2.30-stable, 2020-08-31](#clickhouse-release-v207230-stable-2020-08-31)
-  - [ClickHouse release 20.8](#clickhouse-release-208)
     - [ClickHouse release v20.8.2.3-stable, 2020-09-08](#clickhouse-release-v20823-stable-2020-09-08)
-  - [ClickHouse release 20.9](#clickhouse-release-209)
     - [ClickHouse release v20.9.2.20, 2020-09-22](#clickhouse-release-v209220-2020-09-22)
-  - [ClickHouse release 20.10](#clickhouse-release-2010)
     - [ClickHouse release v20.10.3.30, 2020-10-28](#clickhouse-release-v2010330-2020-10-28)
-  - [ClickHouse release 20.11](#clickhouse-release-2011)
     - [ClickHouse release v20.11.2.1, 2020-11-11](#clickhouse-release-v201121-2020-11-11)
-  - [ClickHouse release 20.12](#clickhouse-release-2012)
     - [ClickHouse release v20.12.3.3-stable, 2020-12-13](#clickhouse-release-v201233-stable-2020-12-13)
-  - [ClickHouse release 21.1](#clickhouse-release-211)
+  - [ClickHouse release 21.\*](#clickhouse-release-21)
     - [ClickHouse release v21.1.2.15-stable 2021-01-18](#clickhouse-release-v211215-stable-2021-01-18)
-  - [ClickHouse release 21.2](#clickhouse-release-212)
     - [ClickHouse release v21.2.2.8-stable, 2021-02-07](#clickhouse-release-v21228-stable-2021-02-07)
-  - [ClickHouse release 21.3 (LTS)](#clickhouse-release-213-lts)
-    - [ClickHouse release v21.3, 2021-03-12](#clickhouse-release-v213-2021-03-12)
-  - [ClickHouse release 21.4](#clickhouse-release-214)
+    - [ClickHouse release v21.3-lts, 2021-03-12](#clickhouse-release-v213-lts-2021-03-12)
     - [ClickHouse release 21.4.1 2021-04-12](#clickhouse-release-2141-2021-04-12)
-  - [ClickHouse release 21.5](#clickhouse-release-215)
     - [ClickHouse release 21.5, 2021-05-20](#clickhouse-release-215-2021-05-20)
-  - [ClickHouse release 21.6](#clickhouse-release-216)
     - [ClickHouse release 21.6, 2021-06-05](#clickhouse-release-216-2021-06-05)
+    - [ClickHouse release v21.7, 2021-07-09](#clickhouse-release-v217-2021-07-09)
+    - [ClickHouse release v21.8, 2021-08-12](#clickhouse-release-v218-2021-08-12)
+    - [ClickHouse release v21.9, 2021-09-09](#clickhouse-release-v219-2021-09-09)
+    - [ClickHouse release v21.10, 2021-10-16](#clickhouse-release-v2110-2021-10-16)
+    - [ClickHouse release v21.11, 2021-11-09](#clickhouse-release-v2111-2021-11-09)
+    - [ClickHouse release v21.12, 2021-12-15](#clickhouse-release-v2112-2021-12-15)
+  - [ClickHouse Release 22.\*](#clickhouse-release-22)
+    - [ClickHouse release v22.1, 2022-01-18](#clickhouse-release-v221-2022-01-18)
+    - [ClickHouse release v22.2, 2022-02-17](#clickhouse-release-v222-2022-02-17)
+    - [ClickHouse release v22.3-lts, 2022-03-17](#clickhouse-release-v223-lts-2022-03-17)
+    - [ClickHouse release 22.4, 2022-04-19](#clickhouse-release-224-2022-04-19)
+    - [ClickHouse release 22.5, 2022-05-19](#clickhouse-release-225-2022-05-19)
+    - [ClickHouse release 22.6, 2022-06-16](#clickhouse-release-226-2022-06-16)
+    - [ClickHouse release 22.7, 2022-07-21](#clickhouse-release-227-2022-07-21)
+    - [ClickHouse release 22.8, 2022-08-18](#clickhouse-release-228-2022-08-18)
+    - [ClickHouse release 22.9, 2022-09-22](#clickhouse-release-229-2022-09-22)
+    - [ClickHouse release 22.10, 2022-10-25](#clickhouse-release-2210-2022-10-25)
+    - [ClickHouse release 22.11, 2022-11-17](#clickhouse-release-2211-2022-11-17)
 
 ------
 
 ## ClickHouse Release 1.1
 ### ClickHouse Release 1.1.54245, 2017-07-04
 
-- Distributed DDL (for example, CREATE TABLE ON CLUSTER)
+- *Distributed DDL (for example, CREATE TABLE ON CLUSTER)*
 - The replicated query ALTER TABLE CLEAR COLUMN IN PARTITION.
 - The engine for Dictionary tables (access to dictionary data in the form of a table).
 - Dictionary database engine (this type of database automatically has Dictionary tables available for all the connected external dictionaries).
@@ -116,10 +99,12 @@
 - Qualified column names
 - Quoting identifiers using double quotation marks.
 - Sessions in the HTTP interface.
-- The OPTIMIZE query for a Replicated table can can run not only on the leader.
+- *The OPTIMIZE query for a Replicated table can can run not only on the leader.*
+- **Removed SET GLOBAL.**
+
 
 ### ClickHouse Release 1.1.54276, 2017-08-16 
-- Added an optional WITH section for a SELECT query. Example query: WITH 1+1 AS a SELECT a, a*a
+- *Added an optional WITH section for a SELECT query. Example query: `WITH 1+1 AS a SELECT a, a*a`*
 - INSERT can be performed synchronously in a Distributed table: OK is returned only after all the data is saved on all the shards. This is activated by the setting insert_distributed_sync=1.
 - Added the UUID data type for working with 16-byte identifiers.
 - Added aliases of CHAR, FLOAT and other types for compatibility with the Tableau.
@@ -127,10 +112,12 @@
 - You can use IP addresses (together with the hostname) to identify servers for clustered DDL queries.
 - Added support for non-constant arguments and negative offsets in the function substring(str, pos, len).
 - Added the max_size parameter for the groupArray(max_size)(column) aggregate function, and optimized its performance.
+- **Changed the binary format of aggregate states of groupArray(array_column) functions for arrays.**
+
 
 ### ClickHouse Release 1.1.54289, 2017-09-13 
 - SYSTEM queries for server administration: SYSTEM RELOAD DICTIONARY, SYSTEM RELOAD DICTIONARIES, SYSTEM DROP DNS CACHE, SYSTEM SHUTDOWN, SYSTEM KILL.
-- Added functions for working with arrays: concat, arraySlice, arrayPushBack, arrayPushFront, arrayPopBack, arrayPopFront.
+- *Added functions for working with arrays: concat, arraySlice, arrayPushBack, arrayPushFront, arrayPopBack, arrayPopFront.*
 - Added root and identity parameters for the ZooKeeper configuration. This allows you to isolate individual users on the same ZooKeeper cluster.
 - Added aggregate functions groupBitAnd, groupBitOr, and groupBitXor (for compatibility, they are also available under the names BIT_AND, BIT_OR, and BIT_XOR).
 - External dictionaries can be loaded from MySQL by specifying a socket in the filesystem.
@@ -154,13 +141,13 @@
 - TLS support in the native protocol (to enable, set tcp_ssl_port in config.xml ).
 
 ### ClickHouse Release 1.1.54310, 2017-11-01
-- Custom partitioning key for the MergeTree family of table engines.
+- *Custom partitioning key for the MergeTree family of table engines.*
 - Kafka table engine.
 - Added support for loading CatBoost models and applying them to data stored in ClickHouse.
-- Added support for time zones with non-integer offsets from UTC.
+- *Added support for time zones with non-integer offsets from UTC.*
 - Added support for arithmetic operations with time intervals.
 - The range of values for the Date and DateTime types is extended to the year 2105.
-- Added the CREATE MATERIALIZED VIEW x TO y query (specifies an existing table for storing the data of a materialized view).
+- *Added the CREATE MATERIALIZED VIEW x TO y query (specifies an existing table for storing the data of a materialized view).*
 - Added the ATTACH TABLE query without arguments.
 - The processing logic for Nested columns with names ending in -Map in a SummingMergeTree table was extracted to the sumMap aggregate function. You can now specify such columns explicitly.
 - Max size of the IP trie dictionary is increased to 128M entries.
@@ -168,6 +155,9 @@
 - Added the sumWithOverflow aggregate function.
 - Added support for the Cap’n Proto input format.
 - You can now customize compression level when using the zstd algorithm.
+- **Creation of temporary tables with an engine other than Memory is not allowed.**
+- **Explicit creation of tables with the View or MaterializedView engine is not allowed.**
+- **During table creation, a new check verifies that the sampling key expression is included in the primary key.**
 
 ### ClickHouse Release 1.1.54337, 2018-01-18
 - Added support for storage of multi-dimensional arrays and tuples (Tuple data type) in tables.
@@ -191,20 +181,28 @@
 - Added support for using multiple consumers with the Kafka engine. Extended configuration options for Kafka (Marek Vavruša).
 - Added the intExp3 and intExp4 functions.
 - Added the sumKahan aggregate function.
-- Added the to * Number* OrNull functions, where * Number* is a numeric type.
+- Added the `to * Number* OrNull` functions, where `* Number*` is a numeric type.
 - Added support for WITH clauses for an INSERT SELECT query (author: zhang2014).
 - Added settings: http_connection_timeout, http_send_timeout, http_receive_timeout. In particular, these settings are used for downloading data parts for replication. Changing these settings allows for faster failover if the network is overloaded.
 - Added support for ALTER for tables of type Null (Anastasiya Tsarkova).
 - The reinterpretAsString function is extended for all data types that are stored contiguously in memory.
 - Added the --silent option for the clickhouse-local tool. It suppresses printing query execution info in stderr.
 - Added support for reading values of type Date from text in a format where the month and/or day of the month is specified using a single digit instead of two digits (Amos Bird).
+- **The format for marks in Log type tables that contain Nullable columns was changed in a backward incompatible way. If you have these tables, you should convert them to the TinyLog type before starting up the new server version. To do this, replace ENGINE = Log with ENGINE = TinyLog in the corresponding .sql file in the metadata directory. If your table does not have Nullable columns or if the type of your table is not Log, then you do not need to do anything.**
+- **Removed the experimental_allow_extended_storage_definition_syntax setting. Now this feature is enabled by default.**
+- **The runningIncome function was renamed to runningDifferenceStartingWithFirstvalue to avoid confusion.**
+- **Removed the FROM ARRAY JOIN arr syntax when ARRAY JOIN is specified directly after FROM with no table (Amos Bird).**
+- **Removed the BlockTabSeparated format that was used solely for demonstration purposes.**
+- **Changed the state format for aggregate functions varSamp, varPop, stddevSamp, stddevPop, covarSamp, covarPop, corr. If you have stored states of these aggregate functions in tables (using the AggregateFunction data type or materialized views with corresponding states), please write to feedback@clickhouse.com.**
+- **In previous server versions there was an undocumented feature: if an aggregate function depends on parameters, you can still specify it without parameters in the AggregateFunction data type. Example: AggregateFunction(quantiles, UInt64) instead of AggregateFunction(quantiles(0.5, 0.9), UInt64). This feature was lost. Although it was undocumented, we plan to support it again in future releases.**
+- **Enum data types cannot be used in min/max aggregate functions. This ability will be returned in the next release.**
 
-ClickHouse Release 1.1.54362, 2018-03-11 
-- Aggregation without GROUP BY for an empty set (such as SELECT count(*) FROM table WHERE 0) now returns a result with one row with null values for aggregate functions, in compliance with the SQL standard. To restore the old behavior (return an empty result), set empty_result_for_aggregation_by_empty_set to 1.
-- Added type conversion for UNION ALL. Different alias names are allowed in SELECT positions in UNION ALL, in compliance with the SQL standard.
+### ClickHouse Release 1.1.54362, 2018-03-11
+- Aggregation without GROUP BY for an empty set (such as `SELECT count(*) FROM table WHERE 0`) now returns a result with one row with null values for aggregate functions, in compliance with the SQL standard. To restore the old behavior (return an empty result), set empty_result_for_aggregation_by_empty_set to 1.
+- *Added type conversion for UNION ALL. Different alias names are allowed in SELECT positions in UNION ALL, in compliance with the SQL standard.*
 - Arbitrary expressions are supported in LIMIT BY clauses. Previously, it was only possible to use columns resulting from SELECT.
 - An index of MergeTree tables is used when IN is applied to a tuple of expressions from the columns of the primary key. Example: WHERE (UserID, EventDate) IN ((123, '2000-01-01'), ...) (Anastasiya Tsarkova).
-- Added the clickhouse-copier tool for copying between clusters and resharding data (beta).
+- *Added the clickhouse-copier tool for copying between clusters and resharding data (beta).*
 - Added consistent hashing functions: yandexConsistentHash, jumpConsistentHash, sumburConsistentHash. They can be used as a sharding key in order to reduce the amount of network traffic during subsequent reshardings.
 - Added functions: arrayAny, arrayAll, hasAny, hasAll, arrayIntersect, arrayResize.
 - Added the arrayCumSum function (Javi Santana).
@@ -256,11 +254,11 @@ ClickHouse Release 1.1.54362, 2018-03-11
 
 
 ### ClickHouse Release 1.1.54380, 2018-04-21
-- Added the table function file(path, format, structure). An example reading bytes from /dev/urandom: ln -s /dev/urandom /var/lib/clickhouse/user_files/random``clickhouse-client -q "SELECT * FROM file('random', 'RowBinary', 'd UInt8') LIMIT 10".
+- Added the table function file(path, format, structure). An example reading bytes from /dev/urandom: ln -s /dev/urandom /var/lib/clickhouse/user_files/random`clickhouse-client -q "SELECT * FROM file('random', 'RowBinary', 'd UInt8') LIMIT 10"`.
 
 ### ClickHouse Release 1.1.54388, 2018-06-28¶
 - Support for the ALTER TABLE t DELETE WHERE query for replicated tables. Added the system.mutations table to track progress of this type of queries.
-- Support for the ALTER TABLE t [REPLACE|ATTACH] PARTITION query for *MergeTree tables.
+- Support for the ALTER TABLE t [REPLACE|ATTACH] PARTITION query for `*MergeTree` tables.
 - Support for the TRUNCATE TABLE query (Winter Zhang)
 - Several new SYSTEM queries for replicated tables (RESTART REPLICAS, SYNC REPLICA, [STOP|START] [MERGES|FETCHES|SENDS REPLICATED|REPLICATION QUEUES]).
 - Added the ability to write to a table with the MySQL engine and the corresponding table function (sundy-li).
@@ -281,17 +279,16 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Now OPTIMIZE TABLE ... FINAL can be used without specifying the partition for non-replicated variants of MergeTree (Amos Bird).
 
 
-## ClickHouse Release 18.1 
+## ClickHouse Release 18.*
 ### ClickHouse Release 18.1.0, 2018-07-23 
 - Support for the ALTER TABLE t DELETE WHERE query for non-replicated MergeTree tables (#2634).
-- Support for arbitrary types for the uniq* family of aggregate functions (#2010).
+- Support for arbitrary types for the `uniq*` family of aggregate functions (#2010).
 - Support for arbitrary types in comparison operators (#2026).
 - The users.xml file allows setting a subnet mask in the format 10.0.0.1/255.255.255.0. This is necessary for using masks for IPv6 networks with zeros in the middle (#2637).
 - Added the arrayDistinct function (#2670).
 - The SummingMergeTree engine can now work with AggregateFunction type columns (Constantin S. Pan).
 
 
-## ClickHouse Release 18.4
 ### ClickHouse Release 18.4.0, 2018-07-28
 - Added system tables: formats, data_type_families, aggregate_function_combinators, table_functions, table_engines, collations #2721.
 - Added the ability to use a table function instead of a table as an argument of a remote or cluster table function #2708.
@@ -300,12 +297,10 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Support for adding arbitrary message separators when reading from Kafka Amos Bird.
 
 
-## ClickHouse Release 18.5
 ### ClickHouse Release 18.5.1, 2018-07-31 
 - Added the hash function murmurHash2_32 #2756.
 
 
-## ClickHouse Release 18.6
 ### ClickHouse Release 18.6.0, 2018-08-02 
 - Added support for ON expressions for the JOIN ON syntax:
 - JOIN ON Expr([table.]column ...) = Expr([table.]column, ...) [AND Expr([table.]column, ...) = Expr([table.]column, ...) ...]
@@ -313,7 +308,6 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - HTTPS can be enabled for replication. #2760
 
 
-## ClickHouse Release 18.10
 ### ClickHouse Release 18.10.3, 2018-08-13 
 - HTTPS can be used for replication. #2760
 - Added the functions murmurHash2_64, murmurHash3_32, murmurHash3_64, and murmurHash3_128 in addition to the existing murmurHash2_32. #2791
@@ -321,7 +315,6 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Support for UUID in the key columns.
 
 
-## ClickHouse Release 18.12 
 ### ClickHouse Release 18.12.13, 2018-09-10 
 - Added the DECIMAL(digits, scale) data type (Decimal32(scale), Decimal64(scale), Decimal128(scale)). To enable it, use the setting allow_experimental_decimal_type. #2846 #2970 #3008 #3047
 - New WITH ROLLUP modifier for GROUP BY (alternative syntax: GROUP BY ROLLUP(...)). #2948
@@ -356,13 +349,12 @@ ClickHouse Release 1.1.54362, 2018-03-11
 
 ### ClickHouse Release 18.12.17, 2018-09-16 
 - invalidate_query (the ability to specify a query to check whether an external dictionary needs to be updated) is implemented for the clickhouse source. #3126
-- Added the ability to use UInt*, Int*, and DateTime data types (along with the Date type) as a range_hashed external dictionary key that defines the boundaries of ranges. Now NULL can be used to designate an open range. Vasily Nemkov
-- The Decimal type now supports var* and stddev* aggregate functions. #3129
+- Added the ability to use `UInt*`, `Int*`, and DateTime data types (along with the Date type) as a range_hashed external dictionary key that defines the boundaries of ranges. Now NULL can be used to designate an open range. Vasily Nemkov
+- The Decimal type now supports `var*` and `stddev*` aggregate functions. #3129
 - The Decimal type now supports mathematical functions (exp, sin and so on.) #3129
 - The system.part_log table now has the partition_id column. #3089
 
 
-## ClickHouse Release 18.14
 ### ClickHouse Release 18.14.9, 2018-10-16
 - The WITH CUBE modifier for GROUP BY (the alternative syntax GROUP BY CUBE(...) is also available). #3172
 - Added the formatDateTime function. Alexandr Krasheninnikov
@@ -375,7 +367,7 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Now you can use pre-defined database and table macros when declaring Replicated tables. #3251
 - Added the ability to read Decimal type values in engineering notation (indicating powers of ten). #3153
 
-## ClickHouse Release 18.16
+
 ### ClickHouse Release 18.16.0, 2018-12-14¶
 - DEFAULT expressions are evaluated for missing fields when loading data in semi-structured input formats (JSONEachRow, TSKV). The feature is enabled with the insert_sample_with_metadata setting. #3555
 - The ALTER TABLE query now has the MODIFY ORDER BY action for changing the sorting key when adding or removing a table column. This is useful for tables in the MergeTree family that perform additional tasks when merging based on this sorting key, such as SummingMergeTree, AggregatingMergeTree, and so on. #3581 #3755
@@ -395,8 +387,7 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Added the min_time and max_time columns to the system.parts table. These columns are populated when the partitioning key is an expression consisting of DateTime columns. Emmanuel Donin de Rosière
 
 
-
-## ClickHouse Release 19.1
+## ClickHouse Release 19.*
 ### ClickHouse Release 19.1.6, 2019-01-24¶
 - Custom per column compression codecs for tables. #3899 #4111 (alesapin, Winter Zhang, Anatoly)
 - Added compression codec Delta. #4052 (alesapin)
@@ -413,7 +404,7 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Added hashing functions javaHash, hiveHash. #3811 (shangshujie365)
 - Added table function remoteSecure. Function works as remote, but uses secure connection. #4088 (proller)
 
-## ClickHouse Release 19.3
+
 ### ClickHouse Release 19.3.3, 2019-02-13 
 - Added the KILL MUTATION statement that allows removing mutations that are for some reasons stuck. Added latest_failed_part, latest_fail_time, latest_fail_reason fields to the system.mutations table for easier troubleshooting. #4287 (Alex Zatelepin)
 - Added aggregate function entropy which computes Shannon entropy. #4238 (Quid37)
@@ -427,14 +418,14 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - StorageJoin now supports join_any_take_last_row setting that allows overwriting existing values of the same key. #3973 (Amos Bird
 - Added function toStartOfInterval. #4304 (Vitaly Baranov)
 - Added RowBinaryWithNamesAndTypes format. #4200 (Oleg V. Kozlyuk)
-- Added IPv4 and IPv6 data types. More effective implementations of IPv* functions. #3669 (Vasily Nemkov)
+- Added IPv4 and IPv6 data types. More effective implementations of `IPv*` functions. #3669 (Vasily Nemkov)
 - Added function toStartOfTenMinutes(). #4298 (Vitaly Baranov)
 - Added Protobuf output format. #4005 #4158 (Vitaly Baranov)
 - Added brotli support for HTTP interface for data import (INSERTs). #4235 (Mikhail)
 - Added hints while user make typo in function name or type in command line client. #4239 (Danila Kutenin)
 - Added Query-Id to Server’s HTTP Response header. #4231 (Mikhail)
 
-## ClickHouse Release 19.4
+
 ### ClickHouse Release 19.4.0.49, 2019-03-09 
 - Added full support for Protobuf format (input and output, nested data structures). #4174 #4493 (Vitaly Baranov)
 - Added bitmap functions with Roaring Bitmaps. #4207 (Andy Yang) #4568 (Vitaly Baranov)
@@ -446,7 +437,7 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Added functions arrayEnumerateDenseRanked and arrayEnumerateUniqRanked (it’s like arrayEnumerateUniq but allows to fine tune array depth to look inside multidimensional arrays). #4475 (proller) #4601 (alexey-milovidov)
 - Multiple JOINS with some restrictions: no asterisks, no complex aliases in ON/WHERE/GROUP BY/… #4462 (Artem Zuikov)
 
-## ClickHouse Release 19.5
+
 ### ClickHouse Release 19.5.2.6, 2019-04-15 
 - Hyperscan multiple regular expression matching was added (functions multiMatchAny, multiMatchAnyIndex, multiFuzzyMatchAny, multiFuzzyMatchAnyIndex). #4780, #4841 (Danila Kutenin)
 - multiSearchFirstPosition function was added. #4780 (Danila Kutenin)
@@ -455,14 +446,14 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Added ASOF JOIN which allows to run queries that join to the most recent value known. #4774 #4867 #4863 #4875 (Martijn Bakker, Artem Zuikov)
 - Rewrite multiple COMMA JOIN to CROSS JOIN. Then rewrite them to INNER JOIN if possible. #4661 (Artem Zuikov)
 
-## ClickHouse Release 19.6
+
 ### ClickHouse Release 19.6.2.11, 2019-05-13 
 - TTL expressions for columns and tables. #4212 (Anton Popov)
 - Added support for brotli compression for HTTP responses (Accept-Encoding: br) #4388 (Mikhail)
 - Added new function isValidUTF8 for checking whether a set of bytes is correctly utf-8 encoded. #4934 (Danila Kutenin)
 - Add new load balancing policy first_or_random which sends queries to the first specified host and if it’s inaccessible send queries to random hosts of shard. Useful for cross-replication topology setups. #5012 (nvartolomei)
 
-## ClickHouse Release 19.7
+
 ### ClickHouse Release 19.7.3.9, 2019-05-30 
 - Allow to limit the range of a setting that can be specified by user.These constraints can be set up in user settings profile.#4931 (VitalyBaranov)
 - Add a second version of the function groupUniqArray with an optional max_size parameter that limits the size of the resulting array. This behavior is similar to groupArray(max_size)(x) function.#5026 (GuillaumeTassery)
@@ -471,7 +462,7 @@ ClickHouse Release 1.1.54362, 2018-03-11
 ### ClickHouse Release 19.7.5.27, 2019-06-09¶
 - Added bitmap related functions bitmapHasAny and bitmapHasAll analogous to hasAny and hasAll functions for arrays. #5279 (Sergi Vladykin)
 
-## ClickHouse Release 19.8
+
 ### ClickHouse Release 19.8.3.8, 2019-06-11 
 - Added functions to work with JSON #4686 (hcz) #5124. (Vitaly Baranov)
 - Add a function basename, with a similar behaviour to a basename function, which exists in a lot of languages (os.path.basename in python, basename in PHP, etc…). Work with both an UNIX-like path or a Windows path. #5136 (Guillaume Tassery)
@@ -493,13 +484,12 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Added functions IPv4CIDRtoIPv4Range and IPv6CIDRtoIPv6Range to calculate the lower and higher bounds for an IP in the subnet using a CIDR. #5095 (Guillaume Tassery)
 - Add a X-ClickHouse-Summary header when we send a query using HTTP with enabled setting send_progress_in_http_headers. Return the usual information of X-ClickHouse-Progress, with additional information like how many rows and bytes were inserted in the query. #5116 (Guillaume Tassery)
 
-## ClickHouse Release 19.9
+
 ### ClickHouse Release 19.9.2.4, 2019-06-24¶
 - Print information about frozen parts in system.parts table. #5471 (proller)
 - Ask client password on clickhouse-client start on tty if not set in arguments #5092 (proller)
 - Implement dictGet and dictGetOrDefault functions for Decimal types. #5394 (Artem Zuikov)
 
-## ClickHouse Release 19.10 
 ### ClickHouse Release 19.10.1.5, 2019-07-12 
 - Add new column codec: T64. Made for (U)IntX/EnumX/Data(Time)/DecimalX columns. It should be good for columns with constant or small range values. Codec itself allows enlarge or shrink data type without re-compression. #5557 (Artem Zuikov)
 - Add database engine MySQL that allow to view all the tables in remote MySQL server #5599 (Winter Zhang)
@@ -507,7 +497,7 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Support for crc32 function (with behaviour exactly as in MySQL or PHP). Do not use it if you need a hash function. #5661 (Remen Ivan)
 - Implemented SYSTEM START/STOP DISTRIBUTED SENDS queries to control asynchronous inserts into Distributed tables. #4935 (Winter Zhang)
 
-## ClickHouse Release 19.11
+
 ### ClickHouse Release 19.11.3.11, 2019-07-18 
 - Added support for prepared statements. #5331 (Alexander) #5630 (alexey-milovidov)
 - DoubleDelta and Gorilla column codecs #5600 (Vasily Nemkov)
@@ -518,7 +508,7 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Add synonim arrayFlatten \<-> flatten #5764 (hcz)
 - Intergate H3 function geoToH3 from Uber. #4724 (Remen Ivan) #5805 (alexey-milovidov)
 
-## ClickHouse Release 19.13
+
 ### ClickHouse Release 19.13.2.19, 2019-08-14 
 - Sampling profiler on query level. Example. #4247 (laplab) #6124 (alexey-milovidov) #6250 #6283 #6386
 - Allow to specify a list of columns with COLUMNS('regexp') expression that works like a more sophisticated variant of * asterisk. #5951 (mfridental), (alexey-milovidov)
@@ -528,7 +518,7 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - RENAME queries now work with all storages. #5953 (Ivan)
 - Now client receive logs from server with any desired level by setting send_logs_level regardless to the log level specified in server settings. #5964 (Nikita Mikhaylov)
 
-## ClickHouse Release 19.14
+
 ### ClickHouse Release 19.14.3.3, 2019-09-10 
 - WITH FILL modifier for ORDER BY. (continuation of #5069) #6610 (Anton Popov)
 - WITH TIES modifier for LIMIT. (continuation of #5069) #6610 (Anton Popov)
@@ -558,7 +548,7 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Input and output data format Template. It allows to specify custom format string for input and output. #4354 #6727 (tavplubix)
 - Implementation of LIVE VIEW tables that were originally proposed in #2898, prepared in #3925, and then updated in #5541. See #5541 for detailed description. #5541 (vzakaznikov) #6425 (Nikolai Kochetov) #6656 (vzakaznikov) Note that LIVE VIEW feature may be removed in next versions.
 
-## ClickHouse Release 19.15
+
 ### ClickHouse Release 19.15.2.2, 2019-10-01 
 - Tiered storage: support to use multiple storage volumes for tables with MergeTree engine. It’s possible to store fresh data on SSD and automatically move old data to HDD. (example). #4918 (Igr) #6489 (alesapin)
 - Add table function input for reading incoming data in INSERT SELECT query. #5450 (palasonic1) #6832 (Anton Popov)
@@ -572,7 +562,7 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Implement (in memory) Merge Join variant that does not change current pipeline. Result is partially sorted by merge key. Set partial_merge_join = 1 to use this feature. The Merge Join is still in development. #6940 (Artem Zuikov)
 - Add S3 engine and table function. It is still in development (no authentication support yet). #5596 (Vladimir Chebotarev)
 
-## ClickHouse Release 19.16
+
 ### ClickHouse Release 19.16.2.2, 2019-10-30 
 - Add missing arity validation for count/counIf.#7095,#7298 (Vdimir)
 - Remove legacy asterisk_left_columns_only setting (it was disabled by default).#7335 (Artem Zuikov)
@@ -591,7 +581,7 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Introduce CustomSeparated data format that supports custom escaping and delimiter rules. #7118 (tavplubix)
 - Support Redis as source of external dictionary. #4361 #6962 (comunodi, Anton Popov)
 
-## ClickHouse Release 19.17
+
 ### ClickHouse Release 19.17.4.11, 2019-11-22¶
 - Using column instead of AST to store scalar subquery results for better performance. Setting enable_scalar_subquery_optimization was added in 19.17 and it was enabled by default. It leads to errors like this during upgrade to 19.17.2 or 19.17.3 from previous versions. This setting was disabled by default in 19.17.4, to make possible upgrading from 19.16 and older versions without errors. #7392 (Amos Bird)
 - Add the ability to create dictionaries with DDL queries. #7360 (alesapin)
@@ -607,7 +597,9 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Add _shard_num virtual column for the Distributed engine #7624 (Azat Khuzhin)
 - Support for processors (new query execution pipeline) in MergeTree. #7181 (Nikolai Kochetov)
 
-## ClickHouse release v20.1
+
+## ClickHouse Release 20.*
+
 ### ClickHouse release v20.1.2.4, 2020-01-22¶
 - Make the setting merge_tree_uniform_read_distribution obsolete. The server still recognizes this setting but it has no effect. #8308 (alexey-milovidov)
 - Changed return type of the function greatCircleDistance to Float32 because now the result of calculation is Float32. #7993 (alexey-milovidov)
@@ -651,7 +643,7 @@ ClickHouse Release 1.1.54362, 2018-03-11
 ### ClickHouse release v20.1.6.30, 2020-03-05
 - Add deduplicate_blocks_in_dependent_materialized_views option to control the behaviour of idempotent inserts into tables with materialized views. This new feature was added to the bugfix release by a special request from Altinity.#9070 (urykhy)
 
-## ClickHouse release v20.3
+
 ### ClickHouse release v20.3.2.1, 2020-03-12
 - Fixed the issue file name too long when sending data for Distributed tables for a large number of replicas. Fixed the issue that replica credentials were exposed in the server log. The format of directory name on disk was changed to [shard{shard_index}[_replica{replica_index}]]. #8911 (Mikhail Korotov) After you upgrade to the new version, you will not be able to downgrade without manual intervention, because old server version does not recognize the new directory format. If you want to downgrade, you have to manually rename the corresponding directories to the old format. This change is relevant only if you have used asynchronous INSERTs to Distributed tables. In the version 20.3.3 we will introduce a setting that will allow you to enable the new format gradually.
 - Changed the format of replication log entries for mutation commands. You have to wait for old mutations to process before installing the new version.
@@ -667,7 +659,7 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Add Avro and AvroConfluent input/output formats #8571 (Andrew Onyshchuk) #8957 (Andrew Onyshchuk) #8717 (alexey-milovidov)
 - Multi-threaded and non-blocking updates of expired keys in cache dictionaries (with optional permission to read old ones). #8303 (Nikita Mikhaylov)
 - Add query ALTER ... MATERIALIZE TTL. It runs mutation that forces to remove expired data by TTL and recalculates meta-information about TTL in all parts. #8775 (Anton Popov)
-- Switch from HashJoin to MergeJoin (on disk) if needed #9082 (Artem Zuikov)
+- *Switch from HashJoin to MergeJoin (on disk) if needed #9082 (Artem Zuikov)*
 - Added MOVE PARTITION command for ALTER TABLE #4729 #6168 (Guillaume Tassery)
 - Reloading storage configuration from configuration file on the fly. #8594 (Vladimir Chebotarev)
 - Allowed to change storage_policy to not less rich one. #8107 (Vladimir Chebotarev)
@@ -701,7 +693,7 @@ ClickHouse Release 1.1.54362, 2018-03-11
 ### ClickHouse release v20.3.11.97-lts 2020-06-10
 - Now ClickHouse controls timeouts of dictionary sources on its side. Two new settings added to cache dictionary configuration: strict_max_lifetime_seconds, which is max_lifetime by default and query_wait_timeout_milliseconds, which is one minute by default. The first settings is also useful with allow_read_expired_keys settings (to forbid reading very expired keys). #10337 (Nikita Mikhaylov).
 
-## ClickHouse release v20.4
+
 ### ClickHouse release v20.4.2.9, 2020-05-12 
 - System tables (e.g. system.query_log, system.trace_log, system.metric_log) are using compact data part format for parts smaller than 10 MiB in size. Compact data part format is supported since version 20.3. If you are going to downgrade to version less than 20.3, you should manually delete table data for system logs in /var/lib/clickhouse/data/system/.
 - When string comparison involves FixedString and compared arguments are of different sizes, do comparison as if smaller string is padded to the length of the larger. This is intented for SQL compatibility if we imagine that FixedString data type corresponds to SQL CHAR. This closes #9272. #10363 (alexey-milovidov)
@@ -734,7 +726,7 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Add 'strict_order' option to windowFunnel() #9773 (achimbab)
 - Support DATE and TIMESTAMP SQL operators, e.g. SELECT date '2001-01-01' #9691 (Artem Zuikov)
 
-## ClickHouse release 20.5
+
 ### ClickHouse release v20.5.2.7-stable 2020-07-02 
 - Return non-Nullable result from COUNT(DISTINCT), and uniq aggregate functions family. If all passed values are NULL, return zero instead. This improves SQL compatibility. #11661 (alexey-milovidov).
 - Added a check for the case when user-level setting is specified in a wrong place. User-level settings should be specified in users.xml inside <profile> section for specific user profile (or in <default> for default settings). The server won't start with exception message in log. This fixes #9051. If you want to skip the check, you can either move settings to the appropriate place or add <skip_check_for_incorrect_settings>1</skip_check_for_incorrect_settings> to config.xml. #11449 (alexey-milovidov).
@@ -759,7 +751,7 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - minMap and maxMap functions were added. #11603 (Ildus Kurbangaliev).
 - Add the system.asynchronous_metric_log table that logs historical metrics from system.asynchronous_metrics. #11588 (Alexander Kuzmenkov).
 - Add functions extractAllGroupsHorizontal(haystack, re) and extractAllGroupsVertical(haystack, re). #11554 (Vasily Nemkov).
-- Add SHOW CLUSTER(S) queries. #11467 (hexiaoting).
+- *Add SHOW CLUSTER(S) queries. #11467 (hexiaoting).*
 - Add netloc function for extracting network location, similar to urlparse(url), netloc in python. #11356 (Guillaume Tassery).
 - Add 2 more virtual columns for engine=Kafka to access message headers. #11283 (filimonov).
 - Add _timestamp_ms virtual column for Kafka engine (type is Nullable(DateTime64(3))). #11260 (filimonov).
@@ -793,7 +785,7 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - SimpleAggregateFunction now also supports sumMap. #10000 (Ildus Kurbangaliev).
 - Support ALTER RENAME COLUMN for the distributed table engine. Continuation of #10727. Fixes #10747. #10887 (alesapin).
 
-## ClickHouse release 20.6
+
 ### ClickHouse release v20.6.3.28-stable
 - When upgrading from versions older than 20.5, if rolling update is performed and cluster contains both versions 20.5 or greater and less than 20.5, if ClickHouse nodes with old versions are restarted and old version has been started up in presence of newer versions, it may lead to Part ... intersects previous part errors. To prevent this error, first install newer clickhouse-server packages on all cluster nodes and then do restarts (so, when clickhouse-server is restarted, it will start up with the new version).
 - Added an initial implementation of EXPLAIN query. Syntax: EXPLAIN SELECT .... This fixes #1118. #11873 (Nikolai Kochetov).
@@ -805,7 +797,7 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Added function parseDateTimeBestEffortUS. #12028 (flynn).
 - Support format ORC for output (was supported only for input). #11662 (Kruglov Pavel).
 
-## ClickHouse release 20.7
+
 ### ClickHouse release v20.7.2.30-stable, 2020-08-31
 - Function modulo (operator %) with at least one floating point number as argument will calculate remainder of division directly on floating point numbers without converting both arguments to integers. It makes behaviour compatible with most of DBMS. This also applicable for Date and DateTime data types. Added alias mod. This closes #7323. #12585 (alexey-milovidov).
 - Deprecate special printing of zero Date/DateTime values as 0000-00-00 and 0000-00-00 00:00:00. #12442 (alexey-milovidov).
@@ -827,9 +819,9 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Integration with COS. #12386 (fastio).
 - Add mapAdd and mapSubtract functions for adding/subtracting key-mapped values. #11735 (Ildus Kurbangaliev).
 
-## ClickHouse release 20.8
+
 ### ClickHouse release v20.8.2.3-stable, 2020-09-08
-- Now OPTIMIZE FINAL query does not recalculate TTL for parts that were added before TTL was created. Use ALTER TABLE ... MATERIALIZE TTL once to calculate them, after that OPTIMIZE FINAL will evaluate TTL's properly. This behavior never worked for replicated tables. #14220 (alesapin).
+- *Now OPTIMIZE FINAL query does not recalculate TTL for parts that were added before TTL was created. Use ALTER TABLE ... MATERIALIZE TTL once to calculate them, after that OPTIMIZE FINAL will evaluate TTL's properly. This behavior never worked for replicated tables. #14220 (alesapin).*
 - Extend parallel_distributed_insert_select setting, adding an option to run INSERT into local table. The setting changes type from Bool to UInt64, so the values false and true are no longer supported. If you have these values in server configuration, the server will not start. Please replace them with 0 and 1, respectively. #14060 (Azat Khuzhin).
 - Remove support for the ODBCDriver input/output format. This was a deprecated format once used for communication with the ClickHouse ODBC driver, now long superseded by the ODBCDriver2 format. Resolves #13629. #13847 (hexiaoting).
 - When upgrading from versions older than 20.5, if rolling update is performed and cluster contains both versions 20.5 or greater and less than 20.5, if ClickHouse nodes with old versions are restarted and old version has been started up in presence of newer versions, it may lead to Part ... intersects previous part errors. To prevent this error, first install newer clickhouse-server packages on all cluster nodes and then do restarts (so, when clickhouse-server is restarted, it will start up with the new version).
@@ -845,14 +837,14 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Add ALTER SAMPLE BY statement that allows to change table sample clause. #13280 (Amos Bird).
 - Function position now supports optional start_pos argument. #13237 (vdimir).
 
-## ClickHouse release 20.9
+
 ### ClickHouse release v20.9.2.20, 2020-09-22 
 - When upgrading from versions older than 20.5, if rolling update is performed and cluster contains both versions 20.5 or greater and less than 20.5, if ClickHouse nodes with old versions are restarted and old version has been started up in presence of newer versions, it may lead to Part ... intersects previous part errors. To prevent this error, first install newer clickhouse-server packages on all cluster nodes and then do restarts (so, when clickhouse-server is restarted, it will start up with the new version).
 - Added column transformers EXCEPT, REPLACE, APPLY, which can be applied to the list of selected columns (after * or COLUMNS(...)). For example, you can write SELECT * EXCEPT(URL) REPLACE(number + 1 AS number). Another example: select * apply(length) apply(max) from wide_string_table to find out the maxium length of all string columns. #14233 (Amos Bird).
 - Added an aggregate function rankCorr which computes a rank correlation coefficient. #11769 (antikvist) #14411 (Nikita Mikhaylov).
 - Added table function view which turns a subquery into a table object. This helps passing queries around. For instance, it can be used in remote/cluster table functions. #12567 (Amos Bird).
 
-## ClickHouse release 20.10
+
 ### ClickHouse release v20.10.3.30, 2020-10-28
 - Make multiple_joins_rewriter_version obsolete. Remove first version of joins rewriter. #15472 (Artem Zuikov).
 - Change default value of format_regexp_escaping_rule setting (it's related to Regexp format) to Raw (it means - read whole subpattern as a value) to make the behaviour more like to what users expect. #15426 (alexey-milovidov).
@@ -890,7 +882,7 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Add event_time_microseconds to system.asynchronous_metric_log & system.metric_log tables. #14514 (Bharat Nallan).
 - Add query_start_time_microseconds field to system.query_log & system.query_thread_log tables. #14252 (Bharat Nallan).
 
-## ClickHouse release 20.11
+
 ### ClickHouse release v20.11.2.1, 2020-11-11
 - If some profile was specified in distributed_ddl config section, then this profile could overwrite settings of default profile on server startup. It's fixed, now settings of distributed DDL queries should not affect global server settings. #16635 (tavplubix).
 - Restrict to use of non-comparable data types (like AggregateFunction) in keys (Sorting key, Primary key, Partition key, and so on). #16601 (alesapin).
@@ -920,7 +912,7 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Add function formatReadableTimeDelta that format time delta to human readable string ... #15497 (Filipe Caixeta).
 - Added disable_merges option for volumes in multi-disk configuration. #13956 (Vladimir Chebotarev).
 
-## ClickHouse release 20.12
+
 ### ClickHouse release v20.12.3.3-stable, 2020-12-13 
 - Enable use_compact_format_in_distributed_parts_names by default (see the documentation for the reference). #16728 (Azat Khuzhin).
 - Accept user settings related to file formats (e.g. format_csv_delimiter) in the SETTINGS clause when creating a table that uses File engine, and use these settings in all INSERTs and SELECTs. The file format settings changed in the current user session, or in the SETTINGS clause of a DML query itself, no longer affect the query. #16591 (Alexander Kuzmenkov).
@@ -937,7 +929,7 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Updated DateTime, DateTime64 parsing to accept string Date literal format. #16040 (Maksim Kita).
 - Make it possible to change the path to history file in clickhouse-client using the --history_file parameter. #15960 (Maksim Kita).
 
-## ClickHouse release 21.1
+## ClickHouse release 21.*
 ### ClickHouse release v21.1.2.15-stable 2021-01-18 
 - The setting input_format_null_as_default is enabled by default. #17525 (alexey-milovidov).
 - Check settings constraints for profile settings from config. Server will fail to start if users.xml contain settings that do not meet corresponding constraints. #18486 (tavplubix).
@@ -996,7 +988,6 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Implement alternative SQL parser based on ANTLR4 runtime and generated from EBNF grammar. #11298 (Ivan).
 
 
-## ClickHouse release 21.2
 ### ClickHouse release v21.2.2.8-stable, 2021-02-07
 - Bitwise functions (bitAnd, bitOr, etc) are forbidden for floating point arguments. Now you have to do explicit cast to integer. #19853 (Azat Khuzhin).
 - Forbid lcm/gcd for floats. #19532 (Azat Khuzhin).
@@ -1022,8 +1013,7 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Add SELECT ALL syntax. closes #18706. #18723 (flynn).
 
 
-## ClickHouse release 21.3 (LTS) 
-### ClickHouse release v21.3, 2021-03-12 
+### ClickHouse release v21.3-lts, 2021-03-12
 - Now it's not allowed to create MergeTree tables in old syntax with table TTL because it's just ignored. Attach of old tables is still possible. #20282 (alesapin).
 - Now all case-insensitive function names will be rewritten to their canonical representations. This is needed for projection query routing (the upcoming feature). #20174 (Amos Bird).
 - Fix creation of TTL in cases, when its expression is a function and it is the same as ORDER BY key. Now it's allowed to set custom aggregation to primary key columns in TTL with GROUP BY. Backward incompatible: For primary key columns, which are not in GROUP BY and aren't set explicitly now is applied function any instead of max, when TTL is expired. Also if you use TTL with WHERE or GROUP BY you can see exceptions at merges, while making rolling update. #15450 (Anton Popov).
@@ -1044,7 +1034,6 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Add the ability to backup/restore metadata files for DiskS3. #18377 (Pavel Kovalenko).
 
 
-## ClickHouse release 21.4 
 ### ClickHouse release 21.4.1 2021-04-12 
 - The toStartOfIntervalFunction will align hour intervals to the midnight (in previous versions they were aligned to the start of unix epoch). For example, toStartOfInterval(x, INTERVAL 11 HOUR) will split every day into three intervals: 00:00:00..10:59:59, 11:00:00..21:59:59 and 22:00:00..23:59:59. This behaviour is more suited for practical needs. This closes #9510. #22060 (alexey-milovidov).
 - Age and Precision in graphite rollup configs should increase from retention to retention. Now it's checked and the wrong config raises an exception. #21496 (Mikhail f. Shiryaev).
@@ -1076,7 +1065,7 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Zero-copy replication for ReplicatedMergeTree over S3 storage. #16240 (ianton-ru).
 - Added possibility to migrate existing S3 disk to the schema with backup-restore capabilities. #22070 (Pavel Kovalenko).
 
-## ClickHouse release 21.5
+
 ### ClickHouse release 21.5, 2021-05-20
 - Change comparison of integers and floating point numbers when integer is not exactly representable in the floating point data type. In new version comparison will return false as the rounding error will occur. Example: 9223372036854775808.0 != 9223372036854775808, because the number 9223372036854775808 is not representable as floating point number exactly (and 9223372036854775808.0 is rounded to 9223372036854776000.0). But in previous version the comparison will return as the numbers are equal, because if the floating point number 9223372036854776000.0 get converted back to UInt64, it will yield 9223372036854775808. For the reference, the Python programming language also treats these numbers as equal. But this behaviour was dependend on CPU model (different results on AMD64 and AArch64 for some out-of-range numbers), so we make the comparison more precise. It will treat int and float numbers equal only if int is represented in floating point type exactly. #22595 (alexey-milovidov).
 - Remove support for argMin and argMax for single Tuple argument. The code was not memory-safe. The feature was added by mistake and it is confusing for people. These functions can be reintroduced under different names later. This fixes #22384 and reverts #17359. #23393 (alexey-milovidov).
@@ -1087,7 +1076,7 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Added ALTER TABLE ... FETCH PART ... query. It's similar to FETCH PARTITION, but fetches only one part. #22706 (turbo jason).
 - Added a setting max_distributed_depth that limits the depth of recursive queries to Distributed tables. Closes #20229. #21942 (flynn).
 
-## ClickHouse release 21.6
+
 ### ClickHouse release 21.6, 2021-06-05 
 - Add Postgres-like cast operator (::). E.g.: [1, 2]::Array(UInt8), 0.1::Decimal(4, 4), number::UInt16. #23871 (Anton Popov).
 - Make big integers production ready. Add support for UInt128 data type. Fix known issues with the Decimal256 data type. Support big integers in dictionaries. Support gcd/lcm functions for big integers. Support big integers in array search and conditional functions. Support LowCardinality(UUID). Support big integers in generateRandom table function and clickhouse-obfuscator. Fix error with returning UUID from scalar subqueries. This fixes #7834. This fixes #23936. This fixes #4176. This fixes #24018. Backward incompatible change: values of UUID type cannot be compared with integer. For example, instead of writing uuid != 0 type uuid != '00000000-0000-0000-0000-000000000000'. #23631 (alexey-milovidov).
@@ -1109,4 +1098,369 @@ ClickHouse Release 1.1.54362, 2018-03-11
 - Added less secure IMDS credentials provider for S3 which works under docker correctly. #21852 (Vladimir Chebotarev).
 - Add back indexHint function. This is for #21238. This reverts #9542. This fixes #9540. #21304 (Amos Bird).
 - Add PROJECTION support for MergeTree* tables. #20202 (Amos Bird).
-- 
+  
+### ClickHouse release v21.7, 2021-07-09
+- **Improved performance of queries with explicitly defined large sets. Added compatibility setting legacy_column_name_of_tuple_literal. It makes sense to set it to true, while doing rolling update of cluster from version lower than 21.7 to any higher version. Otherwise distributed queries with explicitly defined sets at IN clause may fail during update. #25371 (Anton Popov).**
+- **Forward/backward incompatible change of maximum buffer size in clickhouse-keeper (an experimental alternative to ZooKeeper). Better to do it now (before production), than later. #25421 (alesapin).**
+- Support configuration in YAML format as alternative to XML. This closes #3607. #21858 (BoloniniD).
+- Provides a way to restore replicated table when the data is (possibly) present, but the ZooKeeper metadata is lost. Resolves #13458. #13652 (Mike Kot).
+- Support structs and maps in Arrow/Parquet/ORC and dictionaries in Arrow input/output formats. Present new setting output_format_arrow_low_cardinality_as_dictionary. #24341 (Kruglov Pavel).
+- Added support for Array type in dictionaries. #25119 (Maksim Kita).
+- Added function bitPositionsToArray. Closes #23792. Author [Kevin Wan] (@MaxWk). #25394 (Maksim Kita).
+- Added function dateName to return names like 'Friday' or 'April'. Author [Daniil Kondratyev] (@dankondr). #25372 (Maksim Kita).
+- Add toJSONString function to serialize columns to their JSON representations. #25164 (Amos Bird).
+- Now query_log has two new columns: initial_query_start_time, initial_query_start_time_microsecond that record the starting time of a distributed query if any. #25022 (Amos Bird).
+- Add aggregate function segmentLengthSum. #24250 (flynn).
+- Add a new boolean setting prefer_global_in_and_join which defaults all IN/JOIN as GLOBAL IN/JOIN. #23434 (Amos Bird).
+- Support ALTER DELETE queries for Join table engine. #23260 (foolchi).
+- Add quantileBFloat16 aggregate function as well as the corresponding quantilesBFloat16 and medianBFloat16. It is very simple and fast quantile estimator with relative error not more than 0.390625%. This closes #16641. #23204 (Ivan Novitskiy).
+- Implement sequenceNextNode() function useful for flow analysis. #19766 (achimbab).
+
+### ClickHouse release v21.8, 2021-08-12
+- Add support for a part of SQL/JSON standard. #24148 (l1tsolaiki, Kseniia Sumarokova).
+- Collect common system metrics (in system.asynchronous_metrics and system.asynchronous_metric_log) on CPU usage, disk usage, memory usage, IO, network, files, load average, CPU frequencies, thermal sensors, EDAC counters, system uptime; also added metrics about the scheduling jitter and the time spent collecting the metrics. It works similar to atop in ClickHouse and allows access to monitoring data even if you have no additional tools installed. Close #9430. #24416 (alexey-milovidov, Yegor Levankov).
+- Add MaterializedPostgreSQL table engine and database engine. This database engine allows replicating a whole database or any subset of database tables. #20470 (Kseniia Sumarokova).
+- Add new functions leftPad(), rightPad(), leftPadUTF8(), rightPadUTF8(). #26075 (Vitaly Baranov).
+- Add the FIRST keyword to the ADD INDEX command to be able to add the index at the beginning of the indices list. #25904 (xjewer).
+- Introduce system.data_skipping_indices table containing information about existing data skipping indices. Close #7659. #25693 (Dmitry Novik).
+- Add bin/unbin functions. #25609 (zhaoyu).
+- Support Map and UInt128, Int128, UInt256, Int256 types in mapAdd and mapSubtract functions. #25596 (Ildus Kurbangaliev).
+- Support DISTINCT ON (columns) expression, close #25404. #25589 (Zijie Lu).
+- Add an ability to reset a custom setting to default and remove it from the table's metadata. It allows rolling back the change without knowing the system/config's default. Closes #14449. #17769 (xjewer).
+- Render pipelines as graphs in Web UI if EXPLAIN PIPELINE graph = 1 query is submitted. #26067 (alexey-milovidov).
+
+### ClickHouse release v21.9, 2021-09-09
+- **Do not output trailing zeros in text representation of Decimal types. Example: 1.23 will be printed instead of 1.230000 for decimal with scale 6. This closes #15794. It may introduce slight incompatibility if your applications somehow relied on the trailing zeros. Serialization in output formats can be controlled with the setting output_format_decimal_trailing_zeros. Implementation of toString and casting to String is changed unconditionally. #27680 (alexey-milovidov).**
+- **Do not allow to apply parametric aggregate function with -Merge combinator to aggregate function state if state was produced by aggregate function with different parameters. For example, state of fooState(42)(x) cannot be finalized with fooMerge(s) or fooMerge(123)(s), parameters must be specified explicitly like fooMerge(42)(s) and must be equal. It does not affect some special aggregate functions like `quantile` and `sequence*` that use parameters for finalization only. #26847 (tavplubix).**
+- **Under clickhouse-local, always treat local addresses with a port as remote. #26736 (Raúl Marín).**
+- **Fix the issue that in case of some sophisticated query with column aliases identical to the names of expressions, bad cast may happen. This fixes #25447. This fixes #26914. This fix may introduce backward incompatibility: if there are different expressions with identical names, exception will be thrown. It may break some rare cases when enable_optimize_predicate_expression is set. #26639 (alexey-milovidov).**
+- **Now, scalar subquery always returns Nullable result if it's type can be Nullable. It is needed because in case of empty subquery it's result should be Null. Previously, it was possible to get error about incompatible types (type deduction does not execute scalar subquery, and it could use not-nullable type). Scalar subquery with empty result which can't be converted to Nullable (like Array or Tuple) now throws error. Fixes #25411. #26423 (Nikolai Kochetov).**
+- **Introduce syntax for here documents. Example SELECT $doc$ VALUE $doc$. #26671 (Maksim Kita). This change is backward incompatible if in query there are identifiers that contain $ #28768.**
+- **Now indices can handle Nullable types, including isNull and isNotNull. #12433 and #12455 (Amos Bird) and #27250 (Azat Khuzhin). But this was done with on-disk format changes, and even though new server can read old data, old server cannot. Also, in case you have MINMAX data skipping indices, you may get Data after mutation/merge is not byte-identical error, since new index will have .idx2 extension while before it was .idx. That said, that you should not delay updating all existing replicas, in this case, otherwise, if old replica (<21.9) will download data from new replica with 21.9+ it will not be able to apply index for downloaded part.**
+- Implementation of short circuit function evaluation, closes #12587. Add settings short_circuit_function_evaluation to configure short circuit function evaluation. #23367 (Kruglov Pavel).
+- Add support for INTERSECT, EXCEPT, ANY, ALL operators. #24757 (Kirill Ershov). (Kseniia Sumarokova).
+- Add support for encryption at the virtual file system level (data encryption at rest) using AES-CTR algorithm. #24206 (Latysheva Alexandra). (Vitaly Baranov) #26733 #26377 #26465.
+- Added natural language processing (NLP) functions for tokenization, stemming, lemmatizing and search in synonyms extensions. #24997 (Nikolay Degterinsky).
+- Added integration with S2 geometry library. #24980 (Andr0901). (Nikita Mikhaylov).
+- Add SQLite table engine, table function, database engine. #24194 (Arslan Gumerov). (Kseniia Sumarokova).
+- Added support for custom query for MySQL, PostgreSQL, ClickHouse, JDBC, Cassandra dictionary source. Closes #1270. #26995 (Maksim Kita).
+- Add shared (replicated) storage of user, roles, row policies, quotas and settings profiles through ZooKeeper. #27426 (Kevin Michel).
+- Add compression for INTO OUTFILE that automatically choose compression algorithm. Closes #3473. #27134 (Filatenkov Artur).
+- Add INSERT ... FROM INFILE similarly to SELECT ... INTO OUTFILE. #27655 (Filatenkov Artur).
+- Added complex_key_range_hashed dictionary. Closes #22029. #27629 (Maksim Kita).
+- Support expressions in JOIN ON section. Close #21868. #24420 (Vladimir C).
+- When client connects to server, it receives information about all warnings that are already were collected by server. (It can be disabled by using option --no-warnings). Add system.warnings table to collect warnings about server configuration. #26246 (Filatenkov Artur). #26282 (Filatenkov Artur).
+- Allow using constant expressions from with and select in aggregate function parameters. Close #10945. #27531 (abel-cheng).
+- Add tupleToNameValuePairs, a function that turns a named tuple into an array of pairs. #27505 (Braulio Valdivielso Martínez).
+- Add support for bzip2 compression method for import/export. Closes #22428. #27377 (Nikolay Degterinsky).
+- Added bitmapSubsetOffsetLimit(bitmap, offset, cardinality_limit) function. It creates a subset of bitmap limit the results to cardinality_limit with offset of offset. #27234 (DHBin).
+- Add column default_database to system.users. #27054 (kevin wan).
+- Supported cluster macros inside table functions 'cluster' and 'clusterAllReplicas'. #26913 (polyprogrammist).
+- Add new functions currentRoles(), enabledRoles(), defaultRoles(). #26780 (Vitaly Baranov).
+- New functions currentProfiles(), enabledProfiles(), defaultProfiles(). #26714 (Vitaly Baranov).
+- Add functions that return (initial_)query_id of the current query. This closes #23682. #26410 (Alexey Boykov).
+- Add REPLACE GRANT feature. #26384 (Caspian).
+- EXPLAIN query now has EXPLAIN ESTIMATE ... mode that will show information about read rows, marks and parts from MergeTree tables. Closes #23941. #26131 (fastio).
+- Added system.zookeeper_log table. All actions of ZooKeeper client are logged into this table. Implements #25449. #26129 (tavplubix).
+- *Zero-copy replication for ReplicatedMergeTree over HDFS storage. #25918 (Zhichang Yu).*
+- Allow to insert Nested type as array of structs in Arrow, ORC and Parquet input format. #25902 (Kruglov Pavel).
+- Add a new datatype Date32 (store data as Int32), support date range same with DateTime64 support load parquet date32 to ClickHouse Date32 Add new function toDate32 like toDate. #25774 (LiuNeng).
+- Allow setting default database for users. #25268. #25687 (kevin wan).
+- Add an optional parameter to MongoDB engine to accept connection string options and support SSL connection. Closes #21189. Closes #21041. #22045 (Omar Bazaraa).
+
+### ClickHouse release v21.10, 2021-10-16
+- **Now the following MergeTree table-level settings: replicated_max_parallel_sends, replicated_max_parallel_sends_for_table, replicated_max_parallel_fetches, replicated_max_parallel_fetches_for_table do nothing. They never worked well and were replaced with max_replicated_fetches_network_bandwidth, max_replicated_sends_network_bandwidth and background_fetches_pool_size. #28404 (alesapin).**
+- Add feature for creating user-defined functions (UDF) as lambda expressions. Syntax CREATE FUNCTION {function_name} as ({parameters}) -> {function core}. Example CREATE FUNCTION plus_one as (a) -> a + 1. Authors @Realist007. #27796 (Maksim Kita) #23978 (Realist007).
+- Added Executable storage engine and executable table function. It enables data processing with external scripts in streaming fashion. #28102 (Maksim Kita) (ruct).
+- Added ExecutablePool storage engine. Similar to Executable but it's using a pool of long running processes. #28518 (Maksim Kita).
+- Add ALTER TABLE ... MATERIALIZE COLUMN query. #27038 (Vladimir Chebotarev).
+- Support for partitioned write into s3 table function. #23051 (Vladimir Chebotarev).
+- Support lz4 compression format (in addition to gz, bz2, xz, zstd) for data import / export. #25310 (Bharat Nallan).
+- Allow positional arguments under setting enable_positional_arguments. Closes #2592. #27530 (Kseniia Sumarokova).
+- Accept user settings related to file formats in SETTINGS clause in CREATE query for s3 tables. This closes #27580. #28037 (Nikita Mikhaylov).
+- Allow SSL connection for RabbitMQ engine. #28365 (Kseniia Sumarokova).
+- Add getServerPort function to allow getting server port. When the port is not used by the server, throw an exception. #27900 (Amos Bird).
+- Add conversion functions between "snowflake id" and DateTime, DateTime64. See #27058. #27704 (jasine).
+- Add function SHA512. #27830 (zhanglistar).
+- Add log_queries_probability setting that allows user to write to query_log only a sample of queries. Closes #16609. #27527 (Nikolay Degterinsky).
+
+### ClickHouse release v21.11, 2021-11-09
+- **Change order of json_path and json arguments in SQL/JSON functions (to be consistent with the standard). Closes #30449. #30474 (Kseniia Sumarokova).**
+- **Remove MergeTree table setting write_final_mark. It will be always true. #30455 (Kseniia Sumarokova). No actions required, all tables are compatible with the new version.**
+- **Function bayesAB is removed. Please help to return this function back, refreshed. This closes #26233. #29934 (alexey-milovidov).**
+- **This is relevant only if you already started using the experimental clickhouse-keeper support. Now ClickHouse Keeper snapshots compressed with ZSTD codec by default instead of custom ClickHouse LZ4 block compression. This behavior can be turned off with compress_snapshots_with_zstd_format coordination setting (must be equal on all quorum replicas). Backward incompatibility is quite rare and may happen only when new node will send snapshot (happens in case of recovery) to the old node which is unable to read snapshots in ZSTD format. #29417 (alesapin).**
+- *New asynchronous INSERT mode allows to accumulate inserted data and store it in a single batch in background. On client it can be enabled by setting async_insert for INSERT queries with data inlined in query or in separate buffer (e.g. for INSERT queries via HTTP protocol). If wait_for_async_insert is true (by default) the client will wait until data will be flushed to table. On server-side it controlled by the settings async_insert_threads, async_insert_max_data_size and async_insert_busy_timeout_ms. Implements #18282. #27537 (Anton Popov). #20557 (Ivan). Notes on performance: with asynchronous inserts you can do up to around 10 000 individual INSERT queries per second, so it is still recommended to insert in batches if you want to achieve performance up to millions inserted rows per second.*
+- Add interactive mode for clickhouse-local. So, you can just run clickhouse-local to get a command line ClickHouse interface without connecting to a server and process data from files and external data sources. Also merge the code of clickhouse-client and clickhouse-local together. Closes #7203. Closes #25516. Closes #22401. #26231 (Kseniia Sumarokova).
+- Added support for executable (scriptable) user defined functions. These are UDFs that can be written in any programming language. #28803 (Maksim Kita).
+- Allow predefined connections to external data sources. This allows to avoid specifying credentials or addresses while using external data sources, they can be referenced by names instead. Closes #28367. #28577 (Kseniia Sumarokova).
+- Added INFORMATION_SCHEMA database with SCHEMATA, TABLES, VIEWS and COLUMNS views to the corresponding tables in system database. Closes #9770. #28691 (tavplubix).
+- Support EXISTS (subquery). Closes #6852. #29731 (Kseniia Sumarokova).
+- Session logging for audit. Logging all successful and failed login and logout events to a new system.session_log table. #22415 (Vasily Nemkov) (Vitaly Baranov).
+- Support multidimensional cosine distance and euclidean distance functions; L1, L2, Lp, Linf distances and norms. Scalar product on tuples and various arithmetic operators on tuples. This fully closes #4509 and even more. #27933 (Alexey Boykov).
+- Add support for compression and decompression for INTO OUTFILE and FROM INFILE (with autodetect or with additional optional parameter). #27135 (Filatenkov Artur).
+- Add CORS (Cross Origin Resource Sharing) support with HTTP OPTIONS request. It means, now Grafana will work with serverless requests without a kludges. Closes #18693. #29155 (Filatenkov Artur).
+- Queries with JOIN ON now supports disjunctions (OR). #21320 (Ilya Golshtein).
+- Added function tokens. That allow to split string into tokens using non-alpha numeric ASCII characters as separators. #29981 (Maksim Kita). Added function ngrams to extract ngrams from text. Closes #29699. #29738 (Maksim Kita).
+- Add functions for Unicode normalization: normalizeUTF8NFC, normalizeUTF8NFD, normalizeUTF8NFKC, normalizeUTF8NFKD functions. #28633 (darkkeks).
+- Streaming consumption of application log files in ClickHouse with FileLog table engine. It's like Kafka or RabbitMQ engine but for append-only and rotated logs in local filesystem. Closes #6953. #25969 (flynn) (Kseniia Sumarokova).
+- Add CapnProto output format, refactor CapnProto input format. #29291 (Kruglov Pavel).
+- Allow to write number in query as binary literal. Example SELECT 0b001;. #29304 (Maksim Kita).
+- Added hashed_array dictionary type. It saves memory when using dictionaries with multiple attributes. Closes #30236. #30242 (Maksim Kita).
+- Added JSONExtractKeys function. #30056 (Vitaly).
+- Add a function getOSKernelVersion - it returns a string with OS kernel version. #29755 (Memo).
+- Added MD4 and SHA384 functions. MD4 is an obsolete and insecure hash function, it can be used only in rare cases when MD4 is already being used in some legacy system and you need to get exactly the same result. #29602 (Nikita Tikhomirov).
+- HSTS can be enabled for ClickHouse HTTP server by setting hsts_max_age in configuration file with a positive number. #29516 (凌涛).
+- Huawei OBS Storage support. Closes #24294. #29511 (kevin wan).
+- New function mapContainsKeyLike to get the map that key matches a simple regular expression. #29471 (凌涛). New function mapExtractKeyLike to get the map only kept elements matched specified pattern. #30793 (凌涛).
+- Implemented ALTER TABLE x MODIFY COMMENT. #29264 (Vasily Nemkov).
+- Adds H3 inspection functions that are missing from ClickHouse but are available via the H3 api: https://h3geo.org/docs/api/inspection. #29209 (Bharat Nallan).
+- Allow non-replicated ALTER TABLE FETCH and ATTACH in Replicated databases. #29202 (Kevin Michel).
+- Added a setting output_format_csv_null_representation: This is the same as output_format_tsv_null_representation but is for CSV output. #29123 (PHO).
+- Added function zookeeperSessionUptime() which returns uptime of current ZooKeeper session in seconds. #28983 (tavplubix).
+- Implements the h3ToGeoBoundary function. #28952 (Ivan Veselov).
+- Add aggregate function exponentialMovingAverage that can be used as window function. This closes #27511. #28914 (alexey-milovidov).
+- Allow to include subcolumns of table columns into DESCRIBE query result (can be enabled by setting describe_include_subcolumns). #28905 (Anton Popov).
+- Executable, ExecutablePool added option send_chunk_header. If this option is true then chunk rows_count with line break will be sent to client before chunk. #28833 (Maksim Kita).
+- tokenbf_v1 and ngram support Map with key of String of FixedSring type. It enhance data skipping in query with map key filter. sql CREATE TABLE map_tokenbf ( row_id UInt32, map Map(String, String), INDEX map_tokenbf map TYPE ngrambf_v1(4,256,2,0) GRANULARITY 1 ) Engine=MergeTree() Order by id With table above, the query select * from map_tokebf where map['K']='V' will skip the granule that doesn't contain key A . Of course, how many rows will skipped is depended on the granularity and index_granularity you set. #28511 (凌涛).
+- Send profile events from server to client. New packet type ProfileEvents was introduced. Closes #26177. #28364 (Dmitry Novik).
+- Bit shift operations for FixedString and String data types. This closes #27763. #28325 (小路).
+- Support adding / deleting tables to replication from PostgreSQL dynamically in database engine MaterializedPostgreSQL. Support alter for database settings. Closes #27573. #28301 (Kseniia Sumarokova).
+- Added function accurateCastOrDefault(x, T). Closes #21330. Authors @taiyang-li. #23028 (Maksim Kita).
+- Add Function toUUIDOrDefault, toUInt8/16/32/64/256OrDefault, toInt8/16/32/64/128/256OrDefault, which enables user defining default value(not null) when string parsing is failed. #21330 (taiyang-li).
+
+### ClickHouse release v21.12, 2021-12-15
+- **A fix for a feature that previously had unwanted behaviour. Do not allow direct select for Kafka/RabbitMQ/FileLog. Can be enabled by setting stream_like_engine_allow_direct_select. Direct select will be not allowed even if enabled by setting, in case there is an attached materialized view. For Kafka and RabbitMQ direct selectm if allowed, will not commit massages by default. To enable commits with direct select, user must use storage level setting kafka{rabbitmq}_commit_on_select=1 (default 0). #31053 (Kseniia Sumarokova).**
+- **A slight change in behaviour of a new function. Return unquoted string in JSON_VALUE. Closes #27965. #31008 (Kseniia Sumarokova).**
+- **Setting rename. Add custom null representation support for TSV/CSV input formats. Fix deserialing Nullable(String) in TSV/CSV/JSONCompactStringsEachRow/JSONStringsEachRow input formats. Rename output_format_csv_null_representation and output_format_tsv_null_representation to format_csv_null_representation and format_tsv_null_representation accordingly. #30497 (Kruglov Pavel).**
+- **Further deprecation of already unused code. This is relevant only for users of ClickHouse versions older than 20.6. A "leader election" mechanism is removed from ReplicatedMergeTree, because multiple leaders are supported since 20.6. If you are upgrading from an older version and some replica with an old version is a leader, then server will fail to start after upgrade. Stop replicas with old version to make new version start. After that it will not be possible to downgrade to version older than 20.6. #32140 (tavplubix).**
+- Implemented more of the ZooKeeper Four Letter Words commands in clickhouse-keeper: https://zookeeper.apache.org/doc/r3.4.8/zookeeperAdmin.html#sc_zkCommands. #28981 (JackyWoo). Now clickhouse-keeper is feature complete.
+- Support for Bool data type. #31072 (kevin wan).
+- Support for PARTITION BY in File, URL, HDFS storages and with INSERT INTO table function. Closes #30273. #30690 (Kseniia Sumarokova).
+- Added CONSTRAINT ... ASSUME ... (without checking during INSERT). Added query transformation to CNF (https://github.com/ClickHouse/ClickHouse/issues/11749) for more convenient optimization. Added simple query rewriting using constraints (only simple matching now, will be improved to support <,=,>... later). Added ability to replace heavy columns with light columns if it's possible. #18787 (Nikita Vasilev).
+- Basic access authentication for http/url functions. #31648 (michael1589).
+- Support INTERVAL type in STEP clause for WITH FILL modifier. #30927 (Anton Popov).
+- Add support for parallel reading from multiple files and support globs in FROM INFILE clause. #30135 (Filatenkov Artur).
+- Add support for Identifier table and database query parameters. Closes #27226. #28668 (Nikolay Degterinsky).
+- TLDR: Major improvements of completeness and consistency of text formats. Refactor formats TSV, TSVRaw, CSV and JSONCompactEachRow, JSONCompactStringsEachRow, remove code duplication, add base interface for formats with -WithNames and -WithNamesAndTypes suffixes. Add formats CSVWithNamesAndTypes, TSVRawWithNames, TSVRawWithNamesAndTypes, JSONCompactEachRowWIthNames, JSONCompactStringsEachRowWIthNames, RowBinaryWithNames. Support parallel parsing for formats TSVWithNamesAndTypes, TSVRaw(WithNames/WIthNamesAndTypes), CSVWithNamesAndTypes, JSONCompactEachRow(WithNames/WIthNamesAndTypes), JSONCompactStringsEachRow(WithNames/WIthNamesAndTypes). Support columns mapping and types checking for RowBinaryWithNamesAndTypes format. Add setting input_format_with_types_use_header which specify if we should check that types written in <format_name>WIthNamesAndTypes format matches with table structure. Add setting input_format_csv_empty_as_default and use it in CSV format instead of input_format_defaults_for_omitted_fields (because this setting should not control csv_empty_as_default). Fix usage of setting input_format_defaults_for_omitted_fields (it was used only as csv_empty_as_default, but it should control calculation of default expressions for omitted fields). Fix Nullable input/output in TSVRaw format, make this format fully compatible with inserting into TSV. Fix inserting NULLs in LowCardinality(Nullable) when input_format_null_as_default is enabled (previously default values was inserted instead of actual NULLs). Fix strings deserialization in JSONStringsEachRow/JSONCompactStringsEachRow formats (strings were parsed just until first '\n' or '\t'). Add ability to use Raw escaping rule in Template input format. Add diagnostic info for JSONCompactEachRow(WithNames/WIthNamesAndTypes) input format. Fix bug with parallel parsing of -WithNames formats in case when setting min_chunk_bytes_for_parallel_parsing is less than bytes in a single row. #30178 (Kruglov Pavel). Allow to print/parse names and types of colums in CustomSeparated input/output format. Add formats CustomSeparatedWithNames/WithNamesAndTypes similar to TSVWithNames/WithNamesAndTypes. #31434 (Kruglov Pavel).
+- Aliyun OSS Storage support. #31286 (cfcz48).
+- Exposes all settings of the global thread pool in the configuration file. #31285 (Tomáš Hromada).
+- Introduced window functions exponentialTimeDecayedSum, exponentialTimeDecayedMax, exponentialTimeDecayedCount and exponentialTimeDecayedAvg which are more effective than exponentialMovingAverage for bigger windows. Also more use-cases were covered. #29799 (Vladimir Chebotarev).
+- Add option to compress logs before writing them to a file using LZ4. Closes #23860. #29219 (Nikolay Degterinsky).
+- Support JOIN ON 1 = 1 that have CROSS JOIN semantic. This closes #25578. #25894 (Vladimir C).
+- Add Map combinator for Map type. - Rename old sum-, min-, max- Map for mapped arrays to sum-, min-, max- MappedArrays. #24539 (Ildus Kurbangaliev).
+- Make reading from HTTP retriable. Closes #29696. #29894 (Kseniia Sumarokova).
+
+## ClickHouse Release 22.*
+
+### ClickHouse release v22.1, 2022-01-18
+- Implement data schema inference for input formats. Allow to skip structure (or write just auto) in table functions file, url, s3, hdfs and in parameters of clickhouse-local . Allow to skip structure in create query for table engines File, HDFS, S3, URL, Merge, Buffer, Distributed and ReplicatedMergeTree (if we add new replicas). #32455 (Kruglov Pavel).
+- Detect format by file extension in file/hdfs/s3/url table functions and HDFS/S3/URL table engines and also for SELECT INTO OUTFILE and INSERT FROM INFILE #33565 (Kruglov Pavel). Close #30918. #33443 (OnePiece).
+- A tool for collecting diagnostics data if you need support. #33175 (Alexander Burmak).
+- Automatic cluster discovery via Zoo/Keeper. It allows to add replicas to the cluster without changing configuration on every server. #31442 (vdimir).
+- Implement hive table engine to access apache hive from clickhouse. This implements: #29245. #31104 (taiyang-li).
+- Add aggregate functions cramersV, cramersVBiasCorrected, theilsU and contingency. These functions calculate dependency (measure of association) between categorical values. All these functions are using cross-tab (histogram on pairs) for implementation. You can imagine it like a correlation coefficient but for any discrete values (not necessary numbers). #33366 (alexey-milovidov). Initial implementation by Vanyok-All-is-OK and antikvist.
+- Added table function hdfsCluster which allows processing files from HDFS in parallel from many nodes in a specified cluster, similarly to s3Cluster. #32400 (Zhichang Yu).
+- Adding support for disks backed by Azure Blob Storage, in a similar way it has been done for disks backed by AWS S3. #31505 (Jakub Kuklis).
+- Allow COMMENT in CREATE VIEW (for all VIEW kinds). #31062 (Vasily Nemkov).
+- Dynamically reinitialize listening ports and protocols when configuration changes. #30549 (Kevin Michel).
+- Added left, right, leftUTF8, rightUTF8 functions. Fix error in implementation of substringUTF8 function with negative offset (offset from the end of string). #33407 (alexey-milovidov).
+- Add new functions for H3 coordinate system: h3HexAreaKm2, h3CellAreaM2, h3CellAreaRads2. #33479 (Bharat Nallan).
+- Add MONTHNAME function. #33436 (usurai).
+- Added function arrayLast. Closes #33390. #33415 Added function arrayLastIndex. #33465 (Maksim Kita).
+- Add function decodeURLFormComponent slightly different to decodeURLComponent. Close #10298. #33451 (SuperDJY).
+- Allow to split GraphiteMergeTree rollup rules for plain/tagged metrics (optional rule_type field). #33494 (Michail Safronov).
+
+### ClickHouse release v22.2, 2022-02-17
+- Projections are production ready. Set allow_experimental_projection_optimization by default and deprecate this setting. #34456 (Nikolai Kochetov).
+- An option to create a new files on insert for File/S3/HDFS engines. Allow to overwrite a file in HDFS. Throw an exception in attempt to overwrite a file in S3 by default. Throw an exception in attempt to append data to file in formats that have a suffix (and thus don't support appends, like Parquet, ORC). Closes #31640 Closes #31622 Closes #23862 Closes #15022 Closes #16674. #33302 (Kruglov Pavel).
+- Add a setting that allows a user to provide own deduplication semantic in MergeTree/ReplicatedMergeTree If provided, it's used instead of data digest to generate block ID. So, for example, by providing a unique value for the setting in each INSERT statement, the user can avoid the same inserted data being deduplicated. This closes: #7461. #32304 (Igor Nikonov).
+- Add support of DEFAULT keyword for INSERT statements. Closes #6331. #33141 (Andrii Buriachevskyi).
+- EPHEMERAL column specifier is added to CREATE TABLE query. Closes #9436. #34424 (yakov-olkhovskiy).
+- Support IF EXISTS clause for TTL expr TO [DISK|VOLUME] [IF EXISTS] 'xxx' feature. Parts will be moved to disk or volume only if it exists on replica, so MOVE TTL rules will be able to behave differently on replicas according to the existing storage policies. Resolves #34455. #34504 (Anton Popov).
+- Allow set default table engine and to create tables without specifying ENGINE. #34187 (Ilya Yatsishin).
+- Add table function format(format_name, data). #34125 (Kruglov Pavel).
+- Detect format in clickhouse-local by file name even in the case when it is passed to stdin. #33829 (Kruglov Pavel).
+- Add schema inference for values table function. Closes #33811. #34017 (Kruglov Pavel).
+- Dynamic reload of server TLS certificates on config reload. Closes #15764. #15765 (johnskopis). #31257 (Filatenkov Artur).
+- Now ReplicatedMergeTree can recover data when some of its disks are broken. #13544 (Amos Bird).
+- Fault-tolerant connections in clickhouse-client: clickhouse-client ... --host host1 --host host2 --port port2 --host host3 --port port --host host4. #34490 (Kruglov Pavel). #33824 (Filippov Denis).
+- Add DEGREES and RADIANS functions for MySQL compatibility. #33769 (Bharat Nallan).
+- Add h3ToCenterChild function. #33313 (Bharat Nallan). Add new h3 miscellaneous functions: edgeLengthKm,exactEdgeLengthKm,exactEdgeLengthM,exactEdgeLengthRads,numHexagons. #33621 (Bharat Nallan).
+- Add function bitSlice to extract bit subsequences from String/FixedString. #33360 (RogerYK).
+- Implemented meanZTest aggregate function. #33354 (achimbab).
+- Add confidence intervals to T-tests aggregate functions. #33260 (achimbab).
+- Add function addressToLineWithInlines. Close #26211. #33467 (SuperDJY).
+- Added #! and # as a recognised start of a single line comment. Closes #34138. #34230 (Aaron Katz).
+
+
+### ClickHouse release v22.3-lts, 2022-03-17
+- **Make arrayCompact function behave as other higher-order functions: perform compaction not of lambda function results but on the original array. If you're using nontrivial lambda functions in arrayCompact you may restore old behaviour by wrapping arrayCompact arguments into arrayMap. Closes #34010 #18535 #14778. #34795 (Alexandre Snarskii).**
+- **Change implementation specific behavior on overflow of function toDatetime. It will be saturated to the nearest min/max supported instant of datetime instead of wraparound. This change is highlighted as "backward incompatible" because someone may unintentionally rely on the old behavior. #32898 (HaiBo Li).**
+- **Make function cast(value, 'IPv4'), cast(value, 'IPv6') behave same as toIPv4, toIPv6 functions. Changed behavior of incorrect IP address passed into functions toIPv4, toIPv6, now if invalid IP address passes into this functions exception will be raised, before this function return default value. Added functions IPv4StringToNumOrDefault, IPv4StringToNumOrNull, IPv6StringToNumOrDefault, IPv6StringOrNull toIPv4OrDefault, toIPv4OrNull, toIPv6OrDefault, toIPv6OrNull. Functions IPv4StringToNumOrDefault , toIPv4OrDefault , toIPv6OrDefault should be used if previous logic relied on IPv4StringToNum, toIPv4, toIPv6 returning default value for invalid address. Added setting cast_ipv4_ipv6_default_on_conversion_error, if this setting enabled, then IP address conversion functions will behave as before. Closes #22825. Closes #5799. Closes #35156. #35240 (Maksim Kita).**
+- Support for caching data locally for remote filesystems. It can be enabled for s3 disks. Closes #28961. #33717 (Kseniia Sumarokova). In the meantime, we enabled the test suite on s3 filesystem and no more known issues exist, so it is started to be production ready.
+- Add new table function hive. It can be used as follows hive('<hive metastore url>', '<hive database>', '<hive table name>', '<columns definition>', '<partition columns>') for example SELECT * FROM hive('thrift://hivetest:9083', 'test', 'demo', 'id Nullable(String), score Nullable(Int32), day Nullable(String)', 'day'). #34946 (lgbo).
+- Support authentication of users connected via SSL by their X.509 certificate. #31484 (eungenue).
+- Support schema inference for inserting into table functions file/hdfs/s3/url. #34732 (Kruglov Pavel).
+- Now you can read system.zookeeper table without restrictions on path or using like expression. This reads can generate quite heavy load for zookeeper so to enable this ability you have to enable setting allow_unrestricted_reads_from_keeper. #34609 (Sergei Trifonov).
+- Display CPU and memory metrics in clickhouse-local. Close #34545. #34605 (李扬).
+- Implement startsWith and endsWith function for arrays, closes #33982. #34368 (usurai).
+- Add three functions for Map data type: 1. mapReplace(map1, map2) - replaces values for keys in map1 with the values of the corresponding keys in map2; adds keys from map2 that don't exist in map1. 2. mapFilter 3. mapMap. mapFilter and mapMap are higher order functions, accepting two arguments, the first argument is a lambda function with k, v pair as arguments, the second argument is a column of type Map. #33698 (hexiaoting).
+- Allow getting default user and password for clickhouse-client from the CLICKHOUSE_USER and CLICKHOUSE_PASSWORD environment variables. Close #34538. #34947 (DR).
+
+### ClickHouse release 22.4, 2022-04-19
+- **Do not allow SETTINGS after FORMAT for INSERT queries (there is compatibility setting parser_settings_after_format_compact to accept such queries, but it is turned OFF by default). #35883 (Azat Khuzhin).**
+- **Function yandexConsistentHash (consistent hashing algorithm by Konstantin "kostik" Oblakov) is renamed to kostikConsistentHash. The old name is left as an alias for compatibility. Although this change is backward compatible, we may remove the alias in subsequent releases, that's why it's recommended to update the usages of this function in your apps. #35553 (Alexey Milovidov).**
+- Added INTERPOLATE extension to the ORDER BY ... WITH FILL. Closes #34903. #35349 (Yakov Olkhovskiy).
+- Profiling on Processors level (under log_processors_profiles setting, ClickHouse will write time that processor spent during execution/waiting for data to system.processors_profile_log table). #34355 (Azat Khuzhin).
+- Added functions makeDate(year, month, day), makeDate32(year, month, day). #35628 (Alexander Gololobov). Implementation of makeDateTime() and makeDateTIme64(). #35934 (Alexander Gololobov).
+- Support new type of quota WRITTEN BYTES to limit amount of written bytes during insert queries. #35736 (Anton Popov).
+- Added function flattenTuple. It receives nested named Tuple as an argument and returns a flatten Tuple which elements are the paths from the original Tuple. E.g.: Tuple(a Int, Tuple(b Int, c Int)) -> Tuple(a Int, b Int, c Int). flattenTuple can be used to select all paths from type Object as separate columns. #35690 (Anton Popov).
+- Added functions arrayFirstOrNull, arrayLastOrNull. Closes #35238. #35414 (Maksim Kita).
+- Added functions minSampleSizeContinous and minSampleSizeConversion. Author achimbab. #35360 (Maksim Kita).
+- New functions minSampleSizeContinous and minSampleSizeConversion. #34354 (achimbab).
+- Introduce format ProtobufList (all records as repeated messages in out Protobuf). Closes #16436. #35152 (Nikolai Kochetov).
+- Add h3PointDistM, h3PointDistKm, h3PointDistRads, h3GetRes0Indexes, h3GetPentagonIndexes functions. #34568 (Bharat Nallan).
+- Add toLastDayOfMonth function which rounds up a date or date with time to the last day of the month. #33501. #34394 (Habibullah Oladepo).
+- Added load balancing setting for [Zoo]Keeper client. Closes #29617. #30325 (小路).
+- Add a new kind of row policies named simple. Before this PR we had two kinds or row policies: permissive and restrictive. A simple row policy adds a new filter on a table without any side-effects like it was for permissive and restrictive policies. #35345 (Vitaly Baranov).
+- Added an ability to specify cluster secret in replicated database. #35333 (Nikita Mikhaylov).
+- Added sanity checks on server startup (available memory and disk space, max thread count, etc). #34566 (Sergei Trifonov).
+- INTERVAL improvement - can be used with [MILLI|MICRO|NANO]SECOND. Added toStartOf[Milli|Micro|Nano]second() functions. Added [add|subtract][Milli|Micro|Nano]seconds(). #34353 (Andrey Zvonov).
+
+### ClickHouse release 22.5, 2022-05-19
+- Enable memory overcommit by default. #35921 (Dmitry Novik).
+- Add support of GROUPING SETS in GROUP BY clause. This implementation supports a parallel processing of grouping sets. #33631 (Dmitry Novik).
+- Added system.certificates table. #37142 (Yakov Olkhovskiy).
+- Adds h3Line, h3Distance and h3HexRing functions. #37030 (Bharat Nallan).
+- New single binary based diagnostics tool (clickhouse-diagnostics). #36705 (Dale McDiarmid).
+- Add output format Prometheus #36051. #36206 (Vladimir C).
+- Add MySQLDump input format. It reads all data from INSERT queries belonging to one table in dump. If there are more than one table, by default it reads data from the first one. #36667 (Kruglov Pavel).
+- Show the total_rows and total_bytes fields in system.tables for temporary tables. #36401. #36439 (xiedeyantu).
+- Allow to override parts_to_delay_insert and parts_to_throw_insert with query-level settings. If they are defined, they will override table-level settings. #36371 (Memo).
+
+### ClickHouse release 22.6, 2022-06-16
+- **Remove support for octal number literals in SQL. In previous versions they were parsed as Float64. #37765 (Yakov Olkhovskiy).**
+- **Changes how settings using seconds as type are parsed to support floating point values (for example: max_execution_time=0.5). Infinity or NaN values will throw an exception. #37187 (Raúl Marín).**
+- **Changed format of binary serialization of columns of experimental type Object. New format is more convenient to implement by third-party clients. #37482 (Anton Popov).**
+- **Turn on setting output_format_json_named_tuples_as_objects by default. It allows to serialize named tuples as JSON objects in JSON formats. #37756 (Anton Popov).**
+- **LIKE patterns with trailing escape symbol ('\') are now disallowed (as mandated by the SQL standard). #37764 (Robert Schulze).**
+- **If you run different ClickHouse versions on a cluster with AArch64 CPU or mix AArch64 and amd64 on a cluster, and use distributed queries with GROUP BY multiple keys of fixed-size type that fit in 256 bits but don't fit in 64 bits, and the size of the result is huge, the data will not be fully aggregated in the result of these queries during upgrade. Workaround: upgrade with downtime instead of a rolling upgrade.**
+- Add GROUPING function. It allows to disambiguate the records in the queries with ROLLUP, CUBE or GROUPING SETS. Closes #19426. #37163 (Dmitry Novik).
+- A new codec FPC algorithm for floating point data compression. #37553 (Mikhail Guzov).
+- Add new columnar JSON formats: JSONColumns, JSONCompactColumns, JSONColumnsWithMetadata. Closes #36338 Closes #34509. #36975 (Kruglov Pavel).
+- Added open telemetry traces visualizing tool based on d3js. #37810 (Sergei Trifonov).
+- Support INSERTs into system.zookeeper table. Closes #22130. #37596 (Han Fei).
+- Support non-constant pattern argument for LIKE, ILIKE and match functions. #37251 (Robert Schulze).
+- Executable user defined functions now support parameters. Example: SELECT test_function(parameters)(arguments). Closes #37578. #37720 (Maksim Kita).
+- Add merge_reason column to system.part_log table. #36912 (Sema Checherinda).
+- Add support for Maps and Records in Avro format. Add new setting input_format_avro_null_as_default that allow to insert null as default in Avro format. Closes #18925 Closes #37378 Closes #32899. #37525 (Kruglov Pavel).
+- Add clickhouse-disks tool to introspect and operate on virtual filesystems configured for ClickHouse. #36060 (Artyom Yurkov).
+- Adds H3 unidirectional edge functions. #36843 (Bharat Nallan).
+- Add support for calculating hashids from unsigned integers. #37013 (Michael Nutt).
+- Explicit SALT specification is allowed for CREATE USER <user> IDENTIFIED WITH sha256_hash. #37377 (Yakov Olkhovskiy).
+- Add two new settings input_format_csv_skip_first_lines/input_format_tsv_skip_first_lines to allow skipping specified number of lines in the beginning of the file in CSV/TSV formats. #37537 (Kruglov Pavel).
+- showCertificate function shows current server's SSL certificate. #37540 (Yakov Olkhovskiy).
+- HTTP source for Data Dictionaries in Named Collections is supported. #37581 (Yakov Olkhovskiy).
+- Added a new window function nonNegativeDerivative(metric_column, timestamp_column[, INTERVAL x SECOND]). #37628 (Andrey Zvonov).
+- Implemented changing the comment for ReplicatedMergeTree tables. #37416 (Vasily Nemkov).
+- Added SYSTEM UNFREEZE query that deletes the whole backup regardless if the corresponding table is deleted or not. #36424 (Vadim Volodin).
+
+### ClickHouse release 22.7, 2022-07-21
+- Support expressions with window functions. Closes #19857. #37848 (Dmitry Novik).
+- Add new direct join algorithm for EmbeddedRocksDB tables, see #33582. #35363 (Vladimir C).
+- Added full sorting merge join algorithm. #35796 (Vladimir C).
+- Implement NATS table engine, which allows to pub/sub to NATS. Closes #32388. #37171 (tchepavel). (Kseniia Sumarokova)
+- Implement table function mongodb. Allow writes into MongoDB storage / table function. #37213 (aaapetrenko). (Kseniia Sumarokova)
+- Add SQLInsert output format. Closes #38441. #38477 (Kruglov Pavel).
+- Introduced settings additional_table_filters. Using this setting, you can specify additional filtering condition for a table which will be applied directly after reading. Example: select number, x, y from (select number from system.numbers limit 5) f any left join (select x, y from table_1) s on f.number = s.x settings additional_table_filters={'system.numbers : 'number != 3', 'table_1' : 'x != 2'}. Introduced setting additional_result_filter which specifies additional filtering condition for query result. Closes #37918. #38475 (Nikolai Kochetov).
+- Add compatibility setting and system.settings_changes system table that contains information about changes in settings through ClickHouse versions. Closes #35972. #38957 (Kruglov Pavel).
+- Add functions translate(string, from_string, to_string) and translateUTF8(string, from_string, to_string). It translates some characters to another. #38935 (Nikolay Degterinsky).
+- Support parseTimeDelta function. It can be used like ;-+,: can be used as separators, eg. 1yr-2mo, 2m:6s: SELECT parseTimeDelta('1yr-2mo-4w + 12 days, 3 hours : 1 minute ; 33 seconds'). #39071 (jiahui-97).
+- Added CREATE TABLE ... EMPTY AS SELECT query. It automatically deduces table structure from the SELECT query, but does not fill the table after creation. Resolves #38049. #38272 (Alexander Tokmakov).
+- Added options to limit IO operations with remote storage: max_remote_read_network_bandwidth_for_server and max_remote_write_network_bandwidth_for_server. #39095 (Sergei Trifonov).
+- Add group_by_use_nulls setting to make aggregation key columns nullable in the case of ROLLUP, CUBE and GROUPING SETS. Closes #37359. #38642 (Dmitry Novik).
+- Add the ability to specify compression level during data export. #38907 (Nikolay Degterinsky).
+- Add an option to require explicit grants to SELECT from the system database. Details: #38970 (Vitaly Baranov).
+- Functions multiMatchAny, multiMatchAnyIndex, multiMatchAllIndices and their fuzzy variants now accept non-const pattern array argument. #38485 (Robert Schulze). SQL function multiSearchAllPositions now accepts non-const needle arguments. #39167 (Robert Schulze).
+- Add a setting zstd_window_log_max to configure max memory usage on zstd decoding when importing external files. Closes #35693. #37015 (wuxiaobai24).
+- Add send_logs_source_regexp setting. Send server text logs with specified regexp to match log source name. Empty means all sources. #39161 (Amos Bird).
+- Support ALTER for Hive tables. #38214 (lgbo).
+- Support isNullable function. This function checks whether it's argument is nullable and return 1 or 0. Closes #38611. #38841 (lokax).
+- Added functions for base58 encoding/decoding. #38159 (Andrey Zvonov).
+- Add chart visualization to Play UI. #38197 (Alexey Milovidov).
+- Added L2 Squared distance and norm functions for both arrays and tuples. #38545 (Julian Gilyadov).
+- Add ability to pass HTTP headers to the url table function / storage via SQL. Closes #37897. #38176 (Kseniia Sumarokova).
+- Add clickhouse-diagnostics binary to the packages. #38647 (Mikhail f. Shiryaev).
+
+### ClickHouse release 22.8, 2022-08-18
+- **Extended range of Date32 and DateTime64 to support dates from the year 1900 to 2299. In previous versions, the supported interval was only from the year 1925 to 2283. The implementation is using the proleptic Gregorian calendar (which is conformant with ISO 8601:2004 (clause 3.2.1 The Gregorian calendar)) instead of accounting for historical transitions from the Julian to the Gregorian calendar. This change affects implementation-specific behavior for out-of-range arguments. E.g. if in previous versions the value of 1899-01-01 was clamped to 1925-01-01, in the new version it will be clamped to 1900-01-01. It changes the behavior of rounding with toStartOfInterval if you pass INTERVAL 3 QUARTER up to one quarter because the intervals are counted from an implementation-specific point of time. Closes #28216, improves #38393. #39425 (Roman Vasin).**
+- **Now, all relevant dictionary sources respect remote_url_allow_hosts setting. It was already done for HTTP, Cassandra, Redis. Added ClickHouse, MongoDB, MySQL, PostgreSQL. Host is checked only for dictionaries created from DDL. #39184 (Nikolai Kochetov).**
+- **Prebuilt ClickHouse x86 binaries now require support for AVX instructions, i.e. a CPU not older than Intel Sandy Bridge / AMD Bulldozer, both released in 2011. #39000 (Robert Schulze).**
+- **Make the remote filesystem cache composable, allow not to evict certain files (regarding idx, mrk, ..), delete old cache version. Now it is possible to configure cache over Azure blob storage disk, over Local disk, over StaticWeb disk, etc. This PR is marked backward incompatible because cache configuration changes and in order for cache to work need to update the config file. Old cache will still be used with new configuration. The server will startup fine with the old cache configuration. Closes https://github.com/ClickHouse/ClickHouse/issues/36140. Closes https://github.com/ClickHouse/ClickHouse/issues/37889. (Kseniia Sumarokova). #36171)**
+- Support SQL standard DELETE FROM syntax on merge tree tables and lightweight delete implementation for merge tree families. #37893 (Jianmei Zhang) (Alexander Gololobov). Note: this new feature does not make ClickHouse an HTAP DBMS.
+- Query parameters can be set in interactive mode as SET param_abc = 'def' and transferred via the native protocol as settings. #39906 (Nikita Taranov).
+- Quota key can be set in the native protocol (Yakov Olkhovsky).
+- Added a setting exact_rows_before_limit (0/1). When enabled, ClickHouse will provide exact value for rows_before_limit_at_least statistic, but with the cost that the data before limit will have to be read completely. This closes #6613. #25333 (kevin wan).
+- Added support for parallel distributed insert select with s3Cluster table function into tables with Distributed and Replicated engine #34670. #39107 (Nikita Mikhaylov).
+- Add new settings to control schema inference from text formats: - input_format_try_infer_dates - try infer dates from strings. - input_format_try_infer_datetimes - try infer datetimes from strings. - input_format_try_infer_integers - try infer Int64 instead of Float64. - input_format_json_try_infer_numbers_from_strings - try infer numbers from json strings in JSON formats. #39186 (Kruglov Pavel).
+- An option to provide JSON formatted log output. The purpose is to allow easier ingestion and query in log analysis tools. #39277 (Mallik Hassan).
+- Add function nowInBlock which allows getting the current time during long-running and continuous queries. Closes #39522. Notes: there are no functions now64InBlock neither todayInBlock. #39533 (Alexey Milovidov).
+- Add ability to specify settings for an executable() table function. #39681 (Constantine Peresypkin).
+- Implemented automatic conversion of database engine from Ordinary to Atomic. Create empty convert_ordinary_to_atomic file in flags directory and all Ordinary databases will be converted automatically on next server start. Resolves #39546. #39933 (Alexander Tokmakov).
+- Support SELECT ... INTO OUTFILE '...' AND STDOUT. #37490. #39054 (SmitaRKulkarni).
+- Add formats PrettyMonoBlock, PrettyNoEscapesMonoBlock, PrettyCompactNoEscapes, PrettyCompactNoEscapesMonoBlock, PrettySpaceNoEscapes, PrettySpaceMonoBlock, PrettySpaceNoEscapesMonoBlock. #39646 (Kruglov Pavel).
+
+### ClickHouse release 22.9, 2022-09-22
+- **Upgrade from 20.3 and older to 22.9 and newer should be done through an intermediate version if there are any ReplicatedMergeTree tables, otherwise server with the new version will not start. #40641 (Alexander Tokmakov).**
+- **Remove the functions accurate_Cast and accurate_CastOrNull (they are different to accurateCast and accurateCastOrNull by underscore in the name and they are not affected by the value of cast_keep_nullable setting). These functions were undocumented, untested, unused, and unneeded. They appeared to be alive due to code generalization. #40682 (Alexey Milovidov).**
+- **Add a test to ensure that every new table function will be documented. See #40649. Rename table function MeiliSearch to meilisearch. #40709 (Alexey Milovidov).**
+- **Add a test to ensure that every new function will be documented. See #40649. The functions lemmatize, synonyms, stem were case-insensitive by mistake. Now they are case-sensitive. #40711 (Alexey Milovidov).**
+- **For security and stability reasons, catboost models are no longer evaluated within the ClickHouse server. Instead, the evaluation is now done in the clickhouse-library-bridge, a separate process that loads the catboost library and communicates with the server process via HTTP. #40897 (Robert Schulze).**
+- **Make interpretation of YAML configs to be more conventional. #41044 (Vitaly Baranov).**
+- Support insert_quorum = 'auto' to use majority number. #39970 (Sachin).
+- Add embedded dashboards to ClickHouse server. This is a demo project about how to achieve 90% results with 1% effort using ClickHouse features. #40461 (Alexey Milovidov).
+- Added new settings constraint writability kind changeable_in_readonly. #40631 (Sergei Trifonov).
+- Add support for INTERSECT DISTINCT and EXCEPT DISTINCT. #40792 (Duc Canh Le).
+- Add new input/output format JSONObjectEachRow - Support import for formats JSON/JSONCompact/JSONColumnsWithMetadata. Add new setting input_format_json_validate_types_from_metadata that controls whether we should check if data types from metadata match data types from the header. - Add new setting input_format_json_validate_utf8, when it's enabled, all JSON formats will validate UTF-8 sequences. It will be disabled by default. Note that this setting doesn't influence output formats JSON/JSONCompact/JSONColumnsWithMetadata, they always validate utf8 sequences (this exception was made because of compatibility reasons). - Add new setting input_format_json_read_numbers_as_strings that allows to parse numbers in String column, the setting is disabled by default. - Add new setting output_format_json_quote_decimals that allows to output decimals in double quotes, disabled by default. - Allow to parse decimals in double quotes during data import. #40910 (Kruglov Pavel).
+- Query parameters supported in DESCRIBE TABLE query. #40952 (Nikita Taranov).
+- Add support to Parquet Time32/64 by converting it into DateTime64. Parquet time32/64 represents time elapsed since midnight, while DateTime32/64 represents an actual unix timestamp. Conversion simply offsets from 0. #41333 (Arthur Passos).
+- Implement set operations on Apache Datasketches. #39919 (Fangyuan Deng). Note: there is no point of using Apache Datasketches, they are inferiour than ClickHouse and only make sense for integration with other systems.
+- Allow recording errors to specified file while reading text formats (CSV, TSV). #40516 (zjial).
+
+### ClickHouse release 22.10, 2022-10-25
+- **Rename cache commands: show caches -> show filesystem caches, describe cache -> describe filesystem cache. #41508 (Kseniia Sumarokova).**
+- **Remove support for the WITH TIMEOUT section for LIVE VIEW. This closes #40557. #42173 (Alexey Milovidov).**
+- **Remove support for the {database} macro from the client's prompt. It was displayed incorrectly if the database was unspecified and it was not updated on USE statements. This closes #25891. #42508 (Alexey Milovidov).**
+- Composable protocol configuration is added. Now different protocols can be set up with different listen hosts. Protocol wrappers such as PROXYv1 can be set up over any other protocols (TCP, TCP secure, MySQL, Postgres). #41198 (Yakov Olkhovskiy).
+- Add S3 as a new type of the destination of backups. Support BACKUP to S3 with as-is path/data structure. #42333 (Vitaly Baranov), #42232 (Azat Khuzhin).
+- Added functions (randUniform, randNormal, randLogNormal, randExponential, randChiSquared, randStudentT, randFisherF, randBernoulli, randBinomial, randNegativeBinomial, randPoisson) to generate random values according to the specified distributions. This closes #21834. #42411 (Nikita Mikhaylov).
+- An improvement for ClickHouse Keeper: add support for uploading snapshots to S3. S3 information can be defined inside keeper_server.s3_snapshot. #41342 (Antonio Andelic).
+- Added an aggregate function analysisOfVariance (anova) to perform a statistical test over several groups of normally distributed observations to find out whether all groups have the same mean or not. Original PR #37872. #42131 (Nikita Mikhaylov).
+- Support limiting of temporary data stored on disk using settings max_temporary_data_on_disk_size_for_user/max_temporary_data_on_disk_size_for_query . #40893 (Vladimir C).
+- Add setting format_json_object_each_row_column_for_object_name to write/parse object name as column value in JSONObjectEachRow format. #41703 (Kruglov Pavel).
+- Add BLAKE3 hash-function to SQL. #33435 (BoloniniD).
+- The function javaHash has been extended to integers. #41131 (JackyWoo).
+- Add OpenTelemetry support to ON CLUSTER DDL (require distributed_ddl_entry_format_version to be set to 4). #41484 (Frank Chen).
+- Added system table asynchronous_insert_log. It contains information about asynchronous inserts (including results of queries in fire-and-forget mode (with wait_for_async_insert=0)) for better introspection. #42040 (Anton Popov).
+- Add support for methods lz4, bz2, snappy in HTTP's Accept-Encoding which is a non-standard extension to HTTP protocol. #42071 (Nikolay Degterinsky).
+- Adds Morton Coding (ZCurve) encode/decode functions. #41753 (Constantine Peresypkin).
+- Add support for SET setting_name = DEFAULT. #42187 (Filatenkov Artur).
+
+### ClickHouse release 22.11, 2022-11-17
+- **JSONExtract family of functions will now attempt to coerce to the requested type. #41502 (Márcio Martins).**
+- Adds support for retries during INSERTs into ReplicatedMergeTree when a session with ClickHouse Keeper is lost. Apart from fault tolerance, it aims to provide better user experience, - avoid returning a user an error during insert if keeper is restarted (for example, due to upgrade). #42607 (Igor Nikonov).
+- Add Hudi and DeltaLake table engines, read-only, only for tables on S3. #41054 (Daniil Rubin, Kseniia Sumarokova).
+- Add table function hudi and deltaLake. #43080 (flynn).
+- Support for composite time intervals. 1. Add, subtract and negate operations are now available on Intervals. In the case where the types of Intervals are different, they will be transformed into the Tuple of those types. 2. A tuple of intervals can be added to or subtracted from a Date/DateTime field. 3. Added parsing of Intervals with different types, for example: INTERVAL '1 HOUR 1 MINUTE 1 SECOND'. #42195 (Nikolay Degterinsky).
+- Added ** glob support for recursive directory traversal of the filesystem and S3. Resolves #36316. #42376 (SmitaRKulkarni).
+- Introduce s3_plain disk type for write-once-read-many operations. Implement ATTACH of MergeTree table for s3_plain disk. #42628 (Azat Khuzhin).
+- Added applied row-level policies to system.query_log. #39819 (Vladimir Chebotaryov).
+- Add four-letter command csnp for manually creating snapshots in ClickHouse Keeper. Additionally, lgif was added to get Raft information for a specific node (e.g. index of last created snapshot, last committed log index). #41766 (JackyWoo).
+- Add function ascii like in Apache Spark: https://spark.apache.org/docs/latest/api/sql/#ascii. #42670 (李扬).
+- Add function pmod which returns non-negative result based on modulo. #42755 (李扬).
+- Add function formatReadableDecimalSize. #42774 (Alejandro).
+- Add function randCanonical, which is similar to the rand function in Apache Spark or Impala. The function generates pseudo random results with independent and identically distributed uniformly distributed values in [0, 1). #43124 (李扬).
+- Add function displayName, closes #36770. #37681 (hongbin).
+- Add min_age_to_force_merge_on_partition_only setting to optimize old parts for the entire partition only. #42659 (Antonio Andelic).
+- Add generic implementation for arbitrary structured named collections, access type and system.named_collections. #43147 (Kseniia Sumarokova).
+

@@ -11,13 +11,15 @@
 
 ## docker
 
+- image: [https://hub.docker.com/_/rabbitmq](https://hub.docker.com/_/rabbitmq)
+
+`docker pull rabbitmq:3-management`
+
 ``` sh
 docker run -d --hostname rabbit --name rabbit -p 15672:15672 -p 5672:5672 rabbitmq:3-management
 
 # user/password: guest/guest
 ```
-
-- image: [https://hub.docker.com/_/rabbitmq](https://hub.docker.com/_/rabbitmq)
 
 ## 配置
 

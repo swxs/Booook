@@ -3,14 +3,36 @@
 ------
 
 - [安装](#安装)
-  - [源码安装](#源码安装)
-    - [配置启动脚本](#配置启动脚本)
-    - [系统安装](#系统安装)
-      - [centos系统](#centos系统)
+  - [docker](#docker)
+  - [windows](#windows)
+    - [下载安装](#下载安装)
+  - [linux](#linux)
+    - [源码安装](#源码安装)
+    - [yum安装](#yum安装)
+    - [运行](#运行)
 
 ------
 
-## 源码安装
+## docker
+
+[https://hub.docker.com/_/redis](https://hub.docker.com/_/redis)
+
+`docker pull redis`
+
+``` sh
+docker volume create --name redisdb
+docker run --name redis -v redisdb:/data -p 6379:6379 -d redis
+```
+
+## windows
+
+### 下载安装
+
+[https://github.com/microsoftarchive/redis](https://github.com/microsoftarchive/redis)
+
+## linux
+
+### 源码安装
 
 ``` sh
 wget http://download.redis.io/releases/redis-4.0.2.tar.gz
@@ -21,7 +43,15 @@ make
 # /etc/init.d/redis_6379
 ```
 
-### 配置启动脚本
+### yum安装
+
+``` sh
+yum install -y redis
+```
+
+### 运行
+
+1. 脚本运行
 
 ``` sh
 #!/bin/sh
@@ -93,13 +123,7 @@ case "$1" in
 esac
 ```
 
-### 系统安装
-
-#### centos系统
-
-``` sh
-yum install -y redis
-```
+2. systemctl 运行
 
 ``` sh
 systemctl start redis.service
