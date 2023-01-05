@@ -37,10 +37,7 @@
     "tbfed-pagefooter@^0.0.1",
     "sectionx@^3.1.0",
     "local-video@^1.0.1",
-    "favicon@^0.0.2",
-    "code-optimize@^1.2.3",
-    "expandable-chapters",
-    "chapter-fold@^0.0.4"
+    "favicon@^0.0.2"
   ],
   "pluginsConfig": {
     "theme-default": {
@@ -100,11 +97,6 @@
         "linkShape": "diagonal",
         "autoFit": true
       }
-    },
-    "code-optimize": {
-      "copyButtons": true,
-      "showLines": true
-    },
-    "chapter-fold": {}
+    }
   }
 }
