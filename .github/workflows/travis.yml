@@ -55,6 +55,6 @@ jobs:
           docker push ${{ secrets.DOCKER_REGISTRY }}/swxs/booook
 
       - name: deploy webhook
-        uses: joelwmale/webhook-action@master
+        uses: joelwmale/webhook-action@ee20d8c79e728c2d339b114fd27772ee0226aa41
         with:
           url: ${{ secrets.WEBHOOK_URL }}
