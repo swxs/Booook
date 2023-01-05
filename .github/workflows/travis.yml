@@ -54,8 +54,8 @@ jobs:
           docker build -t ${{ secrets.DOCKER_REGISTRY }}/swxs/booook .
           docker push ${{ secrets.DOCKER_REGISTRY }}/swxs/booook
 
-      - name: deploy webhook
-        uses: distributhor/workflow-webhook@v2
-        env:
-          webhook_url: ${{ secrets.WEBHOOK_URL }}
-          webhook_secret: ${{ secrets.WEBHOOK_SECRET }}
+      # - name: deploy webhook
+      #   uses: distributhor/workflow-webhook@v2
+      #   env:
+      #     webhook_url: ${{ secrets.WEBHOOK_URL }}
+      #     webhook_secret: ${{ secrets.WEBHOOK_SECRET }}
