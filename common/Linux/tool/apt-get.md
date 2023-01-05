@@ -62,38 +62,56 @@ apt-get clean        # 删除软件包的安装包
 
 在修改`/etc/apt/sources.list`或者`/etc/apt/preferences`之后运行该命令。此外您需要定期运行这一命令以确保您的软件包列表是最新的：
 
-`apt-get update`
+```
+apt-get update
+```
 
 ### 安装一个新软件包：
 
-`apt-get install packagename`
+```
+apt-get install <packagename>
+```
 
 ### 卸载一个已安装的软件包（保留配置文件）：
 
-`apt-get remove packagename`
+```
+apt-get remove <packagename>
+```
 
 ### 卸载一个已安装的软件包（删除配置文件）：
 
-`apt-get –purge remove packagename`
+```
+apt-get –purge remove <packagename>
+```
 
 ### 这个命令会把安装的软件的备份也删除，不过这样不会影响软件的使用的：
 
-`apt-get clean`
+```
+apt-get clean
+```
 
 ### 更新所有已安装的软件包：
 
-`apt-get upgrade`
+```
+apt-get upgrade
+```
 
 ### 将系统升级到新版本：
 
-`apt-get dist-upgrade`
+```
+apt-get dist-upgrade
+```
 
 ### 清除卸载的软件包
 
 定期运行这个命令来清除那些已经卸载的软件包的.deb文件。通过这种方式，您可以释放大量的磁盘空间。如果您的需求十分迫切，可以使用apt-get clean以释放更多空间。这个命令会将已安装软件包裹的.deb文件一并删除。大多数情况下您不会再用到这些.debs文件，因此如果您为磁盘空间不足 而感到焦头烂额，这个办法也许值得一试：
 
-`apt-get autoclean`
+```
+apt-get autoclean
+```
 
 会把已装或已卸的软件都备份在硬盘上，所以如果需要空间的话，可以让这个命令来删除你已经删掉的软件：
 
-`apt-get autoclean apt`
+```
+apt-get autoclean apt
+```

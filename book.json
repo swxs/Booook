@@ -38,7 +38,8 @@
     "sectionx@^3.1.0",
     "local-video@^1.0.1",
     "favicon@^0.0.2",
-    "code@^0.1.0"
+    "code-optimize@^1.2.3",
+    "chapter-fold@^0.0.4"
   ],
   "pluginsConfig": {
     "theme-default": {
@@ -98,6 +99,11 @@
         "linkShape": "diagonal",
         "autoFit": true
       }
-    }
+    },
+    "code-optimize": {
+      "copyButtons": true,
+      "showLines": true
+    },
+    "chapter-fold": {}
   }
 }

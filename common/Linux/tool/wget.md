@@ -159,35 +159,47 @@ wget -S –-spider url 不下载只显示过程
 
 ### 使用wget下载单个文件
 
-`wget http://www.jsdig.com/testfile.zip`
+```
+wget http://www.jsdig.com/testfile.zip
+```
 
 以下的例子是从网络下载一个文件并保存在当前目录，在下载的过程中会显示进度条，包含（下载完成百分比，已经下载的字节，当前下载速度，剩余下载时间）。
 
 ### 下载并以不同的文件名保存
 
-`wget -O wordpress.zip http://www.jsdig.com/download.aspx?id=1080`
+```
+wget -O wordpress.zip http://www.jsdig.com/download.aspx?id=1080
+```
 
 wget默认会以最后一个符合/的后面的字符来命令，对于动态链接的下载通常文件名会不正确。
 
 错误：下面的例子会下载一个文件并以名称download.aspx?id=1080保存:
 
-`wget http://www.jsdig.com/download?id=1`
+```
+wget http://www.jsdig.com/download?id=1
+```
 
 即使下载的文件是zip格式，它仍然以download.php?id=1080命名。
 
 正确：为了解决这个问题，我们可以使用参数-O来指定一个文件名：
 
-`wget -O wordpress.zip http://www.jsdig.com/download.aspx?id=1080`
+```
+wget -O wordpress.zip http://www.jsdig.com/download.aspx?id=1080
+```
 
 ### wget限速下载
 
-`wget --limit-rate=300k http://www.jsdig.com/testfile.zip`
+```
+wget --limit-rate=300k http://www.jsdig.com/testfile.zip
+```
 
 当你执行wget的时候，它默认会占用全部可能的宽带下载。但是当你准备下载一个大文件，而你还需要下载其它文件时就有必要限速了。
 
 ### 使用wget断点续传
 
-`wget -c http://www.jsdig.com/testfile.zip`
+```
+wget -c http://www.jsdig.com/testfile.zip
+```
 
 使用wget -c重新启动下载中断的文件，对于我们下载大文件时突然由于网络等原因中断非常有帮助，我们可以继续接着下载而不是重新下载一个文件。需要继续中断的下载时可以使用-c参数。
 
@@ -202,11 +214,15 @@ Output will be written to 'wget-log'.
 
 对于下载非常大的文件的时候，我们可以使用参数-b进行后台下载，你可以使用以下命令来察看下载进度：
 
-`tail -f wget-log`
+```
+tail -f wget-log
+```
 
 伪装代理名称下载
 
-`wget --user-agent="Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.204 Safari/534.16" http://www.jsdig.com/testfile.zip`
+```
+wget --user-agent="Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.204 Safari/534.16" http://www.jsdig.com/testfile.zip
+```
 
 有些网站能通过根据判断代理名称不是浏览器而拒绝你的下载请求。不过你可以通过`--user-agent`参数伪装。
 
@@ -214,7 +230,9 @@ Output will be written to 'wget-log'.
 
 当你打算进行定时下载，你应该在预定时间测试下载链接是否有效。我们可以增加--spider参数进行检查。
 
-`wget --spider URL`
+```
+wget --spider URL
+```
 
 如果下载链接正确，将会显示:
 
@@ -243,13 +261,17 @@ Remote file does not exist -- broken link!!!
 
 ### 增加重试次数
 
-`wget --tries=40 URL`
+```
+wget --tries=40 URL
+```
 
 如果网络有问题或下载一个大文件也有可能失败。wget默认重试20次连接下载文件。如果需要，你可以使用--tries增加重试次数。
 
 ### 下载多个文件
 
-`wget -i filelist.txt`
+```
+wget -i filelist.txt
+```
 
 首先，保存一份下载链接文件：
 
@@ -265,7 +287,9 @@ url4
 
 ### 镜像网站
 
-`wget --mirror -p --convert-links -P ./LOCAL URL`
+```
+wget --mirror -p --convert-links -P ./LOCAL URL
+```
 
 下载整个网站到本地。
 
@@ -276,25 +300,33 @@ url4
 
 ### 过滤指定格式下载
 
-`wget --reject=gif ur`
+```
+wget --reject=gif url
+```
 
 下载一个网站，但你不希望下载图片，可以使用这条命令。
 
 ### 把下载信息存入日志文件
 
-`wget -o download.log URL`
+```
+wget -o download.log URL
+```
 
 不希望下载信息直接显示在终端而是在一个日志文件，可以使用。
 
 ### 限制总下载文件大小
 
-`wget -Q5m -i filelist.txt`
+```
+wget -Q5m -i filelist.txt
+```
 
 当你想要下载的文件超过5M而退出下载，你可以使用。注意：这个参数对单个文件下载不起作用，只能递归下载时才有效。
 
 ### 下载指定格式文件
 
-`wget -r -A.pdf url`
+```
+wget -r -A.pdf url
+```
 
 可以在以下情况使用该功能：
 
@@ -313,8 +345,12 @@ wget --ftp-user=USERNAME --ftp-password=PASSWORD url
 
 使用wget匿名ftp下载：
 
-`wget ftp-url`
+```
+wget ftp-url
+```
 
 使用wget用户名和密码认证的ftp下载：
 
-`wget --ftp-user=USERNAME --ftp-password=PASSWORD url`
+```
+wget --ftp-user=USERNAME --ftp-password=PASSWORD url
+```

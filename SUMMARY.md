@@ -9,6 +9,7 @@
             * [apt-get](common/Linux/tool/apt-get.md)
             * [awk](common/Linux/tool/awk.md)
             * [curl](common/Linux/tool/curl.md)
+            * [du](common/Linux/tool/du.md)
             * [find](common/Linux/tool/find.md)
             * [imail](common/Linux/tool/imail.md)
             * [iptables](common/Linux/tool/iptables.md)
@@ -141,6 +142,7 @@
     * [读书体会](common/Book/README.md)
         * [生僻字](common/Book/words.md)
         * [术语](common/Book/terminology.md)
+        * [组合数学](common/Book/Introductory-Combinatorics.md)
         * [代码大全](common/Book/Code-Complete.md)
         * [重构](common/Book/Refactoring-Improving-the-Design-of-Existing-Code.md)
         * [编译原理](common/Book/Compilers.md)
@@ -151,6 +153,6 @@
         * [这就是OKR](common/Book/Measure-What-Matters.md)
         * [一分钟经理人](common/Book/The-One-Minute-Manager.md)
         * [干法](common/Book/働き方.md)
-        * [组合数学](common/Book/Introductory-Combinatorics.md)
+        * [零内耗-打造一支彼此信任的高效团队](common/Book/Trust-Factor.md)
     * [工具](common/Tool/README.md)
 

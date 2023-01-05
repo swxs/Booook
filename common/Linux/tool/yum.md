@@ -52,14 +52,18 @@
 
 1. 查询一下yum源中的相关包信息
 
-   - `yum search cmake`
-   - `yum list cmake | grep cmake`
+- `yum search cmake`
+- `yum list cmake | grep cmake`
 
-2. 看一下安装状态, 可以知道一下安装之后的命令入口
+1. 看一下安装状态, 可以知道一下安装之后的命令入口
 
-    `yum provides */cmake`
+```
+yum provides */cmake
+```
 
 3. 安装
 
-    `yum install -y cmake`
+```
+yum install -y cmake
+```
 

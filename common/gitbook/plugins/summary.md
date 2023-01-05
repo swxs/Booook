@@ -21,6 +21,7 @@
 | [simple-mind-map](./simple-mind-map.md) | 代码块实现思维导图                  |        |
 | katex                                   | 数学公式解析                        | 不好用 |
 | code                                    | 代码块复制                          |        |
+| code-optimize                           | 代码块复制,行号                     |        |
 | advanced-emoji                          | 支持更多emoji                       |        |
 | anchor-navigation-ex                    | 添加Toc到侧边悬浮导航以及回到顶部按 |        |
 | splitter                                | 分割条优化                          |        |
@@ -29,3 +30,4 @@
 | sectionx                                | 支持划分段落                        |        |
 | expandable-chapters-small               | 段落的小节点                        |        |
 | tbfed-pagefooter                        | 添加文章修改时间                    |        |
+| chapter-fold                            | 章节折叠                            |        |
