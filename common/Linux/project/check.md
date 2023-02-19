@@ -3,6 +3,8 @@
 ------
 
 - [问题排查](#问题排查)
+  - [2023/02/10](#20230210)
+    - [内存不足](#内存不足)
   - [2022/08/08](#20220808)
     - [磁盘不足](#磁盘不足)
   - [2022/07/18](#20220718)
@@ -10,14 +12,14 @@
   - [2022/04/11](#20220411)
     - [安装gdb失败](#安装gdb失败)
   - [2022/01/52](#20220152)
-    - [OSS图片没有Access-Control-Allow-Origin: *请求头](#oss图片没有access-control-allow-origin-请求头)
+    - [OSS图片没有Access-Control-Allow-Origin: \*请求头](#oss图片没有access-control-allow-origin-请求头)
   - [2021/12/20](#20211220)
     - [尝试排查内存泄露问题](#尝试排查内存泄露问题)
       - [timeout 问题](#timeout-问题)
     - [top看到的内存占用与heap不一致](#top看到的内存占用与heap不一致)
   - [2020/10/28](#20201028)
     - [延长ssh](#延长ssh)
-    - [$'\r': command not found](#r-command-not-found)
+    - [$'\\r': command not found](#r-command-not-found)
   - [2020/05/11](#20200511)
     - [服务器磁盘占用过高](#服务器磁盘占用过高)
   - [2020/05/12](#20200512)
@@ -26,6 +28,28 @@
     - [.h5文件读写报错](#h5文件读写报错)
 
 ------
+
+## 2023/02/10
+
+### 内存不足
+
+```
+yum update
+yum install -y gdb
+yum install -y python-psutil python-debuginfo python-pycallgraph pygobject3 webkitgtk3 python-meliae
+```
+
+```
+python3 -m pip install pyrasite
+
+cd /usr/local/python3/lib/python3.8/site-packages/pyrasite/tools
+python3 -m pip install urwid meliae objgraph guppy3
+
+python3 shell.py 11
+
+>>> import objgraph
+>>> objgraph.show_most_common_types(limit=20)
+```
 
 ## 2022/08/08
 
@@ -208,11 +232,34 @@ pip install guppy3
 
 >>> from guppy import hpy
 >>> h = hpy()
->>> h.heap()
 >>> h.setref()
->>> h.heap().byid
->>> h.heap().byid[0].sp
->>> h.heap().get_rp(10)
+>>> heap = h.heap()
+
+# 无依赖的
+>>> byclodo = heap.byclodo
+>>> byclodo[0].sp
+>>> byclodo[0].get_rp(10)
+
+>>> ids = heap.byid
+>>> idset = heap.byidset
+>>> bymodule = heap.bymodule
+>>> byrcs = heap.byrcs
+>>> bysize = heap.bysize
+>>> bytype = heap.bytype
+>>> byunity = heap.byunity
+>>> byvia = heap.byvia
+
+
+```
+
+
+
+ 'biper', 'brief', 'by', 'byclodo', 'byid', 'byidset', 'bymodule', 'byprod', 'byrcs', 'bysize', 'bytype', 'byunity', 'byvia', 'count', 'dictof', 'diff', 'disjoint', 'doc', 'dominos', 'domisize', 'dump', 'er', 'fam', 'get_ckc', 'get_examples', 'get_render', 'get_rp', 'get_shpaths', 'imdom', 'indisize', 'kind', 'maprox', 'more', 'nodes', 'owners', 'partition', 'parts', 'pathsin', 'pathsout', 'prod', 'referents', 'referrers', 'rp', 'shpaths', 'size', 'sp', 'stat', 'test_contains', 'theone'
+
+```
+import random
+
+h.heap().byid[random.randint(0, 494765)].sp
 ```
 
 1. 检查垃圾数据

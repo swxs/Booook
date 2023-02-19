@@ -154,5 +154,6 @@
         * [一分钟经理人](common/Book/The-One-Minute-Manager.md)
         * [干法](common/Book/働き方.md)
         * [零内耗-打造一支彼此信任的高效团队](common/Book/Trust-Factor.md)
+        * [危险的金钱](common/Book/How-Money-Became-Dangerous)
     * [工具](common/Tool/README.md)
 
