@@ -12,6 +12,7 @@
             * [du](common/Linux/tool/du.md)
             * [find](common/Linux/tool/find.md)
             * [imail](common/Linux/tool/imail.md)
+            * [install](common/Linux/tool/install.md)
             * [iptables](common/Linux/tool/iptables.md)
             * [kafkacat](common/Linux/tool/kafkacat.md)
             * [kill](common/Linux/tool/kill.md)

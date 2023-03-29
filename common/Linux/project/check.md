@@ -3,6 +3,8 @@
 ------
 
 - [问题排查](#问题排查)
+  - [2023/03/20](#20230320)
+    - [kafka-python 消息发送失败](#kafka-python-消息发送失败)
   - [2023/02/10](#20230210)
     - [内存不足](#内存不足)
   - [2022/08/08](#20220808)
@@ -28,6 +30,64 @@
     - [.h5文件读写报错](#h5文件读写报错)
 
 ------
+
+## 2023/03/20
+
+### kafka-python 消息发送失败
+
+kafka-python可以创建topic，但是无法发送消息
+
+消息是正常flush的producer.flush()， 而且老版本是正常发送
+
+最后发现加了机器host就可以正常访问了，
+
+原因如下：
+
+`site-packages\kafka\client_async.py`
+
+```
+def _maybe_connect(self, node_id):
+    """Idempotent non-blocking connection attempt to the given node id."""
+    with self._lock:
+        conn = self._conns.get(node_id)
+
+        if conn is None:
+            # 这边会尝试获取kafka元信息
+            broker = self.cluster.broker_metadata(node_id)
+            assert broker, 'Broker id %s not in current metadata' % (node_id,)
+
+            log.debug("Initiating connection to node %s at %s:%s",
+                      node_id, broker.host, broker.port)
+            # 这边会使用元信息的host来维持连接
+            host, port, afi = get_ip_port_afi(broker.host)
+            cb = WeakMethod(self._conn_state_change)
+            conn = BrokerConnection(host, broker.port, afi,
+                                    state_change_callback=cb,
+                                    node_id=node_id,
+                                    **self.config)
+            self._conns[node_id] = conn
+
+        # Check if existing connection should be recreated because host/port changed
+        elif self._should_recycle_connection(conn):
+            self._conns.pop(node_id)
+            return False
+
+        elif conn.connected():
+            return True
+
+        conn.connect()
+        return conn.connected()
+```
+
+kafka配置的host是机器名
+
+```
+get /brokers/ids/222
+# 这边的host导致无法解析
+{"listener_security_protocol_map":{"PLAINTEXT":"PLAINTEXT"},"endpoints":["PLAINTEXT://<机器名>:9092"],"jmx_port":9393,"host":"<机器名>","timestamp":"1679283287285","port":9092,"version":4}
+```
+
+调整kafka配置的host后修复
 
 ## 2023/02/10
 
