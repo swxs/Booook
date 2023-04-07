@@ -17,6 +17,7 @@
   - [删除文件](#删除文件)
   - [修改时间](#修改时间)
   - [DNS链路](#dns链路)
+  - [任务调度](#任务调度)
 
 ------
 
@@ -203,4 +204,23 @@ dig -x www.baidu.com
 dig ns com
 
 host www.baidu.com
+```
+
+## 任务调度
+
+``` sh
+# 查看任务
+jobs -l
+ps aux
+
+# 任务前后台切换
+fg %<task_id>
+bg %<task_id>
+
+# 防止任务在退出命令行时被自动kill
+nohup <任务> <2>&1> &
+disown -h %<task_id>
+
+# 停止进程
+kill -9 
 ```
