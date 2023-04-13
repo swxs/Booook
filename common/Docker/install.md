@@ -6,6 +6,9 @@
   - [centos 安装](#centos-安装)
     - [安装 Docker](#安装-docker)
     - [安装 Docker Compose](#安装-docker-compose)
+  - [centos 升级](#centos-升级)
+    - [升级docker](#升级docker)
+    - [升级docker-compose](#升级docker-compose)
     - [Centos 6.7 安装 Docker几个坑](#centos-67-安装-docker几个坑)
   - [windows 安装](#windows-安装)
 
@@ -48,6 +51,31 @@ pip install docker-compose==1.5.2
 可能需要修改docker-compose.yml, 具体参考
 [BLOG](https://blog.csdn.net/kinginblue/article/details/73527832)
 
+## centos 升级
+
+### 升级docker
+
+``` sh
+# 停止当前正在运行的Docker服务：
+sudo systemctl stop docker
+#  删除旧版本的Docker：
+sudo yum remove docker docker-client docker-client-latest docker-common docker-latest docker-latest-logrotate docker-logrotate docker-engine
+# 安装依赖项：
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+# 添加Docker存储库：
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+# 安装最新版本的Docker：
+sudo yum install docker-ce docker-ce-cli containerd.io
+# 启动Docker服务：
+sudo systemctl start docker
+```
+
+### 升级docker-compose
+
+```
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.17.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/bin/docker-compose
+sudo chmod +x /usr/bin/docker-compose
+```
 
 ### Centos 6.7 安装 Docker几个坑
 
