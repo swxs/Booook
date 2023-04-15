@@ -16,7 +16,8 @@
 | edit-link                               | 直接跳转到编辑页面                  |        |
 | prism                                   | 代码块高亮，支持各种语法、          |        |
 | prism-themes                            | 配合prism的主题                     |        |
-| [mermaid](./mermaid.md)                 | 代码块实现流程图                    |        |
+| [mermaid](./mermaid.md)                 | mermaid支持                         | 已失效 |
+| [mermaid-v8](./mermaid.md)              | mermaid支持                         |        |
 | [mermaid-newface](./mermaid.md)         | 新版本                              |        |
 | [simple-mind-map](./simple-mind-map.md) | 代码块实现思维导图                  |        |
 | katex                                   | 数学公式解析                        | 不好用 |
