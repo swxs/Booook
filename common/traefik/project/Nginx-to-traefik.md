@@ -14,6 +14,13 @@
 
 以两层nginx反向代理
 
+``` mermaid
+graph TD;
+    A[访问网址]-->B(入口nginx代理);
+    B(入口nginx代理)-->|proxy|C(前端nginx代理);
+    C(前端nginx代理)-->|upstream|D(后端服务);
+```
+
 第一层nginx代理域名到内网服务
 ```
 upstream server_list {
@@ -134,6 +141,13 @@ server {
 流量频繁从nginx流入流出
 
 ## 迁移后架构
+
+``` mermaid
+graph TD;
+    A[访问网址]-->B(Traefik代理);
+    B(Traefik代理)-->|proxy|C(前端nginx代理);
+    B(Traefik代理)-->|proxy|D(后端服务);
+```
 
 通过traefik动态负载前后端服务
 
