@@ -10,7 +10,6 @@
     "serve": "gitbook serve"
   },
   "dependencies": {
-    "gitbook-cli": "^2.3.2",
-    "gitbook-plugin-mermaid-newface": "^4.1.0"
+    "gitbook-cli": "^2.3.2"
   }
 }
