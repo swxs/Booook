@@ -18,7 +18,9 @@ jobs:
 
       - name: configue gitbook
         run: |
+          npm install -g yarn
           npm install -g gitbook-cli
+          yarn
           gitbook install
 
       - name: generate _book folder
