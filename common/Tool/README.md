@@ -22,9 +22,11 @@
   - [redis](#redis)
   - [mongodb](#mongodb)
   - [Postman](#postman)
+  - [Apifox](#apifox)
   - [xmind](#xmind)
   - [freemind](#freemind)
   - [docker](#docker)
+  - [chromedriver](#chromedriver)
 
 ------
 
@@ -188,6 +190,11 @@ mongod、mongo数据处理工具(mongodump, mongorestore)、robo3T
 下载:
 - [https://www.postman.com/downloads/](https://www.postman.com/downloads/)
 
+## Apifox
+
+下载:
+- [https://apifox.com/](https://apifox.com/)
+
 ## xmind
 
 下载:
@@ -205,3 +212,8 @@ docker on windows
 
 下载:
 - [https://hub.docker.com/editions/community/docker-ce-desktop-windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+
+## chromedriver
+
+下载:
+- [https://chromedriver.chromium.org/](https://chromedriver.chromium.org/)
