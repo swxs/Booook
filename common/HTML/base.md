@@ -16,18 +16,18 @@
 
 ### loading
 
-![loading](/static/HTML/loading.gif)
+![loading](https://s3.bmp.ovh/imgs/2023/04/28/4f30da52d64dcbbe.gif)
 
 ### 空
 
-![空](/static/HTML/tmp.gif)
+![空](https://s3.bmp.ovh/imgs/2023/04/28/3555ad29f510fcb4.gif)
 
 ## 颜色
 
-![色盘](/static/HTML/color.jpg)
+![色盘](https://s3.bmp.ovh/imgs/2023/04/28/d2712c6bc062017e.jpg)
 
 ## 快速编写
 
 ### Emmet
 
-![Emmet](/static/HTML/Emmet.png)
+![Emmet](https://s3.bmp.ovh/imgs/2023/04/28/9fd19fd221d9475e.png)

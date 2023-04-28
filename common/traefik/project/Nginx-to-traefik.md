@@ -6,6 +6,9 @@
   - [历史架构](#历史架构)
     - [老架构存在的问题](#老架构存在的问题)
   - [迁移后架构](#迁移后架构)
+    - [http自动跳转https](#http自动跳转https)
+    - [自动tls证书](#自动tls证书)
+    - [证书验证中间件](#证书验证中间件)
 
 
 ------
@@ -136,9 +139,7 @@ server {
 
 ### 老架构存在的问题
 
-第二层nginx, 依赖nginx-proxy, 存在前后端耦合问题
-
-流量频繁从nginx流入流出
+第二层nginx, 依赖nginx-proxy, 存在前后端耦合问题, 心智要求较高
 
 ## 迁移后架构
 
@@ -151,23 +152,108 @@ graph TD;
 
 通过traefik动态负载前后端服务
 
+> traefik配置
+
+```
+providers:
+  docker:
+    endpoint: "unix:///var/run/docker.sock"
+    exposedByDefault: false
+
+entryPoints:
+  web:
+    address: ":80"
+```
+
+> 具体服务配置
+
 ```
   home:
     labels:
       - "traefik.enable=true"
+      - "traefik.http.services.home.loadbalancer.server.port=8000"
       - "traefik.http.routers.home.rule=PathPrefix(`/api`)"
       - "traefik.http.routers.home.priority=100"
       - "traefik.http.routers.home.entrypoints=web"
       - "traefik.http.routers.home.service=home"
-      - "traefik.http.services.home.loadbalancer.server.port=8000"
 ```
 
 ```
   openapi_passwordlock:
     labels:
       - "traefik.enable=true"
+      - "traefik.http.services.openapi_passwordlock.loadbalancer.server.port=80"
       - "traefik.http.routers.openapi_passwordlock.rule=Host(`password.moveright.top`)"
       - "traefik.http.routers.openapi_passwordlock.entrypoints=web"
       - "traefik.http.routers.openapi_passwordlock.service=openapi_passwordlock"
-      - "traefik.http.services.openapi_passwordlock.loadbalancer.server.port=80"
+```
+
+### http自动跳转https
+
+> traefik配置
+
+```
+entryPoints:
+  web:
+    address: ":80"
+    http:
+      redirections:
+        entryPoint:
+          to: websecure
+          scheme: https
+
+  websecure:
+    address: ":443"
+    http:
+      tls:
+        certResolver: "letsencrypt"
+        domains:
+          - main: "*.moveright.top"
+```
+
+> 具体服务配置修改
+
+```
+    labels:
+      - "traefik.http.routers.whoami.entrypoints=websecure"
+      - "traefik.http.routers.whoami.tls=true"
+```
+
+### 自动tls证书
+
+> traefik配置
+
+有三种证书获取方式可选，这边使用dnsChallenge，好处是支持泛域名
+
+```
+certificatesResolvers:
+  letsencrypt:
+    acme:
+      email: ""
+      storage: "/letsencrypt/acme.json"
+      dnsChallenge:
+        provider: "alidns"
+        delayBeforeCheck: 0
+```
+
+修改阿里云配置
+1. 添加RAM用户，授予所有域名相关权限 
+
+2. 获取AccessKey ID并配置`docker-compose.yml`环境变量
+```
+    environment:
+      - ALICLOUD_ACCESS_KEY=***
+      - ALICLOUD_SECRET_KEY=***
+      - ALICLOUD_REGION_ID=cn-shanghai
+```
+3. 重启等待证书生成
+
+### 证书验证中间件
+
+> 具体服务配置修改
+
+```
+    labels:
+      - "traefik.http.routers.dashboard.middlewares=dashboard"
+      - "traefik.http.middlewares.dashboard.basicauth.users=swxs:$$apr1$$XN0o2eiY$$mJ4mqPzpIuiiA1VRJ3hLi0"
 ```
