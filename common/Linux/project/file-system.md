@@ -71,7 +71,7 @@
 
 - tmpfs
 
-``` sh
+```sh
 mount -t tmpfs -o size=500m tmpfs /mnt/tmp/
 
 vi /etc/fstab

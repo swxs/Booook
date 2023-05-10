@@ -18,14 +18,14 @@
 
 ### 安装 Docker
 
-``` sh
+```sh
 yum install epel-release
 yum install docker-io
 vi /etc/sysconfig/docker
 other-args更改为：other_args="--exec-driver=lxc --selinux-enabled"
 ```
 
-``` sh
+```sh
 # 修改镜像
 mkdir -p /etc/docker
 tee /etc/docker/daemon.json <<-'EOF'
@@ -35,7 +35,7 @@ tee /etc/docker/daemon.json <<-'EOF'
 EOF
 ```
 
-``` sh
+```sh
 service docker start
 将docker加入开机启动
 chkconfig docker on
@@ -43,7 +43,7 @@ chkconfig docker on
 
 ### 安装 Docker Compose
 
-``` sh
+```sh
 pip install pip==9.0.1
 pip install docker-compose==1.5.2
 ```
@@ -55,7 +55,7 @@ pip install docker-compose==1.5.2
 
 ### 升级docker
 
-``` sh
+```sh
 # 停止当前正在运行的Docker服务：
 sudo systemctl stop docker
 #  删除旧版本的Docker：

@@ -64,7 +64,7 @@
 
 	vim ~/.bashrc
 
-``` sh
+```sh
 alias tmuxl='tmux select-pane -L'
 alias tmuxr='tmux select-pane -R'
 alias tmuxu='tmux select-pane -U'
@@ -75,7 +75,7 @@ alias tmuxa='tmux attach -t '
 
 	vim ~/.tmux.conf
 
-``` sh
+```sh
 # 设置鼠标滚动
 set -g mouse on
 ```

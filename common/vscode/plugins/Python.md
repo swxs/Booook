@@ -9,7 +9,7 @@
 
 ## 配置
 
-``` sh
+```sh
 "python.showStartPage": true,
 "python.languageServer": "Pylance",
 "python.linting.flake8Enabled": true,

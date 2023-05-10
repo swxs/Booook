@@ -20,17 +20,17 @@
 
 ### Enable the Windows Subsystem for Linux
 win+x powershell(管理员)
-``` sh
+```sh
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
 
 ### Enable Virtual Machine feature
-``` sh
+```sh
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
 
 ### Download the Linux kernel update package
-``` sh
+```sh
 wsl --set-default-version 2
 wsl --list --verbose
 wsl --set-version <distribution name> <versionNumber>
@@ -40,7 +40,7 @@ wsl --set-version <distribution name> <versionNumber>
 
 ## 更新
 
-``` sh
+```sh
 sudo apt-get update
 ```
 
@@ -52,26 +52,26 @@ sudo apt-get update
 
 1. Update the apt package index and install packages to allow apt to use a repository over HTTPS:
 
-    ``` sh
+    ```sh
     sudo apt-get update
     sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
     ```
 
 2. Add Docker’s official GPG key:
 
-    ``` sh
+    ```sh
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
     ```
 
 3. Use the following command to set up the stable repository
 
-    ``` sh
+    ```sh
     sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
     ```
 
 4. install the latest version of Docker Engine and containerd
 
-    ``` sh
+    ```sh
     sudo apt-get install docker-ce docker-ce-cli containerd.io
     ```
 
@@ -79,13 +79,13 @@ sudo apt-get update
 
     1. 尝试windows上启动服务，wsl启动client
 
-    ``` sh
+    ```sh
     已检测到虚拟机监控程序。将不显示 Hyper-V 所需的功能。
     ```
 
     1. Home装不了docker..., 转装docker-toolbox
 
-    ``` sh
+    ```sh
     # 关闭Hyper-V
     bcdedit /set {d89bf857-d769-11e9-a69e-3c18a0727e3f} hypervisorlaunchtype OFF
 
@@ -97,7 +97,7 @@ sudo apt-get update
 
 ## 安装 python3
 
-``` sh
+```sh
 apt-get install python3-distutils python3-dev build-essential libssl-dev libffi-dev libxml2-dev libxslt1-dev zlib1g-dev python3 python3-pip
 ```
 
@@ -110,6 +110,6 @@ Options tab > Edit options > enable QuickEdit Mode
 
 ### 问题: `参考的对象类型不支持尝试的操作。`
 
-``` sh
+```sh
 netsh winsock reset
 ```

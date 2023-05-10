@@ -15,14 +15,14 @@
 ## 慢日志
 
 ### 通过命令行配置
-``` sh
+```sh
 # 查询慢查询级别和其它信息
 db.getProfilingStatus()
 # 仅返回慢查询级别
 db.getProfilingLevel()
 ```
 
-``` sh
+```sh
 # 禁用慢查询
 db.setProfilingLevel(0)
 #  指定数据库，并指定阈值慢查询 ，超过20毫秒的查询被记录
@@ -34,13 +34,13 @@ db.setProfilingLevel(2)
 ```
 
 ### 通过ini文件配置
-``` ini
+```ini
 profile = 1
 slowms = 300
 ```
 
 ### 通过yaml文件配置
-``` yaml
+```yaml
 operationProfiling:  
     mode:<string># 默认为 off，可选值 off、slowOp(对应上面的等级 1)、all(对应上面的等级 2)   
     slowOpThresholdMs:<int># 阈值，默认值为100，单位毫秒  
@@ -49,7 +49,7 @@ operationProfiling:
 
 ## 慢查询常用命令
 
-``` sh
+```sh
 # 查询最近的10个慢查询日志
 db.system.profile.find().limit(10).sort( { ts : -1 } ).pretty()
 
@@ -73,7 +73,7 @@ db.system.profile.find({
 
 ## MongoDB慢查询日志解析
 
-``` sh
+```sh
 {
   "op" : "query",  # 操作类型，值可为command、count、distinct、geoNear、getMore、group、insert、mapReduce、query、remove、update
   "ns" : "test.report", # 操作的数据库和集合

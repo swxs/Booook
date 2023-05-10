@@ -25,13 +25,13 @@
 
 ### 查找指定名字的文件并删除
 
-``` sh
+```sh
 find . -maxdepth 1 -regex "\.\/[0-9a-f]*_[0-9]*_[0-9a-f]*\.h5" -exec rm -f {} +;
 ```
 
 ### 删除7天前的文件
 
-``` sh
+```sh
 find . -type f -mtime +7 -exec rm -f {} +;
 ```
 

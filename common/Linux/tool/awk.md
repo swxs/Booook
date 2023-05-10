@@ -17,7 +17,7 @@ awk是一种编程语言，用于在linux/unix下对文本和数据进行处理�
 
 ## 基本语法
 
-``` sh
+```sh
 awk 'pattern {action}'
 ```
 
@@ -51,12 +51,12 @@ awk 'pattern {action}'
 
 ## 示例
 
-``` sh
+```sh
 # 条件聚合
 cat 1.csv | awk -F ',' '$1~/[ab]/ {g[$1]+=$2*$3} END {for(l in g) printf "%s = %d\n",l,g[l]}'
 ```
 
-``` sh
+```sh
 # ls
 awk 'BEGIN{while( "ls" | getline) print}'
 ```

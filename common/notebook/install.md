@@ -14,7 +14,7 @@
 
 ## python kernel
 
-``` sh
+```sh
 pip install jupyter
 ```
 
@@ -26,7 +26,7 @@ pip3 install jupyterlab
 
 1. 准备环境
 
-``` sh
+```sh
 bash> tree .
 .
 ├── deps.edn
@@ -50,7 +50,7 @@ bash> cat src/user.clj
 
 2. 安装编译clojupyter-standalone.jar
 
-``` sh
+```sh
 clojure -A:depstar -m hf.depstar.uberjar clojupyter-standalone.jar
 clj -m clojupyter.cmdline install --ident clojupyter-1 --jarfile clojupyter-standalone.jar
 ```
@@ -62,7 +62,7 @@ clj -m clojupyter.cmdline install --ident clojupyter-1 --jarfile clojupyter-stan
 
 ## javascript kernel
 
-``` sh
+```sh
 npm install -g ijavascript
 ijsinstall
 ```

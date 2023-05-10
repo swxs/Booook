@@ -27,19 +27,19 @@
 
 你可以设置 Git 的配置来选择上述的一种方式
 
-``` sh
+```sh
 git config --global credential.helper cache
 ```
 
 部分辅助工具有一些选项。 “store” 模式可以接受一个 --file <path> 参数，可以自定义存放密码的文件路径（默认是 ~/.git-credentials ）。 “cache” 模式有 --timeout <seconds> 参数，可以设置后台进程的存活时间（默认是 “900”，也就是 15 分钟）。 下面是一个配置 “store” 模式自定义路径的例子：
 
-``` sh
+```sh
 git config --global credential.helper store --file ~/.my-credentials
 ```
 
 Git 甚至允许你配置多个辅助工具。 当查找特定服务器的凭证时，Git 会按顺序查询，并且在找到第一个回答时停止查询。 当保存凭证时，Git 会将用户名和密码发送给 所有 配置列表中的辅助工具，它们会按自己的方式处理用户名和密码。 如果你在闪存上有一个凭证文件，但又希望在该闪存被拔出的情况下使用内存缓存来保存用户名密码，.gitconfig 配置文件如下：
 
-``` sh
+```sh
 [credential]
     helper = store --file /mnt/thumbdrive/.git-credentials
     helper = cache --timeout 30000
@@ -47,7 +47,7 @@ Git 甚至允许你配置多个辅助工具。 当查找特定服务器的凭证
 
 ~/git.store 文件的内容类似：
 
-``` sh
+```sh
 https://bob:s3cre7@mygithost
 ```
 
@@ -55,7 +55,7 @@ https://bob:s3cre7@mygithost
 
 ## 示例
 
-``` sh
+```sh
 echo "http:/uesrname:password@github.com" >> ~/.git-credentials
 git config --global credential.helper store
 ```
@@ -72,7 +72,7 @@ git config --global credential.helper store
 
 我们再一次使用 Ruby 来编写这个扩展，但只要 Git 能够执行最终的程序，任何语言都是可以的。 这是我们的凭证辅助工具的完整代码：
 
-``` ruby
+```ruby
 #!/usr/bin/env ruby
 
 require 'optparse'
@@ -117,7 +117,7 @@ end
 
 我们把这个辅助工具保存为 git-credential-read-only，放到我们的 PATH 路径下并且给予执行权限。 一个交互式会话类似：
 
-``` sh
+```sh
 $ git credential-read-only --file=/mnt/shared/creds get
 protocol=https
 host=mygithost
@@ -130,6 +130,6 @@ password=s3cre7
 
 由于这个的名字是 “git-” 开头，所以我们可以在配置值中使用简便的语法：
 
-``` sh
+```sh
 git config --global credential.helper read-only --file /mnt/shared/creds
 ```

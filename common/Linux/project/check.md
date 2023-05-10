@@ -118,7 +118,7 @@ python3 shell.py 11
 20G磁盘用完了，看下情况
 
 清理日志差不多1G
-``` sh
+```sh
 journalctl --disk-usage
 
 journalctl --vacuum-time=1w
@@ -165,12 +165,12 @@ make install
 ```
 
 修改docker
-``` sh
+```sh
 # docker
 docker run --cap-add sys_admin
 ```
 
-``` sh
+```sh
 # docker-compose 添加配置
     cap_add:
       - sys_admin
@@ -231,7 +231,7 @@ rm -f perf.data perf.data.old perf.unfold perf.folded perf.svg
 
 ### OSS图片没有Access-Control-Allow-Origin: *请求头
 
-``` sh
+```sh
 # curl访问资源
 curl -voa '{img-url}' -H 'Origin:{host-url}'
 ```
@@ -245,12 +245,12 @@ curl -voa '{img-url}' -H 'Origin:{host-url}'
 
 - 修改docker配置
 
-``` sh
+```sh
 # docker
 docker run --cap-add sys_ptrace 
 ```
 
-``` sh
+```sh
 # docker-compose 添加配置
     cap_add:
       - sys_ptrace
@@ -363,7 +363,7 @@ gcore: failed to create core.98
 
 - 修改配置
 
-``` sh
+```sh
 #（每30秒往客户端发送会话请求，保持连接）
 ClientAliveInterval 30
 #（去掉注释即可，3表示重连3次失败后，重启SSH会话）
@@ -372,7 +372,7 @@ ClientAliveCountMax 3
 
 - 重启
 
-``` sh
+```sh
 service sshd restart
 ```
 
@@ -384,7 +384,7 @@ yum -y install openssh-server openssh-clients
 
 ### $'\r': command not found
 
-``` sh
+```sh
 vi
 :set ff-unix
 ```
@@ -393,7 +393,7 @@ vi
 
 ### 服务器磁盘占用过高
 
-``` sh
+```sh
 df -h
 # 99G占用了90G左右
 
@@ -422,7 +422,7 @@ kill -9 {pid}
 
 ### 账号服务错误
 
-``` sh
+```sh
 
 # 电脑端访问失败、手机端可以访问
 tail -f /data/docker/mount/nginx/logs/access_home.log
@@ -438,7 +438,7 @@ netstat -nat
 
 ### .h5文件读写报错
 
-``` sh
+```sh
 Traceback (most recent call last):
   File "/XM/apps/bi/mq_handlers.py", line 167, in rule_invalidate_by_survey_respondent_submit
     await df_utils.save_dataframe_by_file(file_path, df, key=key, mode="a", format="table", append=True)
@@ -476,7 +476,7 @@ Unable to open/create file '/XM/data/5d70d351aace70000afe0d1c_20.h5'
 尝试使用读写锁，保证文件操作串行执行
 读写锁正常执行，但错误没有解决
 
-``` sh
+```sh
 # 安装lsof
 yum install lsof
 
@@ -486,7 +486,7 @@ lsof +D ./
 
 查询日志， 发现有问题的文件都有过相关报错
 
-``` sh
+```sh
 [I 200620 09:37:47 aioredislock:143 pid=11] 获得/XM/data/5edf5b19aace70000cbfccec_3.h5读锁
 [E 200620 09:37:47 df_utils:186 pid=11] PID: 11, /XM/data/5edf5b19aace70000cbfccec_3.h5 key[/df_1591804800] exception [Unknown]!
 Traceback (most recent call last):
@@ -516,7 +516,7 @@ tables.exceptions.NoSuchNodeError: group ``/df_1591804800`` does not have a chil
 下载hdf5源码
 [hdf5项目](https://www.hdfgroup.org/downloads/hdf5/source-code/)
 
-``` sh
+```sh
 cd /opt/
 wget -i https://hdf-wordpress-1.s3.amazonaws.com/wp-content/uploads/manual/HDF5/HDF5_1_12_0/source/hdf5-1.12.0.tar.gz
 
@@ -546,7 +546,7 @@ make install
 参考 [安装文档](https://www.pytables.org/usersguide/installation.html)
 
 
-``` sh
+```sh
 # 尝试使用进行安装， 但是失败
 pip3 install --install-option='--hdf5=/usr/local/hdf5/' tables==3.5.1
 ```
@@ -555,7 +555,7 @@ pip3 install --install-option='--hdf5=/usr/local/hdf5/' tables==3.5.1
 
 很老的版本需要系统自带的hdf5，现在会打在wheel里，就不维护了。但是打出来的有问题啊，唉，得继续找办法了
 
-``` sh
+```sh
 # 尝试下载源码，
 python setup.py install -hdf5=/usr/local/hdf5/
 

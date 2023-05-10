@@ -48,14 +48,14 @@
 
 ##### 临时设置
 
-``` sh
+```sh
 -i/--index-url
 --trusted-host
 ```
 
 ##### 全局设值
 
-``` sh
+```sh
 pip config set global.index-url [index-url]
 pip config set global.trusted-host [index-domain]
 ```
@@ -64,47 +64,47 @@ pip config set global.trusted-host [index-domain]
 
 1. 清华(推荐): `https://pypi.tuna.tsinghua.edu.cn/simple`
 
-``` sh
+```sh
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple/
 pip config set global.trusted-host pypi.tuna.tsinghua.edu.cn
 ```
 
 1. 豆瓣(不推荐) `http://pypi.douban.com/simple/`
 
-``` sh
+```sh
 pip config set global.index-url http://pypi.douban.com/simple/
 pip config set global.trusted-host pypi.douban.com
 ```
 
 1. 阿里(不推荐) `http://mirrors.aliyun.com/pypi/simple/`
 
-``` sh
+```sh
 pip config set global.index-url http://mirrors.aliyun.com/pypi/simple/
 pip config set global.trusted-host mirrors.aliyun.com
 ```
 
 #### 包卸载
 
-``` sh
+```sh
 pip uninstall [package]
 ```
 
 #### 包解析
 
-``` sh
+```sh
 pip install pip-tools
 pip-compile requirements.in -o requirements.txt
 ```
 
 #### 包缓存
 
-``` sh
+```sh
 pip2tgz /var/lib/packages -r requirement.txt
 ```
 
 #### 指定wheel地址
 
-``` sh
+```sh
 pip wheel --wheel-dir=/root/tm_wheel
 ```
 
@@ -129,7 +129,7 @@ ssh 问题解决: [https://blog.csdn.net/Sky_Tree_Delivery/article/details/10907
 > 将`~miniconda3\Library\bin`添加到环境变量
 
 linux: 
-``` sh
+```sh
 wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
 ```
 
@@ -139,7 +139,7 @@ wget https://repo.continuum.io/miniconda/Miniconda3-py39_4.9.2-Linux-x86_64.sh
 
 #### 换源:
 
-``` sh
+```sh
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 conda config --set show_channel_urls yes 
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
@@ -147,12 +147,12 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/
 
 #### 添加多版本python
 
-``` sh
+```sh
 conda create -n python36 python=3.6
 ```
 
 #### 版本切换
-``` sh
+```sh
 conda activate python36
 conda deactivate
 ```

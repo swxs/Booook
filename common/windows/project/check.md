@@ -101,25 +101,25 @@ Windows Denfener 开放端口
 
 卸载应用
 
-``` ps1
+```ps1
 get-appxpackage *photo*
 remove-appxpackage {PackageFullName}
 ```
 
 安装应用
-``` ps1
+```ps1
 Get-AppxPackage | % { Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppxManifest.xml" -verbose }
 ```
 
 ### windows Terminal 设置管理员权限
 
-``` sh
+```sh
 PowerShell -Command "Set-ExecutionPolicy RemoteSigned -scope Process; iwr -useb https://raw.githubusercontent.com/gerardog/gsudo/master/installgsudo.ps1 | iex"
 ```
 
 添加到settings
 
-``` sh
+```sh
 {
     "guid": "{41dd7a51-f0e1-4420-a2ec-1a7130b7e950}",
     "name": "Windows PowerShell Elevated",

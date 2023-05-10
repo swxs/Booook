@@ -9,6 +9,6 @@
 
 ## 强制关闭进程
 
-``` sh
+```sh
 ps aux|grep $2|grep -v grep|awk '{print $2}'|xargs kill -9
 ```

@@ -18,6 +18,6 @@
 
 地址: [https://leiningen.org/#install](https://leiningen.org/#install)
 
-``` sh
+```sh
 lein self-install
 ```

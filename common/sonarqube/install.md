@@ -4,7 +4,7 @@
 
 - [安装](#安装)
   - [docker](#docker)
-    - [max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]](#max-virtual-memory-areas-vmmax_map_count-65530-is-too-low-increase-to-at-least-262144)
+    - [max virtual memory areas vm.max\_map\_count \[65530\] is too low, increase to at least \[262144\]](#max-virtual-memory-areas-vmmax_map_count-65530-is-too-low-increase-to-at-least-262144)
     - [Java heap space error or java.lang.OutOfMemoryError](#java-heap-space-error-or-javalangoutofmemoryerror)
 
 ------
@@ -13,7 +13,7 @@
 
 docker-compose.yaml
 
-``` txt
+```
 version: "3"
 
 services:

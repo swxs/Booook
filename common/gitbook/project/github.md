@@ -33,7 +33,7 @@
 
 1. 创建 .travis.yml
 2. 编写以下内容
-``` yml
+```yml
 branches:  
     only:  
         - master    # 构建的分支

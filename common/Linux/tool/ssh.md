@@ -12,18 +12,18 @@
 
 1. 生成私钥
 
-``` sh
+```sh
 ssh-keygen -t  rsa
 ```
 
 2. 复制公钥到远程服务器
 
-``` sh
+```sh
 ssh-copy-id -i ~/.ssh/id_rsa.pub root@127.0.0.1
 ```
 
 3. 重启ssh服务
-``` sh
+```sh
 systemctl restart sshd.service
 ```
 

@@ -23,7 +23,7 @@
     之前居然是个类就可以被raise...
 - [PEP 358 -- The "bytes" Object](https://www.python.org/dev/peps/pep-0358/)
 - [PEP 366 -- Main module explicit relative imports](https://www.python.org/dev/peps/pep-0366/)
-    ``` python
+    ```py
     if __name__ == "__main__" and __package__ is None: 
         __package__ = "expected.package.name"
     ```
@@ -47,7 +47,7 @@
 - [PEP 448 -- Additional Unpacking Generalizations](https://www.python.org/dev/peps/pep-0448/)
 - [PEP 484 -- Type Hints](https://www.python.org/dev/peps/pep-0484/)
 - [PEP 441 Improving Python ZIP Application Support.](https://www.python.org/dev/peps/pep-0441/)
-    ``` shell
+    ```sh
         python 
         -m zipapp directory [options] 
         -o archive / --output archive 
@@ -64,7 +64,7 @@
 - [PEP 515 -- Underscores in Numeric Literals](https://www.python.org/dev/peps/pep-0515/)
 - [PEP 526 -- Syntax for Variable Annotations](https://www.python.org/dev/peps/pep-0526/)
 - [PEP 525 -- Asynchronous Generators](https://www.python.org/dev/peps/pep-0525/)
-    ``` python
+    ```py
     def func(): # a function return
         pass
 
@@ -82,7 +82,7 @@
    *  inspect.isasyncgen() and inspect.isasyncgenfunction() introspection functions. 
    *  New method for asyncio event loop: loop.shutdown_asyncgens(). 
    *  New collections.abc.AsyncGenerator abstract base class.
-    ``` python
+    ```py
     async def ticker(delay, to): 
         for i in range(to): 
             yield i 
@@ -133,7 +133,7 @@
     ```
 - [PEP 553 -- Built-in breakpoint()](https://www.python.org/dev/peps/pep-0553/)
 - [PEP 562 -- Module __getattr__ and __dir__](https://www.python.org/dev/peps/pep-0562/)
-    ``` python
+    ```py
     # lib.py
 
     from warnings import warn
@@ -154,7 +154,7 @@
     from lib import old_function  # Works, but emits the warning
     ```
 
-    ``` python
+    ```py
     # lib/__init__.py
 
     import importlib
@@ -178,7 +178,7 @@
     lib.submod.HeavyClass  # prints "Submodule loaded"
     ```
 - [PEP 560 -- Core support for typing module and generic types](https://www.python.org/dev/peps/pep-0560/)
-    ``` python
+    ```py
     class MyList:
         def __getitem__(self, index):
             return index + 1
@@ -222,7 +222,7 @@
 ## python3.8
 - [PEP 569 -- Python 3.8 Release Schedule](https://www.python.org/dev/peps/pep-0569/)
 - [PEP 572 -- Assignment Expressions](https://www.python.org/dev/peps/pep-0572/)
-    ``` python
+    ```py
     # Handle a matched regex
     if (match := pattern.search(data)) is not None:
     # Do something with match

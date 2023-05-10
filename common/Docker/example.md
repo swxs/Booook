@@ -18,7 +18,7 @@
 
 ### 一般流程
 
-``` sh
+```sh
 pull => [change] => tag => push
 
 run(<-d>image) =>
@@ -29,14 +29,14 @@ rmi(images) <=
 
 ### 更新容器配置
 
-``` sh
+```sh
 docker-compose up --build --no-start [image]
 docker-compose restart [image]
 ```
 
 ### 删除所有container
 
-``` sh
+```sh
 docker rm -f $(docker ps -aq)
 ```
 
@@ -44,7 +44,7 @@ docker rm -f $(docker ps -aq)
 
 [阿里云官方](https://cr.console.aliyun.com/undefined/instances/mirrors?accounttraceid=9fc4c2ae0d664d6f975c608eb808e015hram)
 
-``` sh
+```sh
 sudo mkdir -p /etc/docker
 sudo tee /etc/docker/daemon.json <<-'EOF'
 {
@@ -59,13 +59,13 @@ sudo systemctl restart docker
 
 ### 打包镜像
 
-``` sh
+```sh
  # squash its history.
  docker export 77d9619a7a71 > update.tar
  docker import - update < update.tar
 ```
 
-``` sh
+```sh
  # keep its history
  docker save -o update1.tar update 
  docker load < update1.tar
@@ -73,7 +73,7 @@ sudo systemctl restart docker
 
 ## 实例
 
-``` sh
+```sh
 docker cp "C:\Users\user1\Downloads\Miniconda3-latest-Linux-x86_64.sh" "ffcf4b501621:/home"
 yum install -y bzip2
 export PATH="/root/miniconda3/bin":PATH

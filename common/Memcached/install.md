@@ -18,7 +18,7 @@
 
 ### 安装 & 运行
 
-``` bash
+```bash
 memcached.exe -d install
 memcached.exe -d start
 ```
@@ -30,6 +30,6 @@ memcached.exe -d start
 
 > ![telnet.png](./telnet.png)
 
-``` bash
+```bash
 telnet 127.0.0.1 11211
 ```

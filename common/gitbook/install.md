@@ -21,12 +21,12 @@
 ```
 
 ## 命令
-``` sh
+```sh
 # 安装插件
 gitbook install
 ```
 
-``` sh
+```sh
 # 生成目录
 gitbook init
 ```

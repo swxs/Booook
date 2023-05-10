@@ -10,7 +10,7 @@
 
 ## 安装
 
-``` sh
+```sh
 pip install jupyter_contrib_nbextensions
 jupyter contrib nbextension install --system
 

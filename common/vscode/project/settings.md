@@ -14,14 +14,14 @@
 
 ### 不禁止运行脚本
 
-``` sh
+```sh
 set-executionpolicy remotesigned
 ```
 
 ## launch.json 配置
 
 ### python
-``` json
+```json
 {
     // 使用 IntelliSense 了解相关属性。 
     // 悬停以查看现有属性的描述。

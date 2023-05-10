@@ -10,7 +10,7 @@
 
 ## 命令
 
-``` shell
+```sh
 # 脚本注册
 systemctl daemon-reload
 
@@ -29,7 +29,7 @@ systemctl enable cem.service
 
 cem.service
 
-``` shell
+```sh
 [Unit]
 Description=cem-base service
 

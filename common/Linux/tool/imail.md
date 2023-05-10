@@ -9,7 +9,7 @@
 
 ## 格式
 
-``` sh
+```sh
 telnet mail.bpsinopec.com 25
 cem@bpsinopec.com
 

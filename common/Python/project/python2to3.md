@@ -10,7 +10,7 @@
 
 ## python2to3
 
-``` sh
+```sh
 2to3 --output-dir=[output_dirpath] -W -n [input_dirpath]
 ```
 

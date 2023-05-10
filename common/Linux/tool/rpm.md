@@ -32,7 +32,7 @@
 
 ## APT-GET
 
-``` sh
+```sh
 apt-get update——在修改/etc/apt/sources.list或者/etc/apt/preferences之后运行该命令。此外您需要定期运行这一命令以确保您的软件包列表是最新的。 
 apt-get install packagename——安装一个新软件包（参见下文的aptitude） 
 apt-get remove packagename——卸载一个已安装的软件包（保留配置文件） 

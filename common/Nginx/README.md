@@ -10,7 +10,7 @@
 ## 图谱
 
 {% simplemindmap type="txtmap" %}
-``` txtmap
+```txtmap
 Nginx
     Load Balancing
         HTTP

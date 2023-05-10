@@ -12,7 +12,7 @@
 
 ## 源码安装
 
-``` sh
+```sh
 - wget http://nginx.org/download/nginx-1.12.1.tar.gz
 - wget ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.41.tar.gz
 - yum -y install gcc gcc-c++ autoconf automake make 
@@ -27,7 +27,7 @@
 
 ### 配置启动脚本
 
-``` sh
+```sh
 #!/bin/sh
 # chkconfig: - 85 15
 # description: nginx is a World Wide Web server. It is used to serve
@@ -89,7 +89,7 @@ exit 0
 
 ### 通用基础设置
 
-``` sh
+```sh
 user                    nobody;
 worker_processes        4;
 worker_cpu_affinity     0001 0010 0100 1000;
@@ -145,7 +145,7 @@ http {
 
 ## centos 安装
 
-``` sh
+```sh
 yum install nginx
 nginx -s reload -c /etc/nginx/nginx.conf
 ```

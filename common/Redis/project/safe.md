@@ -12,7 +12,7 @@
 
 ## 修改配置文件权限
 
-``` sh
+```sh
 chmod 600 /<filepath>/redis.conf
 ```
 
@@ -24,7 +24,7 @@ chmod 600 /<filepath>/redis.conf
 
 打开redis.conf，找到requirepass所在的地方，修改为指定的密码，密码应符合复杂性要求：
 
-``` sh
+```sh
 1、长度8位以上
 2、包含以下四类字符中的三类字符:
 英文大写字母(A 到 Z)
@@ -38,7 +38,7 @@ chmod 600 /<filepath>/redis.conf
 
 修改 redis.conf 文件，禁用部分危险命令， 或改名
 
-``` sh
+```sh
 rename-command FLUSHALL ""
 rename-command FLUSHDB  ""
 rename-command CONFIG   ""

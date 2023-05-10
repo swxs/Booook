@@ -9,7 +9,7 @@
 
 ## 示例
 
-``` sh
+```sh
 # SYNTAX
 #    lftp [-d] [-e cmd] [-p port] [-u user[,pass]] [site]
 #    lftp -f script_file

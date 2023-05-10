@@ -11,7 +11,7 @@
 
 ## 删除重复数据
 
-``` sql
+```sql
 delete from
    windmachine
 where
@@ -33,7 +33,7 @@ where
 ```
 
 ## 整理字符集
-``` sql
+```sql
 
 -- 修改数据库表校对规则SQL，执行时将表中列的校对规则一并修改。
 delimiter // 

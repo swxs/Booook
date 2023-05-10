@@ -22,7 +22,7 @@
 
 ### centos 安装
 
-``` sh
+```sh
 rpm -ivh http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6
 rpm -ivh http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
@@ -43,13 +43,13 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 ### yarn
 
-``` shell
+```sh
 npm install yarn -g --registry https://registry.npm.taobao.org
 ```
 
 ### cnpm
 
-``` shell
+```sh
 npm install yarn -g --registry https://registry.npm.taobao.org
 ```
 
@@ -57,28 +57,28 @@ npm install yarn -g --registry https://registry.npm.taobao.org
 
 ### 临时设置
 
-``` shell
+```sh
 --registry
 ```
 
 ### 全局设置
 
-```shell
+```sh
 npm config set registry https://registry.npm.taobao.org
 ```
 
 ### 可用的国内源
 
-``` shell
+```sh
 https://registry.npm.taobao.org
 ```
 
 ### 查看\设置 npm 安装路径
 
-``` sh
+```sh
 npm config get prefix
 ```
 
-``` sh
+```sh
 npm config set prefix
 ```

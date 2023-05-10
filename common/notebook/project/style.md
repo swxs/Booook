@@ -12,12 +12,12 @@
 
 `jupyter --config-dir`
 
-``` sh
+```sh
 mkdir custom
 vim custom/custom.css
 ```
 
-``` css
+```css
 @font-face {
   font-family: 'Fira Code';
   src: url("https://cdn.rawgit.com/dunovank/jupyter-themes/1e851888/jupyterthemes/fonts/monospace/firacode/firacode.otf") format("opentype");

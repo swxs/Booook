@@ -18,7 +18,7 @@
 
 ## MapReduce
 
-``` text
+```text
 EX1
     var mapFunction1 = function() { emit(this.cust_id, this.price); };
     var reduceFunction1 = function(keyCustId, valuesPrices) { return Array.sum(valuesPrices); };
@@ -33,7 +33,7 @@ EX2
 
 BI实现思路， 实现了多维度交叉， 度量的总计， 计数， 去重计数， 平均
 
-``` text
+```text
 db.getCollection('USER_GROUP').aggregate([
     {
         '$match': {
@@ -80,13 +80,13 @@ db.getCollection('USER_GROUP').aggregate([
 
 ## 查询并修改
 
-``` text
+```text
 db.DELIVER_DELIVER。find().forEach(function(item){db.getCollection('DELIVER_DELIVER').update({"_id": item._id},{$set:{"name": item.code}})})
 ```
 
 ## 查询并修改2
 
-``` text
+```text
 db.BI_COLUMN.aggregate([
     {
         "$lookup": {
@@ -123,7 +123,7 @@ db.BI_COLUMN.aggregate([
 
 ## 关联查询
 
-``` text
+```text
 db.getCollection('BI_COLUMN').aggregate([
     {
         $lookup: {
@@ -146,7 +146,7 @@ db.getCollection('BI_COLUMN').aggregate([
 
 ## 多层关联查询
 
-``` text
+```text
 db.getCollection('DELIVER_SMSTEMPLATE').aggregate([
     {
         $lookup: {
@@ -187,7 +187,7 @@ db.getCollection('DELIVER_SMSTEMPLATE').aggregate([
 
 ## 多层关联查询2
 
-``` text
+```text
 db.getCollection('BI_COLUMN').aggregate([
     {
         $lookup: {
@@ -215,7 +215,7 @@ db.getCollection('BI_COLUMN').aggregate([
 
 ## 分组后按数量排序
 
-``` text
+```text
 db.getCollection('BI_COLUMN').aggregate([
     {
         $match: {
@@ -247,7 +247,7 @@ db.getCollection('BI_COLUMN').aggregate([
 
 ## 统计数量分段
 
-``` mongodb
+```mongodb
 db.getCollection('BI_COLUMN').aggregate([
     {
         $match: {

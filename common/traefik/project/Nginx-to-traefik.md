@@ -17,7 +17,7 @@
 
 以两层nginx反向代理
 
-``` mermaid
+```mermaid
 graph TD;
     A[访问网址]-->B(入口nginx代理);
     B(入口nginx代理)-->|proxy|C(前端nginx代理);
@@ -143,7 +143,7 @@ server {
 
 ## 迁移后架构
 
-``` mermaid
+```mermaid
 graph TD;
     A[访问网址]-->B(Traefik代理);
     B(Traefik代理)-->|proxy|C(前端nginx代理);

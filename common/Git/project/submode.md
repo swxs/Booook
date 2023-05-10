@@ -36,7 +36,7 @@
 submodule 是目前对 git 仓库拆分的已有实现之一。它允许将一个Git仓库作为另一个Git仓库的子目录。能够将另一个仓库克隆到自己的项目中，同时还保持独立的提交。
 
 ## 添加子模块
-```shell
+```sh
 # 克隆仓库
 git clone git@xxxxxx/xxx.git
 # 将子仓库添加至父仓库，[]中为子仓库的git url
@@ -47,7 +47,7 @@ git submodule add [child2 url]
 
 ## 初始化子模块
 注意，如果远程父仓库中已经存在子模块，我们clone了父仓库之后，子模块==并不会==一并clone下来，只会有一个目录，我们需要初始化子模块并拉取代码
-```shell
+```sh
 # 初始化本地配置文件
 git submodule init
 # 拉取子模块的代码（注意，这将拉取在父仓库中签出的版本）
@@ -56,7 +56,7 @@ git submodule update
 git submodule update --remote [submodule_name]
 ```
 克隆时子模块的初始化和拉取可以合并成一个操作
-```shell
+```sh
 git clone git@xxxxxx/xxx.git --recursive
 ```
 
@@ -64,7 +64,7 @@ git clone git@xxxxxx/xxx.git --recursive
 添加子模块之后，除了子模块之外，还多了一个叫`.gitmodules`的文件，这是一份子模块与路径的映射关系图，git 根据这份文件去识别 submodule。(tips：这个文件是需要被追踪的)
 
 查看一下文件内容：
-```shell
+```sh
 [submodule "child1_repo"]
 	path = child1_repo
 	url = git@github.com:xxx/child1_repo.git
@@ -78,7 +78,7 @@ git clone git@xxxxxx/xxx.git --recursive
 当子模块存在改动的情况下，父仓库会将子模块当前分支下最新的commitId作为一个目录进行记录，而非将它记录成一个子目录或者一个文件。
 
 父目录记录的子模块的改动信息大致如下
-```shell
+```sh
 # 子模块当前指向的commitId的信息
 Commit	8e182c74182adde49f2b6d192f2a85c50d87f538
 Commit Message	add child1_repo
@@ -102,7 +102,7 @@ git页面中子模块的名称格式：
 
 ## 拉取远程子模块的代码到本地
 子仓库在远程有更改，在本地进行同步（*如果只要修改主仓库的代码，正常的git操作就可以了*），执行
-```shell
+```sh
 # 同初始化子模块部分的update操作
  git submodule update --remote [child_repo]
 ```
@@ -122,11 +122,11 @@ git页面中子模块的名称格式：
 ## 批量操作子模块
 可以使用`foreach`命令对子模块进行批量操作
 举例：
-```shell
+```sh
  git submodule foreach 'git checkout -b featureA' 
 ```
 ### 查看子模块的签出版本
-```shell
+```sh
 git submodule status
 ...
 +3557a0e0f7280fb3aba18fb9035d204c7de6344f   lib/ToProgress (0.1.1)
@@ -134,7 +134,7 @@ git submodule status
 通过上述命令，我们可以查看子模块的哪一个版本在当前被签出了。
 ## 删除子模块
 我们可以手动对子模块进行删除，但这会儿打乱配置文件（除非你很小心）
-```shell
+```sh
 git submodule deinit [child]
 git rm [child]
 git status
@@ -155,7 +155,7 @@ Git对于子模块的管理相对来说比较复杂。当然出现异常的情�
 如果我们在主仓库中提交并推送但并不推送子模块上的改动，其他人尝试更新子模块的人会遇到麻烦，因为他们无法得到依赖的子模块改动。那些改动只存在于我们本地的拷贝中。
 
 可以使用如下命令检查子模块的改动是否提交
-```shell
+```sh
 git push --recurse-submodules=check  # 如果子模块没有提交，会直接报错
 # or
 git push --recurse-submodules=on-demand  # 如果子模块没有提交，会尝试提交，提交不成功同时会阻止主仓库的推送

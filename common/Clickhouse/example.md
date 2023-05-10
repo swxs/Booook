@@ -10,7 +10,7 @@
 
 ## 查询分区数据大小
 
-``` sql
+```sql
 SELECT
     partition AS `分区`,
     sum(rows) AS `总行数`,
@@ -24,7 +24,7 @@ GROUP BY partition
 
 ## 查询所有待优化分区，并拼接优化语句
 
-``` sql
+```sql
 SELECT
     concat('OPTIMIZE TABLE ', database, '.', table, ' on cluster xm_replica PARTITION ', partition , ' FINAL;') as cmd 
 FROM system.parts 

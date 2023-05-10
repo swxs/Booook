@@ -23,7 +23,7 @@
 
 `docker pull mongo`
 
-``` sh
+```sh
 docker volume create --name mongodb
 docker volume create --name mongoconfigdb
 docker run --name mongod -v mongodb:/data/db -v mongoconfigdb:/data/configdb -p 27017:27017 -d mongo
@@ -37,11 +37,11 @@ docker run --name mongod -v mongodb:/data/db -v mongoconfigdb:/data/configdb -p 
 
 ### 配置启动任务
 
-``` sh
+```sh
 .\mongod.exe --config .\mongod.conf --directoryperdb --serviceName Mongodb --install
 ```
 
-``` sh
+```sh
 #mongod.conf
 dbpath=F:\mongodb\db
 logpath=F:\mongodb\logs\mongod.log
@@ -62,7 +62,7 @@ port=27017
 
 1. 下载址定版本并解压
 
-``` sh
+```sh
 wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.2.17.tgz
 
 tar -zxvf mongodb-linux-x86_64-3.2.17.tgz -C /usr/local/
@@ -74,7 +74,7 @@ mv mongodb-linux-x86_64-3.2.17 mongodb3.2.17
 
 2. 配置
 
-``` sh
+```sh
 cat >> /etc/profile << EOF
 export PATH=$PATH:/usr/local/mongodb3.2.17/bin
 EOF
@@ -86,7 +86,7 @@ source /etc/profile
 
 #### 3.6
 
-``` sh
+```sh
 cd /etc/yum.repos.d
 cat >> mongodb-org-3.6.repo << EOF
 [mongodb-org-3.6]
@@ -102,7 +102,7 @@ yum install -y mongodb-org
 
 #### 4.0
 
-``` shell
+```sh
 cd /etc/yum.repos.d
 cat >> mongodb-org-4.0.repo << EOF
 [mongodb-org-4.0]
@@ -120,7 +120,7 @@ yum install -y mongodb-org
 
 vim /etc/mongod.conf
 
-``` sh
+```sh
 # mongod.conf
 
 # for documentation of all options, see:
@@ -176,7 +176,7 @@ net:
 
 1. 创建数据和日志目录
 
-``` sh
+```sh
 mkdir -p /data/database/mongodb/cemdb
 mkdir -p /data/database/mongodb/cemdb_slave
 mkdir -p /data/log/mongodb
@@ -187,19 +187,19 @@ chmod -R 777 /data/log/
 
 2. 启动mongod服务
 
-``` sh
+```sh
 mongod --dbpath /data/database/mongodb/cemdb --logpath=/data/log/mongodb/cemdb.log --logappend --logRotate reopen
 ```
 
 Master:
 
-``` sh
+```sh
 numactl --interleave=all /usr/local/mongodb3.2.17/bin/mongod --dbpath=/data/database/mongodb/cemdb --logpath=/data/log/mongodb/cemdb.log --logappend --logRotate reopen --fork --directoryperdb --nssize=1024 --port=27017 --bind_ip=10.183.188.184 --storageEngine=wiredTiger --master
 ```
 
 Slave:
 
-``` sh
+```sh
 numactl --interleave=all /usr/local/mongodb3.2.17/bin/mongod --dbpath=/data/database/mongodb/cemdb_slave --logpath=/data/log/mongodb/cemdb.log --logappend --logRotate reopen --fork --directoryperdb --nssize=1024 --port=27017 --source=10.183.188.184 --bind_ip=10.183.188.179 --storageEngine=wiredTiger --slave
 ```
 

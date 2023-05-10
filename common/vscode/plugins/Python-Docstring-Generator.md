@@ -9,7 +9,7 @@
 
 ## 配置
 
-``` txt
+```
 "autoDocstring.customTemplatePath": "D:\\\\codehouse\\\\Collection\\\\store\\\\vscode\\\\python.mustache"
 ```
 

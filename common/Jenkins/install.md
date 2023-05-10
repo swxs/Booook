@@ -9,7 +9,7 @@
 
 ## Docker安装
 
-``` sh
+```sh
 docker pull jenkins
 
 sudo mkdir /var/jenkins

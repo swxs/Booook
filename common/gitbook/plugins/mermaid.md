@@ -9,7 +9,7 @@
 ------
 
 ## 示例
-``` mermaid
+```mermaid
 graph TD;
   A-->B;
   A-->C;

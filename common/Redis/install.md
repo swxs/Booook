@@ -19,7 +19,7 @@
 
 `docker pull redis`
 
-``` sh
+```sh
 docker volume create --name redisdb
 docker run --name redis -v redisdb:/data -p 6379:6379 -d redis
 ```
@@ -34,7 +34,7 @@ docker run --name redis -v redisdb:/data -p 6379:6379 -d redis
 
 ### 源码安装
 
-``` sh
+```sh
 wget http://download.redis.io/releases/redis-4.0.2.tar.gz
 tar xzf redis-4.0.2.tar.gz
 make
@@ -45,7 +45,7 @@ make
 
 ### yum安装
 
-``` sh
+```sh
 yum install -y redis
 ```
 
@@ -53,7 +53,7 @@ yum install -y redis
 
 1. 脚本运行
 
-``` sh
+```sh
 #!/bin/sh
 #Configurations injected by install_server below....
 
@@ -125,7 +125,7 @@ esac
 
 2. systemctl 运行
 
-``` sh
+```sh
 systemctl start redis.service
 systemctl stop redis.service
 ```

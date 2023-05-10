@@ -15,29 +15,29 @@
 ## pre-commit
 
 安装git钩子
-``` sh
+```sh
 pip install pre-commit
 pre-commit install
 ```
 
 初始化下项目
-``` sh
+```sh
 pre-commit run --all-files
 ```
 
 自动合并配置
-``` sh
+```sh
 pre-commit migrate-config
 ```
 
 自动更新 hooks
-``` sh
+```sh
 pre-commit autoupdate
 ```
 
 配置文件`pre-commit-config.yaml`示例
 
-``` yaml
+```yaml
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v3.2.0
@@ -62,7 +62,7 @@ repos:
 
 配置文件`pyproject.toml`示例
 
-``` toml
+```toml
 [tool.black]
 line-length = 108
 py36 = true

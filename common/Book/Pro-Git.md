@@ -39,14 +39,14 @@
 
 `--local`: 仓库级
 
-``` sh
+```sh
 git config --list --show-origin
 
 git config --global user.name <user_name>
 git config --global user.email <user_email>
 ```
 
-``` sh
+```sh
 # 查看配置
 git config --list
 git config <key>

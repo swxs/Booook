@@ -6,7 +6,7 @@
 
 ------
 
-```` markdown
+````markdown
 # h1
 
 ## h2
@@ -50,16 +50,16 @@
 
 ---
 
-``` sh
+```sh
 ```
 
-``` json
+```json
 {
 	"type" : "```json```"
 }
 ```
 
-``` js
+```js
 let type = js
 ```
 

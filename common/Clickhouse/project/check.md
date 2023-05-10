@@ -96,12 +96,12 @@ systemctl status clickhouse-server.service
 ### 部分异常及对应配置
 
 `code 62，Max query size exceeded`: 
-``` xml
+```xml
 <max_query_size>10000000</max_query_size>
 ```
 
 `Code: 168, AST is too big，Maximum: 50000`: 
-``` xml
+```xml
 <max_ast_elements>10000000</max_ast_elements>
 <max_expanded_ast_elements>10000000</max_expanded_ast_elements>
 ```

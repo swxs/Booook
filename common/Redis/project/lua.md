@@ -13,7 +13,7 @@
 
 读锁
 
-``` lua
+```lua
 local write_key = 'write';
 local mode = redis.call('hget', KEYS[1], 'mode');
 if (mode == false) then
@@ -34,7 +34,7 @@ return redis.call('pttl', KEYS[1])
 
 释放读锁
 
-``` lua 
+```lua 
 local write_key = 'write';
 local mode = redis.call('hget', KEYS[1], 'mode');
 if (mode == false) then
@@ -61,7 +61,7 @@ return 1;
 
 写锁
 
-``` sh
+```sh
 local write_key = 'write'
 local mode = redis.call('hget', KEYS[1], 'mode');
 if (mode == false) then
@@ -83,7 +83,7 @@ return redis.call('pttl', KEYS[1]);
 
 释放写锁
 
-``` sh
+```sh
 local write_key = 'write'
 local mode = redis.call('hget', KEYS[1], 'mode');
 if (mode == false) then
@@ -102,7 +102,7 @@ return 0;
 
 强制释放锁
 
-``` sh
+```sh
 if (redis.call('hget', KEYS[1], 'mode') == 'read') or (redis.call('hget', KEYS[1], 'mode') == 'write') then
     redis.call('del', KEYS[1]);
     return 1;
@@ -114,7 +114,7 @@ return 0;
 
 查询符合条件的key数量
 
-``` lua
+```lua
 local cursor = '0'
 local count = 0
 repeat
@@ -127,7 +127,7 @@ return count
 
 删除符合条件的key，并返回删除的数量
 
-``` lua
+```lua
 redis.replicate_commands()
 local cursor = '0'
 local delete_count = 0

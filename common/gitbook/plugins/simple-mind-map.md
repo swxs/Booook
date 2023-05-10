@@ -13,7 +13,7 @@
 
 ## 安装
 
-``` json
+```json
 {
     "plugins": ["simple-mind-map"]
 }
@@ -25,9 +25,9 @@
 
 ### markdown
 
-```` sh
+````sh
 {% simplemindmap %}
-``` markdown
+```markdown
 * simplemindmap
     * config book.json
         * plugins
@@ -56,7 +56,7 @@
 ````
 
 {% simplemindmap %}
-``` markdown
+```markdown
 * simplemindmap
     * config book.json
         * plugins
@@ -85,9 +85,9 @@
 
 ### txtmap
 
-```` sh
+````sh
 {% simplemindmap type="txtmap" %}
-``` txtmap
+```txtmap
 some
   example
     content
@@ -103,7 +103,7 @@ some
 ````
 
 {% simplemindmap type="txtmap" %}
-``` txtmap
+```txtmap
 some
   example
     content

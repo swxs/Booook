@@ -40,7 +40,7 @@
 
 ### 系统资源
 
-``` sh
+```sh
 uname -a               # 查看内核/操作系统/CPU信息
 head -n 1 /etc/issue   # 查看操作系统版本
 rpm -q centos-release  # Centos 版本
@@ -68,7 +68,7 @@ cat /proc/loadavg      # 查看系统负载
 
 ### 磁盘和分区
 
-``` sh
+```sh
 mount | column -t      # 查看挂接的分区状态
 fdisk -l               # 查看所有分区
 swapon -s              # 查看所有交换分区
@@ -78,7 +78,7 @@ dmesg | grep IDE       # 查看启动时IDE设备检测状况
 
 ### 网络
 
-``` sh
+```sh
 dmesg | grep -i eth    # 查看网卡信息
 ifconfig               # 查看所有网络接口的属性
 iptables -L            # 查看防火墙设置
@@ -92,14 +92,14 @@ awk '{print $1}' access.log|sort | uniq -c |sort -n -k 1 -r|more  ## ## 查询�
 
 ### 进程
 
-``` sh
+```sh
 ps -ef                 # 查看所有进程
 top                    # 实时显示进程状态
 ```
 
 ### 用户
 
-``` sh
+```sh
 w                      # 查看活动用户
 id <用户名>            # 查看指定用户信息
 last                   # 查看用户登录日志
@@ -110,20 +110,20 @@ crontab -l             # 查看当前用户的计划任务
 
 ### 服务
 
-``` sh
+```sh
 chkconfig --list       # 列出所有系统服务
 chkconfig --list | grep on    # 列出所有启动的系统服务
 ```
 
 ### 程序
 
-``` sh
+```sh
 rpm -qa                # 查看所有安装的软件包
 ```
 
 ## 配置用户
 
-``` sh
+```sh
 # 配置www用户
 groupadd www
 useradd --shell /sbin/nologin -g www www
@@ -137,7 +137,7 @@ cd /data/www
 
 ## 挂载硬盘
 
-``` sh
+```sh
 fdisk -l
 mkfs.ext4 /dev/sdc
 mkdir -p /home/data
@@ -146,13 +146,13 @@ mount /dev/sdc  /home/data
 
 `vi /etc/fstab`
 
-``` sh
+```sh
 /dev/sdc                /home/data              ext4    defaults        0 0
 ```
 
 ## 删除文件
 
-``` sh
+```sh
 # 保留指定数量的文件
 TOTAL_COUNT=`ls|wc -l`
 LEFT_COUNT=20
@@ -170,7 +170,7 @@ find . -name '*.pyc' -type f -print -exec rm -rf {} \;
 
 ## 修改时间
 
-``` sh
+```sh
 # 修改时间
 
 cp /etc/localtime /etc/localtime.bak
@@ -192,7 +192,7 @@ date -R
 
 ## DNS链路
 
-``` sh
+```sh
 #! /bin/bash
 set -x
 set -e
@@ -208,7 +208,7 @@ host www.baidu.com
 
 ## 任务调度
 
-``` sh
+```sh
 # 查看任务
 jobs -l
 ps aux

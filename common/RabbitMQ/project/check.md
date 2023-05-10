@@ -12,7 +12,7 @@
 
 ### rabbitmq ConnectionResetError (104, 'Connection reset by peer')
 
-``` sh
+```sh
 rabbitmqctl set_vm_memory_high_watermark 0.6
 rabbitmqctl set_vm_memory_high_watermark absolute "4G"
 ```

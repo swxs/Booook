@@ -16,7 +16,7 @@
 防火墙开启
 vi /usr/local/sbin/firewall
 
-``` sh
+```sh
 #!/bin/bash
 
 iptables -P INPUT ACCEPT
@@ -49,7 +49,7 @@ chkconfig iptables on
 
 vi /etc/init.d/iptables
 
-``` sh
+```sh
 （set_policy() {    段）
             security)
                 $IPTABLES -t filter -P INPUT $policy \
@@ -63,7 +63,7 @@ firewall-cmd --add-port=5000/tcp --zone=public --permanent
 firewall-cmd --reload
 配置logrotate
 
-``` sh
+```sh
 /data/log/nginx/*.log
 {
     daily
@@ -79,6 +79,6 @@ firewall-cmd --reload
 }
 ```
 
-``` sh
+```sh
 service iptables restart
 ```

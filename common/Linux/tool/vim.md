@@ -17,7 +17,7 @@
 
 ## tab替换
 
-``` sh
+```sh
 :set ts=4
 :set expandtab
 :set noexpandtab
@@ -26,7 +26,7 @@
 
 ## vimrc
 
-``` sh
+```sh
 " must be first, changes behaviour of other settings
 set nocompatible
 

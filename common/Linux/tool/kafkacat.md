@@ -14,7 +14,7 @@
 
 ## 安装
 
-``` sh
+```sh
 apt-get install kafkacat
 ```
 
@@ -22,19 +22,19 @@ apt-get install kafkacat
 
 ### 查询信息列表
 
-``` sh
+```sh
 kafkacat -b cdh-worker001:9092 -L
 ```
 
 ### 起一个消费端
 
-``` sh
+```sh
 kafkacat -C -b cdh-worker001:9092 -t [topic]
 ```
 
 ### 起一个发送端
 
-``` sh
+```sh
 kafkacat -P -b cdh-worker001:9092 -t [topic]
 ```
 

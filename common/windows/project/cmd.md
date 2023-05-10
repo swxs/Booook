@@ -21,13 +21,13 @@
 ## 流程
 
 ### if
-``` bat
+```bat
 if exist c:\windows\History\*.* del c:\windows\History\*.*
 ```
 
 ### for
 
-```` bat
+````bat
 for %%i in (set) do echo %%i
 for /L %%i in (start, step, end) do echo %%i
 for /F %%i in (file) do echo %%i
@@ -83,7 +83,7 @@ for /f "eol=1 tokens=*" %%i in (a.txt) do echo %%i
 
 ## 打印
 
-``` bat
+```bat
 echo
 @echo off
 ```
@@ -118,7 +118,7 @@ echo
 
 ### 迁移
 
-``` bat
+```bat
 pushd "%~dp0"
 REM 这里的root被修改到该文件的地址了
 popd
@@ -128,7 +128,7 @@ popd
 
 **需要是NTFS系统**
 
-``` bat
+```bat
 mklink \j link target
 mklink \d
 
@@ -138,14 +138,14 @@ rmlink
 
 ## 任务
 
-``` bat
+```bat
 tasklist | findstr "2720"
 taskkill /f /t /im python.exe
 ```
 
 ## net
 
-``` bat
+```bat
 netstat -aon | findstr "8050"
 nbtstat -A 192.168.0.1
 ping sz1.tencent.com

@@ -22,50 +22,50 @@
 
 ## git pull
 
-``` sh
+```sh
 git pull <remote> <branch>
 ```
 
 ## 将【本地分支】与【远程分支】同步
 
-``` sh
+```sh
 git branch --set-upstream-to=origin/<branch> <local branch>
 ```
 
 ## 删除git的追踪
 
-``` sh
+```sh
 git rm --cache [file]
 ```
 
 ## 删除远程分支
 
-``` sh
+```sh
 git -c diff.mnemonicprefix=false -c core.quotepath=false --no-optional-locks branch -D -r origin/<branch>
 git -c diff.mnemonicprefix=false -c core.quotepath=false --no-optional-locks push origin :refs/heads/<branch>
 ```
 
 ## 同步远程分支列表
 
-``` sh
+```sh
 git remote prune origin
 ```
 
 ## 分支返回到未提交的状态
 
-``` sh
+```sh
 git reset --hard <分支>
 ```
 
 ## 追加commit
 
-``` sh
+```sh
 git commit --amend
 ```
 
 ## git rebase
 
-``` sh
+```sh
 git rebase <target branch> <root branch> <sub branch>
 
 git rebase <分支2>
@@ -77,7 +77,7 @@ git rebase <target branch> <root branch> <sub branch>
 
 ## 回退分支, 及回退merge的分支
 
-``` sh
+```sh
 git revert <分支>
 git revert <分支> -m [1,2]
 ```
@@ -102,25 +102,25 @@ git revert <分支> -m [1,2]
 
 ## 删除 stash(损坏的)
 
-``` sh
+```sh
 git reflog delete --rewrite stash@{0}
 ```
 
 ## 统计代码行数
 
-``` sh
+```sh
 git log --author="$(git config --get user.name)" --pretty=tformat: --numstat | gawk '{ add += $1 ; subs += $2 ; loc += $1 - $2 } END { printf "added lines: %s removed lines : %s total lines: %s\n",add,subs,loc }' -
 ```
 
 ## 大小写敏感
 
-``` sh
+```sh
 git config core.ignorecase false
 ```
 
 ## cherry-pick
 
-``` sh
+```sh
 git cherry-pick [hash]
 git cherry-pick [hash]..[hash]
 git cherry-pick ^[hash]..[hash]
@@ -129,7 +129,7 @@ git cherry-pick ^[hash]..[hash]
 
 ## cannot lock ref
 
-``` sh
+```sh
 # 先更新一下reference
 git update-ref -d refs/remotes/origin/[locked branch name]
 # 随后同步代码
