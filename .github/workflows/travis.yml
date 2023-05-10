@@ -1,0 +1,61 @@
+name: auto-generate-gitbook
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout master
+        uses: actions/checkout@v2
+        with:
+          ref: master
+
+      - name: install nodejs
+        uses: actions/setup-node@v1
+
+      - name: configue gitbook
+        run: |
+          npm install -g gitbook-cli
+          gitbook install
+
+      - name: generate _book folder
+        run: |
+          gitbook build
+
+      - name: push _book to branch gh-pages
+        env:
+          TOKEN: ${{ secrets.TOKEN }}
+          REF: github.com/${{github.repository}}
+          MYEMAIL: 466565029@qq.com
+          MYNAME: ${{github.repository_owner}}
+        run: |
+          cd _book
+          git config --global user.email "${MYEMAIL}"
+          git config --global user.name "${MYNAME}"
+          git init
+          git remote add origin https://${REF}
+          git add . 
+          git commit -m "Updated By Github Actions With Build ${{github.run_number}} of ${{github.workflow}} For Github Pages"
+          git branch -M master
+          git push --force --quiet "https://${TOKEN}@${REF}" master:gh-pages
+
+      - name: login aliyuncs
+        uses: docker/login-action@v2
+        with:
+          registry: ${{ secrets.DOCKER_REGISTRY }}
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: build and push docker image to aliyuncs
+        run: |
+          docker build -t ${{ secrets.DOCKER_REGISTRY }}/swxs/booook .
+          docker push ${{ secrets.DOCKER_REGISTRY }}/swxs/booook
+
+      # - name: deploy webhook
+      #   uses: distributhor/workflow-webhook@v2
+      #   env:
+      #     webhook_url: ${{ secrets.WEBHOOK_URL }}
+      #     webhook_secret: ${{ secrets.WEBHOOK_SECRET }}

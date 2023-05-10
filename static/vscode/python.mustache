@@ -1,0 +1,42 @@
+{{! Numpy Docstring Template }}
+
+简介
+----------
+
+
+{{#parametersExist}}
+参数
+----------
+{{#args}}
+{{var}} :
+    
+{{/args}}
+{{#kwargs}}
+{{var}} [可选]: 默认为 {{&default}}
+    
+{{/kwargs}}
+{{/parametersExist}}
+{{#returnsExist}}
+
+返回
+----------
+{{#returns}}
+
+{{/returns}}
+{{/returnsExist}}
+{{#yieldsExist}}
+
+迭代
+----------
+{{#yields}}
+
+{{/yields}}
+{{/yieldsExist}}
+{{#exceptionsExist}}
+
+异常
+----------
+{{#exceptions}}
+    
+{{/exceptions}}
+{{/exceptionsExist}}

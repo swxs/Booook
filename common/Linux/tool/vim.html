@@ -1,0 +1,3286 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>vim · 技术笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="swxs">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-local-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="wget.html" />
+    
+    
+    <link rel="prev" href="ps.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../../../favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../../favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"swxs/Booook","types":["star"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/" target="_blank" class="custom-link">github</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    项目
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    Linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../install.html">
+            
+                <a href="../install.html">
+            
+                    
+                        <b>1.2.1.1.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../command.html">
+            
+                <a href="../command.html">
+            
+                    
+                        <b>1.2.1.2.</b>
+                    
+                    命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.2.1.3.</b>
+                    
+                    工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.3.1" data-path="apt-get.html">
+            
+                <a href="apt-get.html">
+            
+                    
+                        <b>1.2.1.3.1.</b>
+                    
+                    apt-get
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3.2" data-path="awk.html">
+            
+                <a href="awk.html">
+            
+                    
+                        <b>1.2.1.3.2.</b>
+                    
+                    awk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3.3" data-path="curl.html">
+            
+                <a href="curl.html">
+            
+                    
+                        <b>1.2.1.3.3.</b>
+                    
+                    curl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3.4" data-path="du.html">
+            
+                <a href="du.html">
+            
+                    
+                        <b>1.2.1.3.4.</b>
+                    
+                    du
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3.5" data-path="find.html">
+            
+                <a href="find.html">
+            
+                    
+                        <b>1.2.1.3.5.</b>
+                    
+                    find
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3.6" data-path="imail.html">
+            
+                <a href="imail.html">
+            
+                    
+                        <b>1.2.1.3.6.</b>
+                    
+                    imail
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3.7" data-path="install.html">
+            
+                <a href="install.html">
+            
+                    
+                        <b>1.2.1.3.7.</b>
+                    
+                    install
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3.8" data-path="iptables.html">
+            
+                <a href="iptables.html">
+            
+                    
+                        <b>1.2.1.3.8.</b>
+                    
+                    iptables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3.9" data-path="kafkacat.html">
+            
+                <a href="kafkacat.html">
+            
+                    
+                        <b>1.2.1.3.9.</b>
+                    
+                    kafkacat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3.10" data-path="kill.html">
+            
+                <a href="kill.html">
+            
+                    
+                        <b>1.2.1.3.10.</b>
+                    
+                    kill
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3.11" data-path="lftp.html">
+            
+                <a href="lftp.html">
+            
+                    
+                        <b>1.2.1.3.11.</b>
+                    
+                    lftp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3.12" data-path="lsof.html">
+            
+                <a href="lsof.html">
+            
+                    
+                        <b>1.2.1.3.12.</b>
+                    
+                    lsof
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3.13" data-path="rpm.html">
+            
+                <a href="rpm.html">
+            
+                    
+                        <b>1.2.1.3.13.</b>
+                    
+                    RPM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3.14" data-path="ssh.html">
+            
+                <a href="ssh.html">
+            
+                    
+                        <b>1.2.1.3.14.</b>
+                    
+                    SSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3.15" data-path="system.html">
+            
+                <a href="system.html">
+            
+                    
+                        <b>1.2.1.3.15.</b>
+                    
+                    system
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3.16" data-path="tcpdump.html">
+            
+                <a href="tcpdump.html">
+            
+                    
+                        <b>1.2.1.3.16.</b>
+                    
+                    tcpdump
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3.17" data-path="tmux.html">
+            
+                <a href="tmux.html">
+            
+                    
+                        <b>1.2.1.3.17.</b>
+                    
+                    tmux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3.18" data-path="ps.html">
+            
+                <a href="ps.html">
+            
+                    
+                        <b>1.2.1.3.18.</b>
+                    
+                    ps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.1.3.19" data-path="vim.html">
+            
+                <a href="vim.html">
+            
+                    
+                        <b>1.2.1.3.19.</b>
+                    
+                    vim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3.20" data-path="wget.html">
+            
+                <a href="wget.html">
+            
+                    
+                        <b>1.2.1.3.20.</b>
+                    
+                    wget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3.21" data-path="yum.html">
+            
+                <a href="yum.html">
+            
+                    
+                        <b>1.2.1.3.21.</b>
+                    
+                    yum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3.22" data-path="zsh.html">
+            
+                <a href="zsh.html">
+            
+                    
+                        <b>1.2.1.3.22.</b>
+                    
+                    ZSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../project/">
+            
+                <a href="../project/">
+            
+                    
+                        <b>1.2.1.4.</b>
+                    
+                    专题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.4.1" data-path="../project/check.html">
+            
+                <a href="../project/check.html">
+            
+                    
+                        <b>1.2.1.4.1.</b>
+                    
+                    问题排查
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4.2" data-path="../project/bash.html">
+            
+                <a href="../project/bash.html">
+            
+                    
+                        <b>1.2.1.4.2.</b>
+                    
+                    bash脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4.3" data-path="../project/file-system.html">
+            
+                <a href="../project/file-system.html">
+            
+                    
+                        <b>1.2.1.4.3.</b>
+                    
+                    文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../windows/">
+            
+                <a href="../../windows/">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    windows
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../windows/tool/">
+            
+                <a href="../../windows/tool/">
+            
+                    
+                        <b>1.2.2.1.</b>
+                    
+                    工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../windows/project/">
+            
+                <a href="../../windows/project/">
+            
+                    
+                        <b>1.2.2.2.</b>
+                    
+                    专题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1" data-path="../../windows/project/check.html">
+            
+                <a href="../../windows/project/check.html">
+            
+                    
+                        <b>1.2.2.2.1.</b>
+                    
+                    问题排查
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.2" data-path="../../windows/project/cmd.html">
+            
+                <a href="../../windows/project/cmd.html">
+            
+                    
+                        <b>1.2.2.2.2.</b>
+                    
+                    CMD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.3" data-path="../../windows/project/wsl.html">
+            
+                <a href="../../windows/project/wsl.html">
+            
+                    
+                        <b>1.2.2.2.3.</b>
+                    
+                    wsl
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../RegExp/">
+            
+                <a href="../../RegExp/">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    RegExp
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../RegExp/command.html">
+            
+                <a href="../../RegExp/command.html">
+            
+                    
+                        <b>1.2.3.1.</b>
+                    
+                    命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../../RegExp/example.html">
+            
+                <a href="../../RegExp/example.html">
+            
+                    
+                        <b>1.2.3.2.</b>
+                    
+                    实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../../RegExp/language/">
+            
+                <a href="../../RegExp/language/">
+            
+                    
+                        <b>1.2.3.3.</b>
+                    
+                    方言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.3.1" data-path="../../RegExp/language/python.html">
+            
+                <a href="../../RegExp/language/python.html">
+            
+                    
+                        <b>1.2.3.3.1.</b>
+                    
+                    python
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../HTML/">
+            
+                <a href="../../HTML/">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    HTML
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../../HTML/base.html">
+            
+                <a href="../../HTML/base.html">
+            
+                    
+                        <b>1.2.4.1.</b>
+                    
+                    基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../Markdown/">
+            
+                <a href="../../Markdown/">
+            
+                    
+                        <b>1.2.5.</b>
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../../Markdown/command.html">
+            
+                <a href="../../Markdown/command.html">
+            
+                    
+                        <b>1.2.5.1.</b>
+                    
+                    命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="../../Markdown/codeblock.html">
+            
+                <a href="../../Markdown/codeblock.html">
+            
+                    
+                        <b>1.2.5.2.</b>
+                    
+                    代码块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../Python/">
+            
+                <a href="../../Python/">
+            
+                    
+                        <b>1.2.6.</b>
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="../../Python/install.html">
+            
+                <a href="../../Python/install.html">
+            
+                    
+                        <b>1.2.6.1.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="../../Python/project/">
+            
+                <a href="../../Python/project/">
+            
+                    
+                        <b>1.2.6.2.</b>
+                    
+                    专题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.2.1" data-path="../../Python/project/version.html">
+            
+                <a href="../../Python/project/version.html">
+            
+                    
+                        <b>1.2.6.2.1.</b>
+                    
+                    version
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.2" data-path="../../Python/project/python2to3.html">
+            
+                <a href="../../Python/project/python2to3.html">
+            
+                    
+                        <b>1.2.6.2.2.</b>
+                    
+                    2to3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.3" data-path="../../Python/project/GIL.html">
+            
+                <a href="../../Python/project/GIL.html">
+            
+                    
+                        <b>1.2.6.2.3.</b>
+                    
+                    GIL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.4" data-path="../../Python/project/pre-commit.html">
+            
+                <a href="../../Python/project/pre-commit.html">
+            
+                    
+                        <b>1.2.6.2.4.</b>
+                    
+                    pre-commit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2.5" data-path="../../Python/project/logging.html">
+            
+                <a href="../../Python/project/logging.html">
+            
+                    
+                        <b>1.2.6.2.5.</b>
+                    
+                    logging
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../NodeJS/">
+            
+                <a href="../../NodeJS/">
+            
+                    
+                        <b>1.2.7.</b>
+                    
+                    NodeJS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.7.1" data-path="../../NodeJS/install.html">
+            
+                <a href="../../NodeJS/install.html">
+            
+                    
+                        <b>1.2.7.1.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../../Java/">
+            
+                <a href="../../Java/">
+            
+                    
+                        <b>1.2.8.</b>
+                    
+                    Java
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.1" data-path="../../Java/install.html">
+            
+                <a href="../../Java/install.html">
+            
+                    
+                        <b>1.2.8.1.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../../Clojure/">
+            
+                <a href="../../Clojure/">
+            
+                    
+                        <b>1.2.9.</b>
+                    
+                    Clojure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.9.1" data-path="../../Clojure/install.html">
+            
+                <a href="../../Clojure/install.html">
+            
+                    
+                        <b>1.2.9.1.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../../RabbitMQ/">
+            
+                <a href="../../RabbitMQ/">
+            
+                    
+                        <b>1.2.10.</b>
+                    
+                    RabbitMQ
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.10.1" data-path="../../RabbitMQ/install.html">
+            
+                <a href="../../RabbitMQ/install.html">
+            
+                    
+                        <b>1.2.10.1.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10.2" data-path="../../RabbitMQ/project/">
+            
+                <a href="../../RabbitMQ/project/">
+            
+                    
+                        <b>1.2.10.2.</b>
+                    
+                    专题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.10.2.1" data-path="../../RabbitMQ/project/check.html">
+            
+                <a href="../../RabbitMQ/project/check.html">
+            
+                    
+                        <b>1.2.10.2.1.</b>
+                    
+                    问题排查
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../../Kafka/">
+            
+                <a href="../../Kafka/">
+            
+                    
+                        <b>1.2.11.</b>
+                    
+                    Kafka
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.11.1" data-path="../../Kafka/">
+            
+                <a href="../../Kafka/">
+            
+                    
+                        <b>1.2.11.1.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../../MongoDB/">
+            
+                <a href="../../MongoDB/">
+            
+                    
+                        <b>1.2.12.</b>
+                    
+                    MongoDB
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.12.1" data-path="../../MongoDB/install.html">
+            
+                <a href="../../MongoDB/install.html">
+            
+                    
+                        <b>1.2.12.1.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12.2" data-path="../../MongoDB/command.html">
+            
+                <a href="../../MongoDB/command.html">
+            
+                    
+                        <b>1.2.12.2.</b>
+                    
+                    命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12.3" data-path="../../MongoDB/project/">
+            
+                <a href="../../MongoDB/project/">
+            
+                    
+                        <b>1.2.12.3.</b>
+                    
+                    专题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.12.3.1" data-path="../../MongoDB/project/version.html">
+            
+                <a href="../../MongoDB/project/version.html">
+            
+                    
+                        <b>1.2.12.3.1.</b>
+                    
+                    version
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12.3.2" data-path="../../MongoDB/project/aggregate.html">
+            
+                <a href="../../MongoDB/project/aggregate.html">
+            
+                    
+                        <b>1.2.12.3.2.</b>
+                    
+                    聚合查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12.3.3" data-path="../../MongoDB/project/export.html">
+            
+                <a href="../../MongoDB/project/export.html">
+            
+                    
+                        <b>1.2.12.3.3.</b>
+                    
+                    导入导出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12.3.4" data-path="../../MongoDB/project/profile.html">
+            
+                <a href="../../MongoDB/project/profile.html">
+            
+                    
+                        <b>1.2.12.3.4.</b>
+                    
+                    优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../../MySQL/">
+            
+                <a href="../../MySQL/">
+            
+                    
+                        <b>1.2.13.</b>
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.13.1" data-path="../../MySQL/install.html">
+            
+                <a href="../../MySQL/install.html">
+            
+                    
+                        <b>1.2.13.1.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13.2" data-path="../../MySQL/command.html">
+            
+                <a href="../../MySQL/command.html">
+            
+                    
+                        <b>1.2.13.2.</b>
+                    
+                    命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13.3" data-path="../../MySQL/project/">
+            
+                <a href="../../MySQL/project/">
+            
+                    
+                        <b>1.2.13.3.</b>
+                    
+                    专题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.13.3.1" data-path="../../MySQL/project/best_practice.html">
+            
+                <a href="../../MySQL/project/best_practice.html">
+            
+                    
+                        <b>1.2.13.3.1.</b>
+                    
+                    最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13.3.2" data-path="../../MySQL/project/aggregate.html">
+            
+                <a href="../../MySQL/project/aggregate.html">
+            
+                    
+                        <b>1.2.13.3.2.</b>
+                    
+                    聚合查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13.3.3" data-path="../../MySQL/project/feature8.0.html">
+            
+                <a href="../../MySQL/project/feature8.0.html">
+            
+                    
+                        <b>1.2.13.3.3.</b>
+                    
+                    8.0特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../../Clickhouse/">
+            
+                <a href="../../Clickhouse/">
+            
+                    
+                        <b>1.2.14.</b>
+                    
+                    Clickhouse
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.14.1" data-path="../../Clickhouse/install.html">
+            
+                <a href="../../Clickhouse/install.html">
+            
+                    
+                        <b>1.2.14.1.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14.2" data-path="../../Clickhouse/example.html">
+            
+                <a href="../../Clickhouse/example.html">
+            
+                    
+                        <b>1.2.14.2.</b>
+                    
+                    实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14.3" data-path="../../Clickhouse/project/">
+            
+                <a href="../../Clickhouse/project/">
+            
+                    
+                        <b>1.2.14.3.</b>
+                    
+                    专题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.14.3.1" data-path="../../Clickhouse/project/version.html">
+            
+                <a href="../../Clickhouse/project/version.html">
+            
+                    
+                        <b>1.2.14.3.1.</b>
+                    
+                    version
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14.3.2" data-path="../../Clickhouse/project/check.html">
+            
+                <a href="../../Clickhouse/project/check.html">
+            
+                    
+                        <b>1.2.14.3.2.</b>
+                    
+                    问题排查
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../../Redis/">
+            
+                <a href="../../Redis/">
+            
+                    
+                        <b>1.2.15.</b>
+                    
+                    Redis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.15.1" data-path="../../Redis/install.html">
+            
+                <a href="../../Redis/install.html">
+            
+                    
+                        <b>1.2.15.1.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15.2" data-path="../../Redis/command.html">
+            
+                <a href="../../Redis/command.html">
+            
+                    
+                        <b>1.2.15.2.</b>
+                    
+                    命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15.3" data-path="../../Redis/project/">
+            
+                <a href="../../Redis/project/">
+            
+                    
+                        <b>1.2.15.3.</b>
+                    
+                    专题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.15.3.1" data-path="../../Redis/project/version.html">
+            
+                <a href="../../Redis/project/version.html">
+            
+                    
+                        <b>1.2.15.3.1.</b>
+                    
+                    version
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15.3.2" data-path="../../Redis/project/safe.html">
+            
+                <a href="../../Redis/project/safe.html">
+            
+                    
+                        <b>1.2.15.3.2.</b>
+                    
+                    安全设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15.3.3" data-path="../../Redis/project/lua.html">
+            
+                <a href="../../Redis/project/lua.html">
+            
+                    
+                        <b>1.2.15.3.3.</b>
+                    
+                    lua脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../../Memcached/">
+            
+                <a href="../../Memcached/">
+            
+                    
+                        <b>1.2.16.</b>
+                    
+                    Memcached
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.16.1" data-path="../../Memcached/install.html">
+            
+                <a href="../../Memcached/install.html">
+            
+                    
+                        <b>1.2.16.1.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="../../Zookeeper/">
+            
+                <a href="../../Zookeeper/">
+            
+                    
+                        <b>1.2.17.</b>
+                    
+                    Zookeeper
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.17.1" data-path="../../Zookeeper/install.html">
+            
+                <a href="../../Zookeeper/install.html">
+            
+                    
+                        <b>1.2.17.1.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="../../Docker/">
+            
+                <a href="../../Docker/">
+            
+                    
+                        <b>1.2.18.</b>
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.18.1" data-path="../../Docker/install.html">
+            
+                <a href="../../Docker/install.html">
+            
+                    
+                        <b>1.2.18.1.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18.2" data-path="../../Docker/command.html">
+            
+                <a href="../../Docker/command.html">
+            
+                    
+                        <b>1.2.18.2.</b>
+                    
+                    命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18.3" data-path="../../Docker/example.html">
+            
+                <a href="../../Docker/example.html">
+            
+                    
+                        <b>1.2.18.3.</b>
+                    
+                    实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19" data-path="../../Git/">
+            
+                <a href="../../Git/">
+            
+                    
+                        <b>1.2.19.</b>
+                    
+                    Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.19.1" data-path="../../Git/install.html">
+            
+                <a href="../../Git/install.html">
+            
+                    
+                        <b>1.2.19.1.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19.2" data-path="../../Git/command.html">
+            
+                <a href="../../Git/command.html">
+            
+                    
+                        <b>1.2.19.2.</b>
+                    
+                    命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19.3" data-path="../../Git/example.html">
+            
+                <a href="../../Git/example.html">
+            
+                    
+                        <b>1.2.19.3.</b>
+                    
+                    实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19.4" data-path="../../Git/project/">
+            
+                <a href="../../Git/project/">
+            
+                    
+                        <b>1.2.19.4.</b>
+                    
+                    专题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.19.4.1" data-path="../../Git/project/submode.html">
+            
+                <a href="../../Git/project/submode.html">
+            
+                    
+                        <b>1.2.19.4.1.</b>
+                    
+                    子模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19.4.2" data-path="../../Git/project/credential.html">
+            
+                <a href="../../Git/project/credential.html">
+            
+                    
+                        <b>1.2.19.4.2.</b>
+                    
+                    凭证存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19.4.3" data-path="../../Git/project/github.html">
+            
+                <a href="../../Git/project/github.html">
+            
+                    
+                        <b>1.2.19.4.3.</b>
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.20" data-path="../../gitbook/">
+            
+                <a href="../../gitbook/">
+            
+                    
+                        <b>1.2.20.</b>
+                    
+                    gitbook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.20.1" data-path="../../gitbook/install.html">
+            
+                <a href="../../gitbook/install.html">
+            
+                    
+                        <b>1.2.20.1.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.20.2" data-path="../../gitbook/project/">
+            
+                <a href="../../gitbook/project/">
+            
+                    
+                        <b>1.2.20.2.</b>
+                    
+                    专题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.20.2.1" data-path="../../gitbook/project/github.html">
+            
+                <a href="../../gitbook/project/github.html">
+            
+                    
+                        <b>1.2.20.2.1.</b>
+                    
+                    github
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.20.3" data-path="../../gitbook/plugins/">
+            
+                <a href="../../gitbook/plugins/">
+            
+                    
+                        <b>1.2.20.3.</b>
+                    
+                    插件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.20.3.1" data-path="../../gitbook/plugins/summary.html">
+            
+                <a href="../../gitbook/plugins/summary.html">
+            
+                    
+                        <b>1.2.20.3.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.20.3.2" data-path="../../gitbook/plugins/mermaid.html">
+            
+                <a href="../../gitbook/plugins/mermaid.html">
+            
+                    
+                        <b>1.2.20.3.2.</b>
+                    
+                    mermaid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.20.3.3" data-path="../../gitbook/plugins/simple-mind-map.html">
+            
+                <a href="../../gitbook/plugins/simple-mind-map.html">
+            
+                    
+                        <b>1.2.20.3.3.</b>
+                    
+                    simple-mind-map
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21" data-path="../../notebook/">
+            
+                <a href="../../notebook/">
+            
+                    
+                        <b>1.2.21.</b>
+                    
+                    notebook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.21.1" data-path="../../notebook/install.html">
+            
+                <a href="../../notebook/install.html">
+            
+                    
+                        <b>1.2.21.1.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21.2" data-path="../../notebook/plugins/">
+            
+                <a href="../../notebook/plugins/">
+            
+                    
+                        <b>1.2.21.2.</b>
+                    
+                    插件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.21.2.1" data-path="../../notebook/plugins/summary.html">
+            
+                <a href="../../notebook/plugins/summary.html">
+            
+                    
+                        <b>1.2.21.2.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21.3" data-path="../../notebook/project/">
+            
+                <a href="../../notebook/project/">
+            
+                    
+                        <b>1.2.21.3.</b>
+                    
+                    专题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.21.3.1" data-path="../../notebook/project/style.html">
+            
+                <a href="../../notebook/project/style.html">
+            
+                    
+                        <b>1.2.21.3.1.</b>
+                    
+                    样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.22" data-path="../../Nginx/">
+            
+                <a href="../../Nginx/">
+            
+                    
+                        <b>1.2.22.</b>
+                    
+                    Nginx
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.22.1" data-path="../../Nginx/install.html">
+            
+                <a href="../../Nginx/install.html">
+            
+                    
+                        <b>1.2.22.1.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.22.2" data-path="../../Nginx/settings.html">
+            
+                <a href="../../Nginx/settings.html">
+            
+                    
+                        <b>1.2.22.2.</b>
+                    
+                    配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.23" data-path="../../traefik/">
+            
+                <a href="../../traefik/">
+            
+                    
+                        <b>1.2.23.</b>
+                    
+                    traefik
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.23.1" data-path="../../traefik/install.html">
+            
+                <a href="../../traefik/install.html">
+            
+                    
+                        <b>1.2.23.1.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.23.2" data-path="../../traefik/project/">
+            
+                <a href="../../traefik/project/">
+            
+                    
+                        <b>1.2.23.2.</b>
+                    
+                    专题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.23.2.1" data-path="../../traefik/project/Nginx-to-traefik.html">
+            
+                <a href="../../traefik/project/Nginx-to-traefik.html">
+            
+                    
+                        <b>1.2.23.2.1.</b>
+                    
+                    私有服务架构迁移
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.24" data-path="../../vscode/">
+            
+                <a href="../../vscode/">
+            
+                    
+                        <b>1.2.24.</b>
+                    
+                    vscode
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.24.1" data-path="../../vscode/project/">
+            
+                <a href="../../vscode/project/">
+            
+                    
+                        <b>1.2.24.1.</b>
+                    
+                    专题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.24.1.1" data-path="../../vscode/project/settings.html">
+            
+                <a href="../../vscode/project/settings.html">
+            
+                    
+                        <b>1.2.24.1.1.</b>
+                    
+                    常用配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.24.2" data-path="../../vscode/plugins/">
+            
+                <a href="../../vscode/plugins/">
+            
+                    
+                        <b>1.2.24.2.</b>
+                    
+                    插件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.24.2.1" data-path="../../vscode/plugins/summary.html">
+            
+                <a href="../../vscode/plugins/summary.html">
+            
+                    
+                        <b>1.2.24.2.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.24.2.2" data-path="../../vscode/plugins/Python.html">
+            
+                <a href="../../vscode/plugins/Python.html">
+            
+                    
+                        <b>1.2.24.2.2.</b>
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.24.2.3" data-path="../../vscode/plugins/Python-Docstring-Generator.html">
+            
+                <a href="../../vscode/plugins/Python-Docstring-Generator.html">
+            
+                    
+                        <b>1.2.24.2.3.</b>
+                    
+                    Python-Docstring-Generator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.25" data-path="../../sonarqube/">
+            
+                <a href="../../sonarqube/">
+            
+                    
+                        <b>1.2.25.</b>
+                    
+                    SonarQube
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.25.1" data-path="../../sonarqube/install.html">
+            
+                <a href="../../sonarqube/install.html">
+            
+                    
+                        <b>1.2.25.1.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.25.2" data-path="../../sonarqube/project/">
+            
+                <a href="../../sonarqube/project/">
+            
+                    
+                        <b>1.2.25.2.</b>
+                    
+                    专题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.25.2.1" data-path="../../sonarqube/project/python-coverage.html">
+            
+                <a href="../../sonarqube/project/python-coverage.html">
+            
+                    
+                        <b>1.2.25.2.1.</b>
+                    
+                    Python用例覆盖率
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.26" data-path="../../Jenkins/">
+            
+                <a href="../../Jenkins/">
+            
+                    
+                        <b>1.2.26.</b>
+                    
+                    Jenkins
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.26.1" data-path="../../Jenkins/install.html">
+            
+                <a href="../../Jenkins/install.html">
+            
+                    
+                        <b>1.2.26.1.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.27" data-path="../../Book/">
+            
+                <a href="../../Book/">
+            
+                    
+                        <b>1.2.27.</b>
+                    
+                    读书体会
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.27.1" data-path="../../Book/words.html">
+            
+                <a href="../../Book/words.html">
+            
+                    
+                        <b>1.2.27.1.</b>
+                    
+                    生僻字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.27.2" data-path="../../Book/terminology.html">
+            
+                <a href="../../Book/terminology.html">
+            
+                    
+                        <b>1.2.27.2.</b>
+                    
+                    术语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.27.3" data-path="../../Book/Introductory-Combinatorics.html">
+            
+                <a href="../../Book/Introductory-Combinatorics.html">
+            
+                    
+                        <b>1.2.27.3.</b>
+                    
+                    组合数学
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.27.4" data-path="../../Book/Code-Complete.html">
+            
+                <a href="../../Book/Code-Complete.html">
+            
+                    
+                        <b>1.2.27.4.</b>
+                    
+                    代码大全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.27.5" data-path="../../Book/Refactoring-Improving-the-Design-of-Existing-Code.html">
+            
+                <a href="../../Book/Refactoring-Improving-the-Design-of-Existing-Code.html">
+            
+                    
+                        <b>1.2.27.5.</b>
+                    
+                    重构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.27.6" data-path="../../Book/Compilers.html">
+            
+                <a href="../../Book/Compilers.html">
+            
+                    
+                        <b>1.2.27.6.</b>
+                    
+                    编译原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.27.7" data-path="../../Book/Seven-Concurrency-Models-in-Seven-Weeks.html">
+            
+                <a href="../../Book/Seven-Concurrency-Models-in-Seven-Weeks.html">
+            
+                    
+                        <b>1.2.27.7.</b>
+                    
+                    七周七并发模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.27.8" data-path="../../Book/Pro-Git.html">
+            
+                <a href="../../Book/Pro-Git.html">
+            
+                    
+                        <b>1.2.27.8.</b>
+                    
+                    Pro Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.27.9" data-path="../../Book/Influence-The-Psychology-of-Persuasion.html">
+            
+                <a href="../../Book/Influence-The-Psychology-of-Persuasion.html">
+            
+                    
+                        <b>1.2.27.9.</b>
+                    
+                    影响力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.27.10" data-path="../../Book/The-Effective-Executive.html">
+            
+                <a href="../../Book/The-Effective-Executive.html">
+            
+                    
+                        <b>1.2.27.10.</b>
+                    
+                    卓有成效的管理者
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.27.11" data-path="../../Book/Measure-What-Matters.html">
+            
+                <a href="../../Book/Measure-What-Matters.html">
+            
+                    
+                        <b>1.2.27.11.</b>
+                    
+                    这就是OKR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.27.12" data-path="../../Book/The-One-Minute-Manager.html">
+            
+                <a href="../../Book/The-One-Minute-Manager.html">
+            
+                    
+                        <b>1.2.27.12.</b>
+                    
+                    一分钟经理人
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.27.13" data-path="../../Book/働き方.html">
+            
+                <a href="../../Book/働き方.html">
+            
+                    
+                        <b>1.2.27.13.</b>
+                    
+                    干法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.27.14" data-path="../../Book/Trust-Factor.html">
+            
+                <a href="../../Book/Trust-Factor.html">
+            
+                    
+                        <b>1.2.27.14.</b>
+                    
+                    零内耗-打造一支彼此信任的高效团队
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.27.15" data-path="../../Book/How-Money-Became-Dangerous.html">
+            
+                <a href="../../Book/How-Money-Became-Dangerous.html">
+            
+                    
+                        <b>1.2.27.15.</b>
+                    
+                    危险的金钱
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.28" data-path="../../Tool/">
+            
+                <a href="../../Tool/">
+            
+                    
+                        <b>1.2.28.</b>
+                    
+                    工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >vim</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#vim"><b>1.2.1.3.19.1. </b>vim</a></li><ul><li><span class="title-icon "></span><a href="#&#x66FF;&#x6362;"><b>1.2.1.3.19.1.1. </b>&#x66FF;&#x6362;</a></li><li><span class="title-icon "></span><a href="#tab&#x66FF;&#x6362;"><b>1.2.1.3.19.1.2. </b>tab&#x66FF;&#x6362;</a></li><li><span class="title-icon "></span><a href="#vimrc"><b>1.2.1.3.19.1.3. </b>vimrc</a></li></ul></ul></div><a href="#vim" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="vim"><a name="vim" class="anchor-navigation-ex-anchor" href="#vim"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1.3.19.1. vim</h1>
+<hr>
+<ul>
+<li><a href="#vim">vim</a><ul>
+<li><a href="#&#x66FF;&#x6362;">&#x66FF;&#x6362;</a></li>
+<li><a href="#tab&#x66FF;&#x6362;">tab&#x66FF;&#x6362;</a></li>
+<li><a href="#vimrc">vimrc</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="&#x66FF;&#x6362;"><a name="&#x66FF;&#x6362;" class="anchor-navigation-ex-anchor" href="#&#x66FF;&#x6362;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1.3.19.1.1. &#x66FF;&#x6362;</h2>
+<pre class="language-"><code>:[%]s/parttern/replace/[range]
+</code></pre><h2 id="tab&#x66FF;&#x6362;"><a name="tab&#x66FF;&#x6362;" class="anchor-navigation-ex-anchor" href="#tab&#x66FF;&#x6362;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1.3.19.1.2. tab&#x66FF;&#x6362;</h2>
+<pre class="language-"><code class="lang-sh">:set <span class="token assign-left variable">ts</span><span class="token operator">=</span><span class="token number">4</span>
+:set expandtab
+:set noexpandtab
+:%retab<span class="token operator">!</span>
+</code></pre>
+<h2 id="vimrc"><a name="vimrc" class="anchor-navigation-ex-anchor" href="#vimrc"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1.3.19.1.3. vimrc</h2>
+<pre class="language-"><code class="lang-sh"><span class="token string">&quot; must be first, changes behaviour of other settings
+set nocompatible
+
+&quot;</span> <span class="token number">256</span> colors
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">t_Co</span><span class="token operator">=</span><span class="token number">256</span>
+
+<span class="token string">&quot; sane text files
+set fileformat=unix
+set encoding=utf-8
+
+&quot;</span> sane tabs
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">tabstop</span><span class="token operator">=</span><span class="token number">4</span>
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">shiftwidth</span><span class="token operator">=</span><span class="token number">4</span>
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">softtabstop</span><span class="token operator">=</span><span class="token number">4</span>
+
+<span class="token string">&quot; convert all typed tabs to spaces
+set expandtab
+
+&quot;</span> syntax highlighting
+syntax on
+color koehler
+
+<span class="token string">&quot;make sure highlighting works all the way down long files
+autocmd BufEnter * :syntax sync fromstart
+
+&quot;</span> allow cursor to be positioned one char past end of line
+<span class="token string">&quot; and apply operations to all of selection including last char
+set selection=exclusive
+
+&quot;</span> allow backgrounding buffers without writing them
+<span class="token string">&quot; and remember marks/undo for backgrounded buffers
+set hidden
+
+&quot;</span> Keep <span class="token function">more</span> context when scrolling off the end of a buffer
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">scrolloff</span><span class="token operator">=</span><span class="token number">3</span>
+
+<span class="token string">&quot; allow cursor keys to go right off end of one line, onto start of next
+set whichwrap+=&lt;,&gt;,[,]
+&quot;</span> allow backspacing over everything <span class="token keyword">in</span> insert mode
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">backspace</span><span class="token operator">=</span>indent,eol,start
+
+<span class="token string">&quot; no line wrapping
+set nowrap
+
+&quot;</span> line numbers
+<span class="token builtin class-name">set</span> number
+
+<span class="token string">&quot; when joining lines, don&apos;t insert two spaces after punctuation
+set nojoinspaces
+
+&quot;</span> Make searches case-sensitive only <span class="token keyword">if</span> they contain upper-case characters
+<span class="token builtin class-name">set</span> ignorecase
+<span class="token builtin class-name">set</span> smartcase
+<span class="token string">&quot; show search matches as the search pattern is typed
+set incsearch
+&quot;</span> search-next wraps back to start of <span class="token function">file</span>
+<span class="token builtin class-name">set</span> wrapscan
+<span class="token string">&quot; highlight last search matches
+set hlsearch
+&quot;</span> map key to dismiss search highlightedness
+map <span class="token operator">&lt;</span>bs<span class="token operator">&gt;</span> :noh<span class="token operator">&lt;</span>CR<span class="token operator">&gt;</span>
+
+<span class="token string">&quot; grep for word under cursor
+noremap &lt;Leader&gt;g :grep -rw &apos;&lt;C-r&gt;&lt;C-w&gt;&apos; .&lt;CR&gt;
+
+&quot;</span> aliases <span class="token keyword">for</span> window switching <span class="token punctuation">(</span>browser captures ctrl-w<span class="token punctuation">)</span>
+noremap <span class="token operator">&lt;</span>C-l<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>C-w<span class="token operator">&gt;</span>l
+noremap <span class="token operator">&lt;</span>C-h<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>C-w<span class="token operator">&gt;</span>h
+noremap <span class="token operator">&lt;</span>C-k<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>C-w<span class="token operator">&gt;</span>k
+noremap <span class="token operator">&lt;</span>C-j<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>C-w<span class="token operator">&gt;</span>j
+
+<span class="token string">&quot; similarly ctrl-q doesnt work, so use leader-q for block visual mode
+nnoremap &lt;leader&gt;q &lt;C-Q&gt;
+
+
+&quot;</span> <span class="token function">make</span> tab completion <span class="token keyword">for</span> files/buffers act like <span class="token function">bash</span>
+<span class="token builtin class-name">set</span> wildmenu
+
+
+<span class="token string">&quot; display cursor co-ords at all times
+set ruler
+set cursorline
+
+&quot;</span> display number of selected chars, lines, or size of blocks.
+<span class="token builtin class-name">set</span> showcmd
+
+<span class="token string">&quot; show matching brackets, etc, for 1/10th of a second
+set showmatch
+set matchtime=1
+
+
+&quot;</span> enables filetype specific plugins
+filetype plugin on
+<span class="token string">&quot; enables filetype detection
+filetype on
+
+if has(&quot;</span>autocmd<span class="token string">&quot;)
+    &quot;</span> Enable <span class="token function">file</span> <span class="token builtin class-name">type</span> detection.
+    <span class="token string">&quot; Use the default filetype settings, so that mail gets &apos;tw&apos; set to 72,
+    &quot;</span> <span class="token string">&apos;cindent&apos;</span> is on <span class="token keyword">in</span> C files, etc.
+    <span class="token string">&quot; Also load indent files, to automatically do language-dependent indenting.
+    filetype plugin indent on
+
+    &quot;</span> When editing a file, always jump to the last known cursor position.
+    <span class="token string">&quot; Don&apos;t do it when the position is invalid or when inside an event handler
+    &quot;</span> <span class="token punctuation">(</span>happens when dropping a <span class="token function">file</span> on gvim<span class="token punctuation">)</span>.
+    autocmd BufReadPost *
+    <span class="token punctuation">\</span> <span class="token keyword">if</span> line<span class="token punctuation">(</span><span class="token string">&quot;&apos;<span class="token entity" title="\&quot;">\&quot;</span>&quot;</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> line<span class="token punctuation">(</span><span class="token string">&quot;&apos;<span class="token entity" title="\&quot;">\&quot;</span>&quot;</span><span class="token punctuation">)</span> <span class="token operator">&lt;=</span> line<span class="token punctuation">(</span><span class="token string">&quot;$&quot;</span><span class="token punctuation">)</span> <span class="token operator">|</span>
+    <span class="token punctuation">\</span>   exe &quot;normal g`<span class="token punctuation">\</span>&quot;<span class="token string">&quot; |
+    \ endif
+
+else
+    &quot;</span> <span class="token keyword">if</span> old vim, <span class="token builtin class-name">set</span> vanilla autoindenting on
+    <span class="token builtin class-name">set</span> autoindent
+
+endif <span class="token string">&quot; has(&quot;</span>autocmd<span class="token string">&quot;)
+
+
+&quot;</span> <span class="token builtin class-name">enable</span> automatic yanking to and pasting from the selection
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">clipboard</span><span class="token operator">+=</span>unnamed
+
+
+
+<span class="token string">&quot; places to look for tags files:
+set tags=./tags,tags
+&quot;</span> recursively search <span class="token function">file</span><span class="token string">&apos;s parent dirs for tags file
+&quot; set tags+=./tags;/
+&quot; recursively search cwd&apos;</span>s parent <span class="token function">dirs</span> <span class="token keyword">for</span> tags <span class="token function">file</span>
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">tags</span><span class="token operator">+=</span>tags<span class="token punctuation">;</span>/
+
+<span class="token string">&quot;autocompletion
+inoremap &lt;c-space&gt; &lt;c-n&gt;
+inoremap &lt;c-s-space&gt; &lt;c-p&gt;
+
+
+&quot;</span> <span class="token operator">==</span><span class="token operator">==</span><span class="token operator">=</span>STATUS LINE OF DEATH<span class="token operator">!</span><span class="token operator">!=</span><span class="token operator">==</span><span class="token operator">==</span>
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">statusline</span><span class="token operator">=</span>
+<span class="token string">&quot; filename, relative to cwd
+set statusline+=%f
+&quot;</span> separator
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">statusline</span><span class="token operator">+=</span><span class="token punctuation">\</span> 
+
+<span class="token string">&quot; modified flag
+set statusline+=%#wildmenu#
+set statusline+=%m
+set statusline+=%*
+
+&quot;</span>Display a warning <span class="token keyword">if</span> <span class="token function">file</span> encoding isnt utf-8
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">statusline</span><span class="token operator">+=</span>%<span class="token comment">#question#</span>
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">statusline</span><span class="token operator">+=</span>%<span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>fenc<span class="token operator">!=</span><span class="token string">&apos;utf-8&apos;</span><span class="token operator">&amp;&amp;</span><span class="token operator">&amp;</span>fenc<span class="token operator">!=</span><span class="token string">&apos;&apos;</span><span class="token punctuation">)</span>?<span class="token string">&apos;[&apos;</span><span class="token builtin class-name">.</span><span class="token operator">&amp;</span>fenc.<span class="token string">&apos;]&apos;</span><span class="token builtin class-name">:</span><span class="token string">&apos;&apos;</span><span class="token punctuation">}</span>
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">statusline</span><span class="token operator">+=</span>%*
+
+<span class="token string">&quot;display a warning if fileformat isnt unix
+set statusline+=%#directory#
+set statusline+=%{&amp;ff!=&apos;unix&apos;?&apos;[&apos;.&amp;ff.&apos;]&apos;:&apos;&apos;}
+set statusline+=%*
+
+&quot;</span>display a warning <span class="token keyword">if</span> files contains tab chars
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">statusline</span><span class="token operator">+=</span>%<span class="token comment">#warningmsg#</span>
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">statusline</span><span class="token operator">+=</span>%<span class="token punctuation">{</span>StatuslineTabWarning<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">statusline</span><span class="token operator">+=</span>%*
+
+<span class="token string">&quot; read-only
+set statusline+=%r
+set statusline+=%*
+
+&quot;</span> right-align
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">statusline</span><span class="token operator">+=</span>%<span class="token operator">=</span>
+
+<span class="token string">&quot; filetype
+set statusline+=%{strlen(&amp;ft)?&amp;ft:&apos;none&apos;}
+&quot;</span> separator
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">statusline</span><span class="token operator">+=</span><span class="token punctuation">\</span> 
+
+<span class="token string">&quot; current char
+set statusline+=%3b,0x%02B
+&quot;</span> separator
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">statusline</span><span class="token operator">+=</span><span class="token punctuation">\</span> 
+
+<span class="token string">&quot; column,
+set statusline+=%2c,
+&quot;</span> current line / lines <span class="token keyword">in</span> <span class="token function">file</span>
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">statusline</span><span class="token operator">+=</span>%l/%L
+
+<span class="token string">&quot; always show status line
+set laststatus=2
+
+&quot;</span> <span class="token builtin class-name">return</span> <span class="token string">&apos;[tabs]&apos;</span> <span class="token keyword">if</span> tab chars <span class="token keyword">in</span> file, or empty string
+function<span class="token operator">!</span> StatuslineTabWarning<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> <span class="token operator">!</span>exists<span class="token punctuation">(</span><span class="token string">&quot;b:statusline_tab_warning&quot;</span><span class="token punctuation">)</span>
+        <span class="token builtin class-name">let</span> tabs <span class="token operator">=</span> search<span class="token punctuation">(</span><span class="token string">&apos;^\t&apos;</span>, <span class="token string">&apos;nw&apos;</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token number">0</span>
+
+        <span class="token keyword">if</span> tabs
+            <span class="token builtin class-name">let</span> b:statusline_tab_warning <span class="token operator">=</span> <span class="token string">&apos;[tabs]&apos;</span>
+        <span class="token keyword">else</span>
+            <span class="token builtin class-name">let</span> b:statusline_tab_warning <span class="token operator">=</span> <span class="token string">&apos;&apos;</span>
+        endif
+    endif
+    <span class="token builtin class-name">return</span> b:statusline_tab_warning
+endfunction
+&quot;recalculate the tab warning flag when idle and after writing
+autocmd cursorhold,bufwritepost * unlet<span class="token operator">!</span> b:statusline_tab_warning
+</code></pre>
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">File Modify: 
+2023-05-10 09:34:39
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ps.html" class="navigation navigation-prev " aria-label="Previous page: ps">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="wget.html" class="navigation navigation-next " aria-label="Next page: wget">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"vim","level":"1.2.1.3.19","depth":4,"next":{"title":"wget","level":"1.2.1.3.20","depth":4,"path":"common/Linux/tool/wget.md","ref":"common/Linux/tool/wget.md","articles":[]},"previous":{"title":"ps","level":"1.2.1.3.18","depth":4,"path":"common/Linux/tool/ps.md","ref":"common/Linux/tool/ps.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","github@^2.0.0","github-buttons@^3.0.0","edit-link@^2.0.2","prism@^2.4.0","prism-themes@^0.0.2","mermaid-gb3@^2.1.0","simple-mind-map@^0.2.4","advanced-emoji@^0.2.2","anchors@^0.7.1","anchor-navigation-ex@^1.0.14","include-codeblock@^3.0.2","ace@^0.3.2","emphasize@^1.1.0","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","sectionx@^3.1.0","local-video@^1.0.1","favicon@^0.0.2"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"],"ignore":["yml","text","txt","ps1","bat","mermaid","markdown","txtmap"]},"pluginsConfig":{"simple-mind-map":{"type":"txtmap","preset":"colorful","linkShape":"diagonal","autoFit":true}},"emphasize":{},"ace":{},"github":{"url":"https://github.com/swxs/Booook"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"mermaid-gb3":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"isRewritePageTitle":false,"showLevel":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"prism-themes":{},"github-buttons":{"repo":"swxs/Booook","types":["star"],"size":"small"},"local-video":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"simple-mind-map":{"autoFit":true,"linkShape":"diagonal","preset":"default","style":{},"type":"markdown"},"edit-link":{"label":"编辑本页","base":"https://github.com/swxs/Booook/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"search-plus":{}},"theme":"default","author":"swxs","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"技术笔记","language":"zh-hans","output.name":"Booook","links":{"sidebar":{"github":"https://github.com/"}},"gitbook":"3.2.2","description":"记录一些通识与思考"},"file":{"path":"common/Linux/tool/vim.md","mtime":"2023-05-10T09:34:39.136Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2023-05-10T09:36:23.517Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-simple-mind-map/bundle.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-local-video/video.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+
