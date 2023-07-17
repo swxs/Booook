@@ -86,12 +86,17 @@ Alter TABLE tabname drop primary key(col)
 
 - 创建索引
 ```sql
-CREATE [unique] index idxname on tabname(col….)
+CREATE [unique] INDEX <idxname> on <tabname(col….)>
 ```
 
 - 删除索引
 ```sql
-DROP index idxname
+DROP INDEX <idxname>
+```
+
+- 查询索引
+```sql
+SHOW INDEX FROM <tablename>
 ```
 
 ## 配置操作

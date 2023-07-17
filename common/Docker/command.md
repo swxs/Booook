@@ -85,3 +85,5 @@
 ## 目录
 
 - compose-file：Reference and guidelines: [https://docs.docker.com/compose/compose-file/](https://docs.docker.com/compose/compose-file/)
+- 配置文件：[https://docs.docker.com/compose/compose-file/compose-file-v3/#volume-configuration-reference](https://docs.docker.com/compose/compose-file/compose-file-v3/#volume-configuration-reference)
+

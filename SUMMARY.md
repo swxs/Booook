@@ -8,6 +8,7 @@
         * [工具](common/Linux/tool/README.md)
             * [apt-get](common/Linux/tool/apt-get.md)
             * [awk](common/Linux/tool/awk.md)
+            * [cloc](common/Linux/tool/cloc.md)
             * [curl](common/Linux/tool/curl.md)
             * [du](common/Linux/tool/du.md)
             * [find](common/Linux/tool/find.md)
@@ -34,6 +35,7 @@
             * [文件系统](common/Linux/project/file-system.md)
     * [windows](common/windows/README.md)
         * [工具](common/windows/tool/README.md)
+            * [Select-String](common/windows/tool/Select-String.md)
         * [专题](common/windows/project/README.md)
             * [问题排查](common/windows/project/check.md)
             * [CMD](common/windows/project/cmd.md)
@@ -162,5 +164,6 @@
         * [干法](common/Book/働き方.md)
         * [零内耗-打造一支彼此信任的高效团队](common/Book/Trust-Factor.md)
         * [危险的金钱](common/Book/How-Money-Became-Dangerous.md)
+        * [prompt](common/Book/prompt.md)
     * [工具](common/Tool/README.md)
 

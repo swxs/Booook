@@ -3,6 +3,8 @@
 ------
 
 - [问题排查](#问题排查)
+  - [2023/07/10](#20230710)
+    - [SourceTree打开秒退](#sourcetree打开秒退)
   - [2022/09/13](#20220913)
     - [win32clipboard 引用失败](#win32clipboard-引用失败)
   - [2021/03/18](#20210318)
@@ -17,6 +19,28 @@
     - [windows Terminal 设置管理员权限](#windows-terminal-设置管理员权限)
 
 ------
+
+## 2023/07/10
+
+### SourceTree打开秒退
+
+查看日志: `C:\Users\{username}\AppData\Local\Atlassian\SourceTree\sourcetree.log`
+
+发现类似错误
+
+```
+ERROR [2023-07-10 11:11:08,264] [1] [Sourcetree.Composition.VSMef.Net48.VSMefCompositionManager] [Log] - Unable to load MEF components
+System.InvalidOperationException: 序列不包含任何元素
+```
+
+- [https://www.jianshu.com/p/e55e9bbb8e06](https://www.jianshu.com/p/e55e9bbb8e06)
+
+删除缓存后恢复:
+```
+C:\Users\{username}\AppData\Local\Atlassian\SourceTree.exe_Url_qwtubqskqkldokzbi0nhe5bni1wc0s51\3.4.13.0\Assemblies.cache
+C:\Users\{username}\AppData\Local\Atlassian\SourceTree.exe_Url_qwtubqskqkldokzbi0nhe5bni1wc0s51\3.4.13.0\Composition.cache
+```
+
 
 ## 2022/09/13
 

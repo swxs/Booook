@@ -7,7 +7,8 @@
   - [函数式编程](#函数式编程)
     - [Future 模型](#future-模型)
     - [Promise 模型](#promise-模型)
-  - [Clojure之道——分离标识与状态](#clojure之道分离标识与状态)
+    - [Clojure之道——分离标识与状态](#clojure之道分离标识与状态)
+  - [Actor](#actor)
   - [资料](#资料)
 
 ------
@@ -60,9 +61,11 @@ Java内存模型定义了何时一个线程对内存的修改对另一个线程�
 
 ### Promise 模型
 
-## Clojure之道——分离标识与状态
+### Clojure之道——分离标识与状态
 
+## Actor
 
+actor模型保留了可变状态，只是不进行共享
 
 
 ## 资料

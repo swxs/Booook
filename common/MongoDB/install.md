@@ -29,6 +29,8 @@ docker volume create --name mongoconfigdb
 docker run --name mongod -v mongodb:/data/db -v mongoconfigdb:/data/configdb -p 27017:27017 -d mongo
 ```
 
+
+
 ## window
 
 ### 下载安装
