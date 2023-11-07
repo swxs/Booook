@@ -3,6 +3,8 @@
 ------
 
 - [问题排查](#问题排查)
+  - [2023/10/18](#20231018)
+  - [基于阿里云SLS统计接口平均响应时间](#基于阿里云sls统计接口平均响应时间)
   - [2023/03/20](#20230320)
     - [kafka-python 消息发送失败](#kafka-python-消息发送失败)
   - [2023/02/10](#20230210)
@@ -30,6 +32,34 @@
     - [.h5文件读写报错](#h5文件读写报错)
 
 ------
+
+## 2023/10/18
+
+## 基于阿里云SLS统计接口平均响应时间
+
+```
+content:"FINISH"| select avg(runtime) as avg_runtime
+# 1200.4225628447766
+
+content:"FINISH" AND (NOT content:"helloworld")| select avg(runtime) as avg_runtime
+# 2481.719275745035
+
+content:"FINISH" AND (NOT content:"chart_show") AND (NOT content:"helloworld")| select avg(runtime) as avg_runtime
+# 892.4810332735514
+
+content:"FINISH" AND (content:"chart_show")| select avg(runtime) as avg_runtime
+# 4736.45184059977
+
+content:"FINISH" | select content, avg(runtime) as avg_runtime group by content
+
+content:"FINISH" AND (content:"chart_show") AND (code: "tims") AND (runtime > 5000) | select
+  code,
+  substr(content, 26, 24) as chart_id,
+  avg(runtime) as avg_runtime
+group by
+  code, substr(content, 26, 24)
+order by avg(runtime) desc
+```
 
 ## 2023/03/20
 
@@ -311,8 +341,6 @@ pip install guppy3
 
 
 ```
-
-
 
  'biper', 'brief', 'by', 'byclodo', 'byid', 'byidset', 'bymodule', 'byprod', 'byrcs', 'bysize', 'bytype', 'byunity', 'byvia', 'count', 'dictof', 'diff', 'disjoint', 'doc', 'dominos', 'domisize', 'dump', 'er', 'fam', 'get_ckc', 'get_examples', 'get_render', 'get_rp', 'get_shpaths', 'imdom', 'indisize', 'kind', 'maprox', 'more', 'nodes', 'owners', 'partition', 'parts', 'pathsin', 'pathsout', 'prod', 'referents', 'referrers', 'rp', 'shpaths', 'size', 'sp', 'stat', 'test_contains', 'theone'
 
