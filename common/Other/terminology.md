@@ -21,10 +21,14 @@ Reaction Time - 响应时间
 Queries-per-second - 每秒查询率
 
 ## WAL
-Write-Ahead Logging - 预写日志系统
+Write-Ahead Logging
+预写日志系统
+它是一种数据库技术，其中事务在提交之前先写入日志文件，以确保数据完整性和持久性。
+
 
 ## VCSs
-版本控制系统
+Version Control Systems - 版本控制系统
+一种用于管理软件开发中源代码更改的工具。
 
 ## PVC
 Persistent Volume Claim - 持久化卷声明

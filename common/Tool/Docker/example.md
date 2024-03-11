@@ -8,6 +8,7 @@
     - [更新容器配置](#更新容器配置)
     - [删除所有container](#删除所有container)
     - [加速](#加速)
+    - [查看状态](#查看状态)
   - [特殊场景](#特殊场景)
     - [打包镜像](#打包镜像)
   - [实例](#实例-1)
@@ -54,6 +55,13 @@ EOF
 sudo systemctl daemon-reload
 sudo systemctl restart docker
 ```
+
+### 查看状态
+
+``` sh
+docker stats
+```
+
 
 ## 特殊场景
 

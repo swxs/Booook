@@ -3,6 +3,11 @@
 ------
 
 - [问题排查](#问题排查)
+  - [2024/01/24](#20240124)
+    - [windows wsl2 无法使用docker](#windows-wsl2-无法使用docker)
+      - [弹出如下告警](#弹出如下告警)
+  - [2024/01/11](#20240111)
+    - [windows11右键使用win10模式](#windows11右键使用win10模式)
   - [2023/07/10](#20230710)
     - [SourceTree打开秒退](#sourcetree打开秒退)
   - [2022/09/13](#20220913)
@@ -19,6 +24,53 @@
     - [windows Terminal 设置管理员权限](#windows-terminal-设置管理员权限)
 
 ------
+
+## 2024/01/24
+
+### windows wsl2 无法使用docker
+
+1. docker desktop 升级到最新版本
+
+2. 确认wsl状态
+```
+wsl -l -v
+```
+3. 按照如下issue处理问题
+```
+Command 'docker' could not be found in this WSL 2 distro error.
+```
+来源: [https://github.com/docker/for-win/issues/13088#issuecomment-1536365076](https://github.com/docker/for-win/issues/13088#issuecomment-1536365076)
+
+#### 弹出如下告警
+```
+wsl: 检测到 localhost 代理配置，但未镜像到 WSL。NAT 模式下的 WSL 不支持 localhost 代理。
+```
+
+处理方式:
+
+`%USERPROFILE%\.wslconfig` 文件添加如下内容后重启wsl: `wsl -shutdown`
+
+```
+[experimental]
+autoMemoryReclaim=gradual | dropcache | disabled
+networkingMode=mirrored
+dnsTunneling=true
+firewall=true
+autoProxy=true
+```
+
+来源: [https://github.com/microsoft/WSL/releases/tag/2.0.0](https://github.com/microsoft/WSL/releases/tag/2.0.0)
+
+## 2024/01/11
+
+### windows11右键使用win10模式
+管理员模式输入后重启
+```
+# 切到老模式
+reg add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve
+# 切到新模式
+reg delete "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /va /f
+```
 
 ## 2023/07/10
 
