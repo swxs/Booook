@@ -9,6 +9,7 @@
     - [删除所有container](#删除所有container)
     - [加速](#加速)
     - [查看状态](#查看状态)
+    - [清理垃圾](#清理垃圾)
   - [特殊场景](#特殊场景)
     - [打包镜像](#打包镜像)
   - [实例](#实例-1)
@@ -62,6 +63,11 @@ sudo systemctl restart docker
 docker stats
 ```
 
+### 清理垃圾
+
+``` sh
+docker system prune -a
+```
 
 ## 特殊场景
 

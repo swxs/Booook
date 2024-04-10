@@ -27,6 +27,8 @@
   - [freemind](#freemind)
   - [docker](#docker)
   - [chromedriver](#chromedriver)
+  - [termux](#termux)
+  - [hacker's keyboard](#hackers-keyboard)
 
 ------
 
@@ -217,3 +219,18 @@ docker on windows
 
 下载:
 - [https://chromedriver.chromium.org/](https://chromedriver.chromium.org/)
+
+
+## termux
+
+App: 手机终端
+
+下载:
+- [https://github.com/termux/termux-app/releases/tag/v0.118.0](https://github.com/termux/termux-app/releases/tag/v0.118.0)
+
+## hacker's keyboard
+
+App: 手机全键盘
+
+下载:
+- [https://github.com/klausw/hackerskeyboard/releases/tag/1.40.7](https://github.com/klausw/hackerskeyboard/releases/tag/1.40.7)
